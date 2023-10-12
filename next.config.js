@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {images: {
-  formats: ['image/png'],
-},}
+const nextConfig = {}
 
 module.exports = nextConfig
