@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--Background, linear-gradient(112deg, #0B1926 21.82%, #040C10 87.74%));
+}
+
+.contacts {
+  display: inline-flex;
+  height: 48px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  border-radius: 43px;
+  background: var(--main, #0DD99F);
+  box-shadow: 0px 7px 18px 0px rgba(7, 39, 25, 0.40);
+  color: #0B1926;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+}
+
+.navLinks {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 30px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 107px;
+  color: #E8FFF5;
+  text-align: center;
+  /* TITLE */
+  font-family: Bayon;
+  font-size: 4.5vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 90px */
+  letter-spacing: -0.75px;
+}
+
+.hero {
+  max-width: 1440px;
+  max-height: 487px;
+  flex-shrink: 0;
+}
+
+.highlightsTitle {
+  color: #0DD99F;
 }
