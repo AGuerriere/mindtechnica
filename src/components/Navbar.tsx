@@ -9,7 +9,7 @@ export default function Navbar() {
       src="/images/Asset 50@4x.png"
       width={136}
       height={54}
-      alt="Picture of the author"
+      alt="Mind Technica Logo"
     />
       </div>
       <div className="navLinks flex justify-evenly w-1/2">
