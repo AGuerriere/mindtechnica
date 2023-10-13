@@ -5,7 +5,16 @@ const bayon = Bayon({
   subsets: ['latin'],
 })
 
-export default function HeroTitles(props:object) {
+type PropsTypes = {
+  icon: string
+  title: string
+  description: string
+  color: string
+}
+
+
+function HeroTitles(props: PropsTypes) {
+
   return (
     <div className="flex flex-col w-1/6 items-center">
       <Image
@@ -20,3 +29,5 @@ export default function HeroTitles(props:object) {
   )
 
 }
+
+export default HeroTitles
