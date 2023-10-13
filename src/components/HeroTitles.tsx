@@ -16,7 +16,7 @@ type PropsTypes = {
 function HeroTitles(props: PropsTypes) {
 
   return (
-    <div className="flex flex-col w-1/6 items-center">
+    <div className="flex flex-col w-1/6 sm:1/3 items-center">
       <Image
         src={props.icon}
         width={40}

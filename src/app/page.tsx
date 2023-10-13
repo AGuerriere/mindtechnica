@@ -26,7 +26,7 @@ export default function Home(){
             <path d="M0.683988 115.22L196.622 0.683961L311.158 196.622L115.22 311.158L0.683988 115.22Z" stroke="#4A6DD9"/>
           </svg>
         </div>
-        <h1 className={`${bayon.className} uppercase`}>At Mind<span className={`${bayon.className} highlightsTitle`}>Technica</span> We deliver Beautifully handcrafted, customisable and fast <span className={`${bayon.className} highlightsTitle`}>websites</span></h1>
+        <h1 className={`${bayon.className} uppercase text-4xl md:text-[4.5vw]`}>At Mind<span className={`${bayon.className} highlightsTitle`}>Technica</span> We deliver Beautifully handcrafted, customisable and fast <span className={`${bayon.className} highlightsTitle`}>websites</span></h1>
         <div className="flex justify-center mt-10 mb-40">
           <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-2xl font-normal leading-9`}>Our team is made of branding wizards and software mavericks</p>
         </div>
