@@ -23,7 +23,7 @@ function HeroTitles(props: PropsTypes) {
         height={40}
         alt="Icon"
       />
-      <h5 className={`${bayon.className} uppercase text-2xl text-${props.color}`}>{props.title}</h5>
+      <h5 className={`${bayon.className} uppercase text-2xl ${props.color}`}>{props.title}</h5>
       <p className="text-center">{props.description}</p>
     </div>
   )
