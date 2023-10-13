@@ -48,13 +48,7 @@ h1 {
   line-height: 120%; /* 90px */
   letter-spacing: -0.75px;
 }
-
-.hero {
-  max-width: 1440px;
-  max-height: 487px;
-  flex-shrink: 0;
-}
-
+  
 .highlightsTitle {
   color: #0DD99F;
 }
