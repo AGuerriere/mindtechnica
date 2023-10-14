@@ -26,29 +26,32 @@ export default function Home(){
             <path d="M0.683988 115.22L196.622 0.683961L311.158 196.622L115.22 311.158L0.683988 115.22Z" stroke="#4A6DD9"/>
           </svg>
         </div>
-        <h1 className={`${bayon.className} uppercase text-4xl md:text-[4.5vw]`}>At Mind<span className={`${bayon.className} highlightsTitle`}>Technica</span> We deliver Beautifully handcrafted, customisable and fast <span className={`${bayon.className} highlightsTitle`}>websites</span></h1>
-        <div className="flex justify-center mt-10 mb-40">
-          <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-2xl font-normal leading-9`}>Our team is made of branding wizards and software mavericks</p>
+        <h1 className={`${bayon.className} mt-16 md:mt-28 uppercase text-4xl md:text-[4.5vw] leading-relaxed`}>At Mind<span className={`${bayon.className} highlightsTitle`}>Technica</span> We deliver Beautifully handcrafted, customisable and fast <span className={`${bayon.className} highlightsTitle`}>websites</span></h1>
+        <div className="flex justify-center mt-9 mb-10 md:mb-40">
+          <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>Our team is made of branding wizards and software mavericks</p>
         </div>
         </div>
         <div className="flex justify-evenly">
           <HeroTitles 
-            icon="/images/Asset 50@4x.png"
+            icon="/images/icons/bulb.svg"
             title="Branding"
             description="Crafting compelling brand identities that captivate, resonate and drive success"
             color="text-pink"
+            bgColor="bg-pinkFaded"
             />
           <HeroTitles 
-            icon="/images/Asset 50@4x.png"
+            icon="/images/icons/laptop.svg"
             title="Branding"
             description="Elevating online presence with innovative, user-centric web solutions"
             color="text-green"
+            bgColor="bg-greenFaded"
             />
           <HeroTitles 
-            icon="/images/Asset 50@4x.png"
+            icon="/images/icons/mobile.svg"
             title="Branding"
             description="Creating seamless and intuitive app experience that delight users"
             color="text-blue"
+            bgColor="bg-blueFaded"
             />
         </div>
       </header>
