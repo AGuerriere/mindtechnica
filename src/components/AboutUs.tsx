@@ -38,10 +38,10 @@ export default function AboutUs() {
                   <h5 className="text-green md:text-lg">Get in Touch
                   <Image
                     src="/images/arrow.svg"
-                    width={40}
-                    height={4}
+                    width={70}
+                    height={9}
                     alt="Arrow"
-                    className="inline-block"
+                    className="inline-block pl-1"
                   />
                   </h5>
                 </div>

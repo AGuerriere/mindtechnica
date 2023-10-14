@@ -5,7 +5,7 @@ const bayon = Bayon({
 })
 
 type propType = {
-  title:string
+  title:string,
 }
 
 export default function SectionTitle(prop:propType) {

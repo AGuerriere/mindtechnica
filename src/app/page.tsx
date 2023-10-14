@@ -4,6 +4,7 @@ import Image from "next/image"
 import Header from "@/components/Header"
 import AboutUs from '@/components/AboutUs'
 import SectionTitle from '@/components/SectionTitle'
+import WhyUs from '@/components/WhyUs'
 
 const inter = Inter({ subsets: ['latin'] })
 const bayon = Bayon({
@@ -19,6 +20,7 @@ export default function Home(){
       <main>
         <AboutUs />
         <SectionTitle title="Why Us"/>
+        <WhyUs />
 
       </main>
     </>
