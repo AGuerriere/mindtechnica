@@ -1,8 +1,7 @@
-import Navbar from "@/components/Navbar"
-import HeroTitles from "@/components/HeroTitles"
 import { Inter } from 'next/font/google'
 import { Bayon } from 'next/font/google'
 import Image from "next/image"
+import Header from "@/components/Header"
 
 const inter = Inter({ subsets: ['latin'] })
 const bayon = Bayon({
@@ -13,58 +12,57 @@ const bayon = Bayon({
 
 export default function Home(){
   return (
-    <>
-      <header className="flex flex-col align-center h-screen">
-        <Navbar></Navbar>
-        <div className="hero">
-        <div className="absolute top-40 left-0 -z-50">
+    <>  
+      <Header />
+      <main>
+          <div className="h-36">
             <Image
-          src="/images/polygon.svg"
-          width={61}
-          height={105}
-          alt="Polygon"
-        />
-        </div>
-        <div className="absolute right-0 -z-50">
+              src="/images/triangle.svg"
+              width={100}
+              height={100}
+              alt="Triangle"
+              className="absolute right-0 -z-50"
+            />
+          </div>
+          <div className="aboutUs">
           <Image
-            src="/images/rectangle.svg"
-            width={156}
-            height={312}
-            alt="Rectangle"
-          />
-        </div>
-        <h1 className={`${bayon.className} mt-16 md:mt-28 uppercase text-4xl md:text-[4.5vw] leading-relaxed`}>At Mind<span className={`${bayon.className} highlightsTitle`}>Technica</span> We deliver Beautifully handcrafted, customisable and fast <span className={`${bayon.className} highlightsTitle`}>websites</span></h1>
-        <div className="flex justify-center mt-9 mb-10 md:mb-40">
-          <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>Our team is made of branding wizards and software mavericks</p>
-        </div>
-        </div>
-        <div className="flex w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto justify-evenly">
-          <HeroTitles 
-            icon="/images/icons/bulb.svg"
-            title="Branding"
-            description="Crafting compelling brand identities that captivate, resonate and drive success"
-            color="text-pink"
-            bgColor="bg-pinkFaded"
-            />
-          <HeroTitles 
-            icon="/images/icons/laptop.svg"
-            title="Web Design"
-            description="Elevating online presence with innovative, user-centric web solutions"
-            color="text-green"
-            bgColor="bg-greenFaded"
-            />
-          <HeroTitles 
-            icon="/images/icons/mobile.svg"
-            title="App Design"
-            description="Creating seamless and intuitive app experience that delight users"
-            color="text-blue"
-            bgColor="bg-blueFaded"
+              src="/images/circle.svg"
+              width={20}
+              height={20}
+              alt="Circle"
+              className="absolute right-20 -z-50"
             />
         </div>
-      </header>
-      <div className="h-96">
+        {/* About US section */}
+          <section>
+            <div className="flex justify-center">
+              <div className="flex flex-col md:flex-row mt-10">
+              <h2 className={`${bayon.className} text-white text-4xl md:text-8xl pb-2`}>About Us</h2>
+              {/* about Us Flex Right */}
+                <div className="pl-10">
+                  <p className="text-xs md:text-2xl pb-3 md:max-w-4xl">At MindTechnica we specialise in creating beautiful handcrafted and high-performance websites that turn visitors into leads and leads into sales. Our focus is on beautiful designs, lightning-fast web apps, and infinitely customizable solutions that are easily maintained.</p>
+                  <h5 className="text-green md:text-lg">Get in Touch
+                  <Image
+                    src="/images/arrow.svg"
+                    width={40}
+                    height={4}
+                    alt="Arrow"
+                    className="inline-block"
+                  />
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <Image
+                src="/images/star.svg"
+                width={70}
+                height={70}
+                alt="Star"
+                className="relative bottom-0 -z-50"
+              />
+          </section>
 
-        </div>
+      </main>
     </>
   )
 }
