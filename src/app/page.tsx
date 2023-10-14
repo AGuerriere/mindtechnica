@@ -3,6 +3,7 @@ import { Bayon } from 'next/font/google'
 import Image from "next/image"
 import Header from "@/components/Header"
 import AboutUs from '@/components/AboutUs'
+import SectionTitle from '@/components/SectionTitle'
 
 const inter = Inter({ subsets: ['latin'] })
 const bayon = Bayon({
@@ -17,6 +18,7 @@ export default function Home(){
       <Header />
       <main>
         <AboutUs />
+        <SectionTitle title="Why Us"/>
 
       </main>
     </>
