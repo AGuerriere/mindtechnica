@@ -51,7 +51,7 @@ export default function AboutUs() {
                 width={70}
                 height={70}
                 alt="Star"
-                className="relative bottom-0 -z-50"
+                className="relative bottom-0 -z-50 mt-10"
               />
           </section></>
   )

@@ -13,9 +13,9 @@ export default function Navbar() {
     />
       </div>
       <div className="navLinks flex justify-evenly w-1/2 hidden">
-        <div className="home">Home</div>
-        <div className="services">Services</div>
-        <div className="ourWork">Our Work</div>
+        <div className="text-green border-b-2 border-green">Home</div>
+        <div>Services</div>
+        <div>Our Work</div>
         <div className="contacts">Contact Us</div>
       </div>
     </nav>

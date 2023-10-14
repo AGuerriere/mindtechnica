@@ -16,6 +16,7 @@ const config: Config = {
         pinkFaded: "rgba(240, 126, 242, 0.10)",
         greenFaded: "rgba(13, 217, 159, 0.10)",
         blueFaded: "rgba(74, 109, 217, 0.10)",
+        yellow: "#F2E744",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
