@@ -5,7 +5,7 @@ import Header from "@/components/Header"
 import AboutUs from '@/components/AboutUs'
 import SectionTitle from '@/components/SectionTitle'
 import WhyUs from '@/components/WhyUs'
-import Services from '@/components/services'
+import Services from '@/components/Services'
 
 const inter = Inter({ subsets: ['latin'] })
 const bayon = Bayon({
