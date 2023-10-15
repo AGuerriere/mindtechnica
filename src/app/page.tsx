@@ -7,6 +7,7 @@ import WhyUs from '@/components/WhyUs'
 import Services from '@/components/Services'
 import OurWork from '@/components/OurWork'
 import OurClients from '@/components/OurClients'
+import GetInTouch from '@/components/GetInTouch'
 
 const inter = Inter({ subsets: ['latin'] })
 const bayon = Bayon({
@@ -25,6 +26,7 @@ export default function Home(){
         <Services />
         <OurWork />
         <OurClients />
+        <GetInTouch />
       </main>
     </>
   )
