@@ -28,24 +28,23 @@ export default function GetInTouch() {
       <form name="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" className="md:pl-10 md:w-2/5">
         <div className="flex justify-between pb-3">
           <label className="block" htmlFor="name">Name</label>
-          <input name="name" id="name" type="text" className="text-greyLight02 rounded-md bg-blueFaded"/>
+          <input name="name" id="name" type="text" className="text-greyLight02 rounded-md bg-blueFaded" placeholder="Name"/>
         </div>
         <div className="flex justify-between pb-3">
           <label htmlFor="company">Company name</label>
-          <input name="company" id="company" type="text" className="text-greyLight02 rounded-md bg-blueFaded" />
+          <input name="company" id="company" type="text" className="text-greyLight02 rounded-md bg-blueFaded" placeholder="Company Name"/>
         </div>
         <div className="flex justify-between pb-3">
           <label htmlFor="email">Your email</label>
-          <input name="email" id="email" type="email" className="text-greyLight02 rounded-md bg-blueFaded" />
+          <input name="email" id="email" type="email" className="text-greyLight02 rounded-md bg-blueFaded" placeholder="Email"/>
         </div>
         <div className="flex justify-between pb-3">
           <label htmlFor="text">Your Message</label>
-          <textarea name="text" id="text" className="text-greyLight02 rounded-md bg-blueFaded" />
+          <textarea name="text" id="text" className="text-greyLight02 rounded-md bg-blueFaded" placeholder="Your Message"/>
         </div>
         <div className="captcha" data-netlify-recaptcha="true"></div>
         <button type="submit" className="border-solid border-green border-2 rounded-full h-10 w-20">Submit</button>
       </form>            
-
     </div>
   )
 }
