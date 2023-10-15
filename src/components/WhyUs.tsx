@@ -1,7 +1,9 @@
 import WhyUsItem from "./WhyUsItem";
-
+import SectionTitle from "./SectionTitle";
 export default function WhyUs() {
   return (
+    <>
+    <SectionTitle title="Why Us"/>
     <div className="grid grid-cols-2 md:grid-cols-3 ">
       <WhyUsItem 
       icon="/images/icons/settings.svg"
@@ -34,5 +36,6 @@ export default function WhyUs() {
       description="We specialise in crafting websites and landing pages that effectively transform visitors into valuable leads, and ultimately, into profitable sales."
       />
     </div>
+    </>
   )
 }
