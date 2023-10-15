@@ -19,16 +19,16 @@ export default function OurWork(){
       <OurWorkItem 
         image="/images/brand1.webp"
         brand="GetSociable"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description="Delivered a website that looks great on all devices, so whether you're on a computer or a phone, it always looks fantastic"
         />
       <OurWorkItem 
         image="/images/brand2.webp"
-        brand="GetSociable"
+        brand="Brand 2"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
       <OurWorkItem 
         image="/images/brand3.webp"
-        brand="GetSociable"
+        brand="Brand 3"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
         
