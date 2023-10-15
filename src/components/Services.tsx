@@ -36,7 +36,7 @@ export default function Services(){
           <li className={activeElement === 5 ? 'text-yellow' : '' } onClick={()=> updateContent(`We’ll help you improve your website’s visibility on search engines like Google, Bing, and Yahoo. Our SEO services include keyword research, on-page optimization, link building, and more. We’ll ensure that your website ranks higher in search engine results, driving organic traffic to your site.`, 5)}>SEO</li>
         </ul>
       </div>
-      <div className="w-fit text-xs md:text-base">{content}</div>
+      <div className="w-fit h-52 text-xs height- md:text-base">{content}</div>
     </section>
     </>
     
