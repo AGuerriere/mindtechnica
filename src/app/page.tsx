@@ -5,6 +5,7 @@ import Header from "@/components/Header"
 import AboutUs from '@/components/AboutUs'
 import WhyUs from '@/components/WhyUs'
 import Services from '@/components/Services'
+import OurWork from '@/components/OurWork'
 
 const inter = Inter({ subsets: ['latin'] })
 const bayon = Bayon({
@@ -21,6 +22,7 @@ export default function Home(){
         <AboutUs />
         <WhyUs />
         <Services />
+        <OurWork />
       </main>
     </>
   )
