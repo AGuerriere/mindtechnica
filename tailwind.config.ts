@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      zIndex: {
+        '100': '100',
+      },
       colors: {
         greyLight02: '#C5C5C5',
         pink: '#F07EF2',
@@ -18,7 +21,8 @@ const config: Config = {
         blueFaded: "rgba(74, 109, 217, 0.10)",
         yellow: "#F2E744",
         grey: "#6B6B6C",
-        mediumGrey: "#959595"
+        mediumGrey: "#959595",
+        bgBlack: "#0B1926",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

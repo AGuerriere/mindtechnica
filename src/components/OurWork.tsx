@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function OurWork(){
   return(
     <>
-      <div className="h-24 pt-3">
+      <div className="h-24 pt-3" id="ourwork">
         <Image
           src="/images/triangle2.svg"
           width={70}

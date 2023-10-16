@@ -15,7 +15,7 @@ export default function Services(){
 
   return (
     <>
-      <div className="h-36">
+      <div className="h-36" id="services">
         <Image
           src="/images/bigcircle.svg"
           width={70}
