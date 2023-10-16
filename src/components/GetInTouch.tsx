@@ -34,7 +34,7 @@ export default function GetInTouch() {
               Name*
             </label> 
             <br />
-            <input className="rounded-md w-full h-9 bg-blueFaded text-gray pl-2" placeholder="Enter your name" type="text" name="name" id="yourname" />
+            <input className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2" placeholder="Enter your name" type="text" name="name" id="yourname" />
           </div>
 
           <div className="pb-2">
@@ -42,21 +42,21 @@ export default function GetInTouch() {
               Email*
             </label>
             <br />
-            <input className="rounded-md w-full h-9 bg-blueFaded text-gray pl-2" placeholder="Email address" type="email" name="email" id="youremail" />
+            <input className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2" placeholder="Email address" type="email" name="email" id="youremail" />
           </div>
 
           <div className="pb-2">
             <label htmlFor="whatservice">
               What services are you interested in?
             </label> <br />
-            <textarea className="rounded-md w-full h-9 bg-blueFaded text-gray pl-2" placeholder="Enter the service required" name="whatservice" id="whatservice"></textarea>
+            <textarea className="rounded-md pt-2 text-xs w-full h-9 bg-blueFaded text-gray pl-2" placeholder="Enter the service required" name="whatservice" id="whatservice"></textarea>
           </div>
 
           <div className="pb-2">
             <label htmlFor="yourmessage">
               Message:
             </label> <br />
-            <textarea className="rounded-md w-full h-28 bg-blueFaded text-gray pl-2" placeholder="Type your message here" name="message" id="yourmessage"></textarea>
+            <textarea className="rounded-md pt-2 text-xs w-full h-28 bg-blueFaded text-gray pl-2" placeholder="Type your message here" name="message" id="yourmessage"></textarea>
           </div>
 
           <div className="flex justify-end">
