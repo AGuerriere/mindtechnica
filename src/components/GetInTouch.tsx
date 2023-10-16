@@ -15,7 +15,7 @@ export default function GetInTouch() {
       <p className="pb-3 text-xs md:text-base">projects@mindtechnica.com </p>
       <h5 className="text-white font-semibold pb-3">Schedule a call</h5>
       <p className="pb-3 text-xs md:text-base">Schedule a free Google Meet video consultation</p>
-      <h5 className="text-green md:text-lg">Get in Touch
+      <h5 className="text-green md:text-lg pb-5">Get in Touch
         <Image
           src="/images/arrow.svg"
           width={70}
@@ -27,28 +27,41 @@ export default function GetInTouch() {
      </div>
         <form name="contact" method="POST" action="/success" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
-          <p>
-          <input type="text" name="firstname" id="firstname" />
-            <label htmlFor="yourname">
-              Your Name:
-            </label> <br />
-            <input type="text" name="name" id="yourname" />
-          </p>
-          <p>
+          
+          <div className="pb-2">
+          <label htmlFor="yourname">
+              Name*
+            </label> 
+            <br />
+            <input className="rounded-md w-full h-9 bg-blueFaded text-gray" placeholder="Enter your name" type="text" name="name" id="yourname" />
+          </div>
+
+          <div className="pb-2">
             <label htmlFor="youremail">
-              Your Email:
+              Email*
+            </label>
+            <br />
+            <input className="rounded-md w-full h-9 bg-blueFaded text-gray" placeholder="Email address" type="email" name="email" id="youremail" />
+          </div>
+
+          <div className="pb-2">
+            <label htmlFor="whatservice">
+              What services are you interested in?
             </label> <br />
-            <input type="email" name="email" id="youremail" />
-          </p>
-          <p>
+            <textarea className="rounded-md w-full h-9 bg-blueFaded text-gray" placeholder="Enter the service required" name="whatservice" id="whatservice"></textarea>
+          </div>
+
+          <div className="pb-2">
             <label htmlFor="yourmessage">
               Message:
             </label> <br />
-            <textarea name="message" id="yourmessage"></textarea>
-          </p>
-          <p>
+            <textarea className="rounded-md w-full h-28 bg-blueFaded text-gray" placeholder="Type your message here" name="message" id="yourmessage"></textarea>
+          </div>
+
+          <div className="flex justify-end">
             <button type="submit">Send</button>
-          </p>
+          </div>
+
         </form>
     </div>
   )
