@@ -25,7 +25,7 @@ export default function GetInTouch() {
         />
       </h5>
      </div>
-      <form name="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" className="md:pl-10 md:w-2/5">
+      <form name="mind-technica-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" className="md:pl-10 md:w-2/5">
         <div className="flex justify-between pb-3">
           <label className="block" htmlFor="name">Name</label>
           <input name="name" id="name" type="text" className="text-greyLight02 rounded-md bg-blueFaded" placeholder="Name"/>
