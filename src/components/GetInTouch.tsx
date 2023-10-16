@@ -7,9 +7,10 @@ const bayon = Bayon({
 
 export default function GetInTouch() {
   return (
-    <div className="flex md:flex-row flex-col">
-     <div>
+    <>
      <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`}>Get in touch</h2>
+    <div className="flex md:flex-row flex-col justify-evenly">
+     <div>
       <p className="pb-3 text-xs md:text-base">Contact us today to discuss your project requirements and let us bring your vision to life!</p>
       <h5 className="text-white font-semibold pb-3">Email</h5>
       <p className="pb-3 text-xs md:text-base">projects@mindtechnica.com </p>
@@ -25,7 +26,7 @@ export default function GetInTouch() {
         />
       </h5>
      </div>
-        <form name="contact" method="POST" action="/success" data-netlify="true">
+        <form name="contact" method="POST" action="/success" data-netlify="true" className="md:w-1/3 md:pl-5">
           <input type="hidden" name="form-name" value="contact" />
           
           <div className="pb-2">
@@ -59,10 +60,11 @@ export default function GetInTouch() {
           </div>
 
           <div className="flex justify-end">
-            <button type="submit">Send</button>
+            <button type="submit" className="border-solid border-green border-2 rounded-2xl h-12 w-32">Send</button>
           </div>
 
         </form>
     </div>
+    </>
   )
 }
