@@ -17,7 +17,8 @@ const config: Config = {
         greenFaded: "rgba(13, 217, 159, 0.10)",
         blueFaded: "rgba(74, 109, 217, 0.10)",
         yellow: "#F2E744",
-        grey: "#6B6B6C"
+        grey: "#6B6B6C",
+        mediumGrey: "#959595"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
