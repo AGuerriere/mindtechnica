@@ -4,7 +4,7 @@ export default function WhyUs() {
   return (
     <>
     <SectionTitle title="Why Us"/>
-    <div className="grid grid-cols-2 md:grid-cols-3 ">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5 md:gap-14">
       <WhyUsItem 
       icon="/images/icons/settings.svg"
       title="Bespoke Solution"
