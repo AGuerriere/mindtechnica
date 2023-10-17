@@ -9,13 +9,17 @@ export default function GetInTouch() {
   return (
     <>
      <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`} id="contacts">Get in touch</h2>
-    <div className="flex md:flex-row flex-col justify-evenly">
-     <div>
+    <div className="flex md:flex-row flex-col justify-start">
+     <div className="flex flex-col justify-between w-1/2">
       <p className="pb-3 text-xs md:text-base">Contact us today to discuss your project requirements and let us bring your vision to life!</p>
-      <h5 className="text-white font-semibold pb-3">Email</h5>
-      <p className="pb-3 text-xs md:text-base">projects@mindtechnica.com </p>
-      <h5 className="text-white font-semibold pb-3">Schedule a call</h5>
-      <p className="pb-3 text-xs md:text-base">Schedule a free Google Meet video consultation</p>
+        <div>
+          <h5 className="text-white font-semibold pb-3">Email</h5>
+          <p className="pb-3 text-xs md:text-base">projects@mindtechnica.com </p>
+        </div>
+        <div>
+          <h5 className="text-white font-semibold pb-3">Schedule a call</h5>
+          <p className="pb-3 text-xs md:text-base">Schedule a free Google Meet video consultation</p>
+        </div>
       <h5 className="text-green md:text-lg pb-5">Get in Touch
         <Image
           src="/images/arrow.svg"
@@ -26,7 +30,7 @@ export default function GetInTouch() {
         />
       </h5>
      </div>
-        <form name="contact" method="POST" action="/success" data-netlify="true" className="md:w-1/3 md:pl-5">
+        <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5">
           <input type="hidden" name="form-name" value="contact" />
           
           <div className="pb-2">

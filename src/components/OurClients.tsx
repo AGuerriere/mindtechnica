@@ -7,7 +7,7 @@ const bayon = Bayon({
 
 export default function OurClients(){
   return (
-    <div className="flex flex-col items-center pt-20 h-[35rem] md:h-[50rem]">
+    <div className="flex flex-col items-center pt-20 min-h-[35rem] md:min-h-[50rem]">
       <Image
           src="/images/smallcircle.svg"
           width={18}
@@ -16,7 +16,7 @@ export default function OurClients(){
           className="absolute right-20 md:right-10 -z-50"
         />
       <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8`}>Our Clients</h2>
-      <p className="pb-4 w-full md:w-1/3 text-xs md:text-base">“I had an amazing experience with MindTechnica! They are a fantastic web development agency that helped us take our tech startup off the ground quickly by building our branding and delivering an MVP quickly. Their team of experienced developers are skilled in web development, branding, and digital marketing. They delivered our project on time and within budget. I would highly recommend MindTechnica to anyone looking for a reliable web development agency that can help them take their business to the next level.”</p>
+      <p className="pb-4 w-full lg:w-1/2 text-xs md:text-base">“I had an amazing experience with MindTechnica! They are a fantastic web development agency that helped us take our tech startup off the ground quickly by building our branding and delivering an MVP quickly. Their team of experienced developers are skilled in web development, branding, and digital marketing. They delivered our project on time and within budget. I would highly recommend MindTechnica to anyone looking for a reliable web development agency that can help them take their business to the next level.”</p>
       <h5 className="text-white text-base font-semibold">Peter McCleery</h5>
       <p className="pb-7">CEO, GetSociable - Belfast</p>
       <div className="flex w-32 justify-evenly">
