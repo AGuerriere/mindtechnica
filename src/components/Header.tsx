@@ -13,7 +13,7 @@ const bayon = Bayon({
   
   export default function Header() {
     return(
-      <header className="flex flex-col align-center justify-evenly h-screen">
+      <header className="flex flex-col align-center justify-evenly min-h-screen">
       <Navbar></Navbar>
       <div className="hero">
       <div className="absolute top-40 left-0 -z-50">
