@@ -53,11 +53,16 @@ export default function Navbar() {
     <div className={`${hidden === 1 ? 'hidden' : ''} bg-bgBlack text-xl pt-5 text-center h-full w-full fixed top-0 z-100 -ml-5`}>
       <div className="pt- 5 flex h-64 justify-between flex-col">
         <div className="text-right pr-7" onClick={()=>triggerToggle()}>X</div>
-      <div  onClick={()=>triggerToggle()}>Home</div>
-        <Link href="#services" onClick={()=>triggerToggle()}>Services</Link>
-        <Link href="#ourwork"  onClick={()=>triggerToggle()}>Our Work</Link>
-        <div>
-          <Link href="#contacts" className="contacts w-2/3" onClick={()=>triggerToggle()}>Contact Us</Link></div>
+      <div onClick={()=>triggerToggle()}>Home</div>
+      <div onClick={()=>triggerToggle()}>
+        <Link href="#services">Services</Link>
+      </div>
+      <div onClick={()=>triggerToggle()}>
+        <Link href="#ourwork">Our Work</Link>
+      </div>
+        <div onClick={()=>triggerToggle()}>
+          <Link href="#contacts" className="contacts w-2/3" >Contact Us</Link>
+          </div>
         </div>     
     </div>
     </>
