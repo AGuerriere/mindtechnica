@@ -7,8 +7,8 @@ const bayon = Bayon({
 
 export default function GetInTouch() {
   return (
-    <>
-     <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`} id="contacts">Get in touch</h2>
+    <div id="contacts">
+     <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`} >Get in touch</h2>
     <div className="flex md:flex-row flex-col justify-start">
      <div className="flex flex-col justify-between w-1/2">
       <p className="pb-3 text-xs md:text-base">Contact us today to discuss your project requirements and let us bring your vision to life!</p>
@@ -69,6 +69,6 @@ export default function GetInTouch() {
 
         </form>
     </div>
-    </>
+    </div>
   )
 }
