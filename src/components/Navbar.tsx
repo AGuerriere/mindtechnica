@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image"
-import Link from "next/link"
 import { useState } from "react"
 
 export default function Navbar() {
@@ -21,14 +20,14 @@ export default function Navbar() {
       src="/images/Asset 50@4x.png"
       width={136}
       height={54}
-      alt="Mind Technica Logo"
+      alt="Logo"
     />
       </div>
       <div className="navLinks flex justify-evenly w-1/2 hidden">
         <div className="text-green border-b-2 border-green">Home</div>
-        <Link href="/#services">Services</Link>
-        <Link href="/#ourwork">Our Work</Link>
-        <Link href="/#contacts" className="contacts">Contact Us</Link>
+        <a href="#services">Services</a>
+        <a href="#ourwork">Our Work</a>
+        <a href="#contacts" className="contacts">Contact Us</a>
       </div>
     </nav>
     {/* Mobile navbar */}
@@ -37,14 +36,14 @@ export default function Navbar() {
         src="/images/Asset 50@4x.png"
         width={110}
         height={40}
-        alt="Mind Technica Logo"
+        alt="Logo"
       />
       <div onClick={()=>triggerToggle()}>
         <Image
           src="/images/icons/menu.svg"
           width={50}
           height={31}
-          alt="Mind Technica Logo"
+          alt="Logo"
         />
       </div>
     </nav>
@@ -52,17 +51,11 @@ export default function Navbar() {
     <div className={`${hidden === 1 ? 'hidden' : ''} bg-bgBlack text-xl pt-5 text-center h-full w-full fixed top-0 z-100 -ml-5`}>
       <div className="pt- 5 flex h-64 justify-between flex-col">
         <div className="text-right pr-7" onClick={()=>triggerToggle()}>X</div>
-      <div onClick={()=>triggerToggle()}>Home</div>
-      <div onClick={()=>triggerToggle()}>
-        <Link href="/#services">Services</Link>
-      </div>
-      <div onClick={()=>triggerToggle()}>
-        <Link href="/#ourwork">Our Work</Link>
-      </div>
-        <div onClick={()=>triggerToggle()}>
-          <Link href="/#contacts" className="contacts w-2/3" >Contact Us</Link>
-          </div>
-        </div>     
+        <a href="#home" onClick={() => triggerToggle()}>Home</a>
+        <a href="#services" onClick={() => triggerToggle()}>Services</a>
+        <a href="#ourwork" onClick={() => triggerToggle()}>Our Work</a>
+        <a href="#contacts" onClick={() => triggerToggle()}>Contact Us</a>
+      </div>     
     </div>
     </>
   )
