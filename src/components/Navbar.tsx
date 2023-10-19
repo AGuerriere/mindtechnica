@@ -26,9 +26,9 @@ export default function Navbar() {
       </div>
       <div className="navLinks flex justify-evenly w-1/2 hidden">
         <div className="text-green border-b-2 border-green">Home</div>
-        <Link href="#services">Services</Link>
-        <Link href="#ourwork">Our Work</Link>
-        <Link href="#contacts" className="contacts">Contact Us</Link>
+        <Link href="/#services">Services</Link>
+        <Link href="/#ourwork">Our Work</Link>
+        <Link href="/#contacts" className="contacts">Contact Us</Link>
       </div>
     </nav>
     {/* Mobile navbar */}
@@ -54,13 +54,13 @@ export default function Navbar() {
         <div className="text-right pr-7" onClick={()=>triggerToggle()}>X</div>
       <div onClick={()=>triggerToggle()}>Home</div>
       <div onClick={()=>triggerToggle()}>
-        <Link href="#services">Services</Link>
+        <Link href="/#services">Services</Link>
       </div>
       <div onClick={()=>triggerToggle()}>
-        <Link href="#ourwork">Our Work</Link>
+        <Link href="/#ourwork">Our Work</Link>
       </div>
         <div onClick={()=>triggerToggle()}>
-          <Link href="#contacts" className="contacts w-2/3" >Contact Us</Link>
+          <Link href="/#contacts" className="contacts w-2/3" >Contact Us</Link>
           </div>
         </div>     
     </div>
