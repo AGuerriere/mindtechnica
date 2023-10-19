@@ -29,6 +29,11 @@ export default function Home(){
       type="image/<generated>"
       sizes="<generated>"
       />
+      <link
+        rel="canonical"
+        href="https://mindtechnica.com"
+        key="canonical"
+      />
     </Head>
       <Header />
       <main>
