@@ -9,7 +9,6 @@ export default function Navbar() {
 
   function triggerToggle() {
     const toggle = hidden === 1 ? 0 : 1;
-    console.log(1);
     toggleHidden(toggle);
   }
 
