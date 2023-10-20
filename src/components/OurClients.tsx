@@ -28,13 +28,13 @@ export default function OurClients(){
         className="absolute left-0 md:left-10 -z-50"
       />
       <Image
-        src="/images/icons/circlebuttonleft.svg"
+        src="/images/circlebuttonleft.svg"
         width={40}
         height={40}
         alt="Icon"
       />
        <Image
-        src="/images/icons/right.svg"
+        src="/images/right.svg"
         width={40}
         height={40}
         alt="Icon"

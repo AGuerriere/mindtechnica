@@ -40,7 +40,7 @@ export default function Navbar() {
       />
       <div onClick={()=>triggerToggle()}>
         <Image
-          src="/images/icons/menu.svg"
+          src="/images/menu.svg"
           width={50}
           height={31}
           alt="Logo"
