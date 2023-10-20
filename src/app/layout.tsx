@@ -6,9 +6,17 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Mind Technica',
   description: 'Web development and branding agency',
-  icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+  keywords: ['Web Development', 'Branding', 'Web Agency', 'Software'],
+  metadataBase: new URL('https://mindtechnica.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    images: '/Asset 44@4x.png',
+    title: 'Mind Technica',
+    description: 'Web development and branding agencyb',
+    url: 'https://nextjs.org',
+    siteName: 'Mind Technica',
   },
 }
 
