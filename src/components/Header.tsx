@@ -32,9 +32,9 @@ const bayon = Bayon({
           alt="Rectangle"
         />
       </div>
-      <h1 className={`${bayon.className} mt-16 md:mt-28 uppercase text-4xl md:text-[4.5vw] leading-relaxed`}>At Mind<span className={`${bayon.className} highlightsTitle`}>Technica</span> We craft beautiful brands and we build high performing <span className={`${bayon.className} highlightsTitle`}>web apps</span></h1>
+      <h1 className={`${bayon.className} mt-16 md:mt-28 uppercase text-4xl md:text-[4.5vw] leading-relaxed`}>At Mind<span className={`${bayon.className} highlightsTitle`}>Technica</span> we craft beautiful brands and we build high performing <span className={`${bayon.className} highlightsTitle`}>web apps</span></h1>
       <div className="flex justify-center mt-9 mb-10 md:mb-40">
-        <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>Our team is made of branding wizards and software mavericks</p>
+        <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>Our team combines the magic of branding with the power of software to create amazing solutions</p>
       </div>
       </div>
       <div className="flex w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto justify-evenly">
