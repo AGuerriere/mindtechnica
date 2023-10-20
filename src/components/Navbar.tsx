@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="hidden md:flex flex-row justify-between mt-10 items-center">
       <div className="logo flex items-center">
       <Image
-      src="/images/Asset 50@4x.png"
+      src="/images/Asset6.png"
       width={136}
       height={54}
       alt="Logo"
@@ -33,7 +33,7 @@ export default function Navbar() {
     {/* Mobile navbar */}
     <nav className="flex justify-between mt-4 md:hidden">
       <Image
-        src="/images/Asset 50@4x.png"
+        src="/images/Asset6.png"
         width={110}
         height={40}
         alt="Logo"

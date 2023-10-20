@@ -12,9 +12,9 @@ export const metadata = {
     canonical: '/',
   },
   openGraph: {
-    images: '/Asset 44@4x.png',
+    images: '/Asset1.png',
     title: 'Mind Technica',
-    description: 'Web development and branding agencyb',
+    description: 'Web development and branding agency',
     url: 'https://nextjs.org',
     siteName: 'Mind Technica',
   },
