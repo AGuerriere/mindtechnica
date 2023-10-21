@@ -24,7 +24,7 @@ export default function Footer() {
         <br />
         <p>Monday - Friday: 9 - 5</p>
         <br />
-        <p>Phone Number:</p>
+        <p>Phone Number: +44 7561 037904</p>
         <br />
         </div>
     </div>
