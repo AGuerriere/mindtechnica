@@ -30,7 +30,7 @@ export default function GetInTouch() {
         />
       </h5>
      </div>
-        <form name="contact" method="POST" action="/success" data-netlify-recaptcha="true" data-netlify="true" className="sm:w-1/2 md:pl-5">
+        <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5">
           <input type="hidden" name="form-name" value="contact" />
           
           <div className="pb-2">
