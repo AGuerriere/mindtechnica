@@ -18,7 +18,7 @@ export default function GetInTouch() {
         </div>
         <div>
           <h5 className="text-white font-semibold pb-3">Schedule a call</h5>
-          <p className="pb-3 text-xs md:text-base">Schedule a free Google Meet video consultation</p>
+          <p className="pb-3 text-xs md:text-base"><a href="https://calendly.com/mindtechnica/30min">Schedule a free Google Meet video consultation</a></p>
         </div>
       <h5 className="text-green md:text-lg pb-5">Get in Touch
         <Image
@@ -30,7 +30,7 @@ export default function GetInTouch() {
         />
       </h5>
      </div>
-        <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5">
+        <form name="contact" method="POST" action="/success" data-netlify-recaptcha="true" data-netlify="true" className="sm:w-1/2 md:pl-5">
           <input type="hidden" name="form-name" value="contact" />
           
           <div className="pb-2">
