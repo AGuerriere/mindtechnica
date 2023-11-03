@@ -8,6 +8,9 @@ export const metadata = {
   description: 'Web development and branding agency',
   keywords: ['Web Development', 'Branding', 'Web Agency', 'Software'],
   metadataBase: new URL('https://mindtechnica.com'),
+  icons: {
+    icon: '/favicon.ico',
+  },
   alternates: {
     canonical: '/',
   },

@@ -8,7 +8,6 @@ import OurWork from '@/components/OurWork'
 import OurClients from '@/components/OurClients'
 import GetInTouch from '@/components/GetInTouch'
 import Footer from '@/components/Footer'
-import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 const bayon = Bayon({
@@ -20,9 +19,6 @@ const bayon = Bayon({
 export default function Home(){
   return (
     <>  
-      <Head>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-      </Head>
       <Header />
       <main>
         <AboutUs />
