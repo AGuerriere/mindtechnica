@@ -15,10 +15,10 @@ export const metadata = {
     canonical: '/',
   },
   openGraph: {
-    images: '/Asset1.png',
+    images: '/images/Asset1.png',
     title: 'Mind Technica',
     description: 'Web development and branding agency',
-    url: 'https://nextjs.org',
+    url: 'https://mindtechnica.com',
     siteName: 'Mind Technica',
   },
   robots: {
