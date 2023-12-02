@@ -28,7 +28,7 @@ export default function Footer() {
         <br />
         </div>
     </div>
-    <footer className="text-xs text-center p-8">&copy; 2023 Mind Technica Ltd. All rights reserved</footer>
+    <footer className="text-xs text-center p-8">&copy; 2023 Mind Technica Ltd - NI698488 - 6 Bayview Terrace, BT48 7EE, Derry, United Kingdom. All rights reserved</footer>
     </>
   )
 }
