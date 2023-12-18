@@ -66,7 +66,8 @@ export default function GetInTouch() {
             <button type="submit" className="border-solid border-green border-2 rounded-2xl h-12 w-32">Send</button>
           </div>
           <div data-netlify-recaptcha="true"></div>
-
+ 
+ 
         </form>
     </div>
     </div>
