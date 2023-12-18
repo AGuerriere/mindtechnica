@@ -30,7 +30,7 @@ export default function GetInTouch() {
         />
       </h5>
      </div>
-        <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5">
+        <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5" data-netlify-recaptcha="true">
           <input type="hidden" name="form-name" value="contact" />
           
           <div className="pb-2">
@@ -65,6 +65,7 @@ export default function GetInTouch() {
           <div className="flex justify-end">
             <button type="submit" className="border-solid border-green border-2 rounded-2xl h-12 w-32">Send</button>
           </div>
+          <div data-netlify-recaptcha="true"></div>
 
         </form>
     </div>
