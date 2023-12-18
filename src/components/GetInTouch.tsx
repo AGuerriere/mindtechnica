@@ -1,12 +1,20 @@
 import Image from "next/image"
 import { Bayon } from 'next/font/google'
+import Script from 'next/script';
+
 const bayon = Bayon({
   weight: '400',
   subsets: ['latin'],
 })
 
 export default function GetInTouch() {
+
   return (
+    <>
+         <Script
+        src="https://www.google.com/recaptcha/api.js"
+        strategy="lazyOnload"
+      />
     <div id="contacts">
      <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`} >Get in touch</h2>
     <div className="flex md:flex-row flex-col justify-start">
@@ -30,7 +38,7 @@ export default function GetInTouch() {
         />
       </h5>
      </div>
-        <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5" data-netlify-recaptcha="true">
+        <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5">
           <input type="hidden" name="form-name" value="contact" />
           
           <div className="pb-2">
@@ -63,13 +71,13 @@ export default function GetInTouch() {
             <textarea className="rounded-md pt-2 text-xs w-full h-28 bg-blueFaded text-gray pl-2" placeholder="Type your message here" name="message" id="yourmessage" required></textarea>
           </div>
           <div className="flex justify-end">
-            <button type="submit" className="border-solid border-green border-2 rounded-2xl h-12 w-32">Send</button>
+            <button type="submit" className="g-recaptcha border-solid border-green border-2 rounded-2xl h-12 w-32" data-sitekey="6LdzNzUpAAAAAGKdHN8hZphNb97FFO_1D_LNKaad" data-callback='onSubmit' data-action='submit'>Send</button>
           </div>
-          <div data-netlify-recaptcha="true"></div>
  
- 
+
         </form>
     </div>
     </div>
+    </>
   )
 }
