@@ -22,6 +22,10 @@ export default function GetInTouch() {
           <h5 className="text-white font-semibold pb-3">Schedule a call</h5>
           <p className="pb-3 text-xs md:text-base"><a href="https://calendly.com/mindtechnica/30min">Schedule a free Google Meet video consultation</a></p>
         </div>
+        <div>
+          <h5 className="text-white font-semibold pb-3">Phone and Whatsapp:</h5>
+          <p>+44 (0) 7561 037904</p>
+        </div>
       <h5 className="text-green md:text-lg pb-5">Get in Touch
         <Image
           src="/images/arrow.svg"

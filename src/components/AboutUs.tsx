@@ -35,15 +35,17 @@ export default function AboutUs() {
                 {/* about Us Flex Right */}
                 <div className="pl-10">
                   <p className="text-xs md:text-2xl pb-3 md:max-w-4xl">At MindTechnica we specialise in creating beautiful handcrafted and high-performance websites that turn visitors into leads and leads into sales. Our focus is on beautiful designs, lightning-fast web apps, and infinitely customizable solutions that are easily maintained.</p>
-                  <h5 className="text-green md:text-lg">Get in Touch
-                  <Image
-                    src="/images/arrow.svg"
-                    width={70}
-                    height={9}
-                    alt="Arrow"
+                  <a href="#contacts">
+                    <h5 className="text-green md:text-lg">Get in Touch
+                    <Image
+                      src="/images/arrow.svg"
+                      width={70}
+                      height={9}
+                      alt="Arrow"
                     className="inline-block pl-1"
-                  />
-                  </h5>
+                       />
+                    </h5>
+                  </a>
                 </div>
               </div>
             <Image
