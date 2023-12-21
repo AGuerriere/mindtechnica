@@ -49,8 +49,17 @@ export default function Navbar() {
     </nav>
     {/* Opened Mobile Navbar */}
     <div className={`${hidden === 1 ? 'hidden' : ''} bg-bgBlack text-xl pt-5 text-center h-full w-full fixed top-0 z-100 -ml-5`}>
+    <div className="fixed top-10 right-5 pr-7" onClick={()=>triggerToggle()}>X</div>
       <div className="pt- 5 flex h-64 justify-between flex-col">
-        <div className="fixed top-0 pr-7" onClick={()=>triggerToggle()}>X</div>
+        <div>
+          <Image
+          src="/images/Asset6.png"
+          width={136}
+          height={54}
+          alt="Logo"
+          className="inline-block"
+        />
+        </div>
         <a href="#home" onClick={() => triggerToggle()}>Home</a>
         <a href="#services" onClick={() => triggerToggle()}>Services</a>
         <a href="#ourwork" onClick={() => triggerToggle()}>Our Work</a>
