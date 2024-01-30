@@ -16,19 +16,21 @@ const bayon = Bayon({
 })
 
 
-export default function Home(){
+export default function Home() {
   return (
-    <>  
+    <>
       <Header />
-      <main>
-        <AboutUs />
-        <WhyUs />
-        <Services />
-        <OurWork />
-        <OurClients />
-        <GetInTouch />
-      </main>
-      <Footer />
+      <div className='2xl:flex 2xl:justify-center'>
+        <main className='2xl:w-[1400px]'>
+          <AboutUs />
+          <WhyUs />
+          <Services />
+          <OurWork />
+          <OurClients />
+          <GetInTouch />
+          <Footer />
+        </main>
+      </div>
     </>
   )
 }
