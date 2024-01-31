@@ -9,13 +9,13 @@ type propsType = {
 export default function OurWorkItem(props: propsType) {
   return (
     <div className="flex flex-col items-start w-1/4">
-      <div className="w-full aspect-square relative">
+      <div className="h-auto w-full aspect-[4/3] relative p-5">
         <Image
           src={props.image}
           fill
           alt="Brand 1"
           // The filler images are already rounded so you might need to fix border raidus to keep same round corners.
-          className="rounded-md md:rounded-3xl object-contain"
+          className="rounded-lg object-fill"
         />
       </div>
         <h5 className="text-sm pb-5 md:text-xl text-white font-semibold">{props.brand}</h5>
