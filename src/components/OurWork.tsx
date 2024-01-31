@@ -15,7 +15,7 @@ export default function OurWork(){
         />
       </div>
     <SectionTitle title="Our Work"/>
-    <div className="flex justify-between gap-3">
+    <div className="flex flex-col md:flex-row justify-between gap-3">
       <OurWorkItem 
         image="/images/brand1.webp"
         brand="GetSociable"
