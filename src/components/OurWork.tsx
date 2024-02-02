@@ -19,7 +19,7 @@ export default function OurWork(){
       <OurWorkItem 
         image="/images/brand1.webp"
         brand="GetSociable"
-        description="Delivered a website that looks great on all devices, so whether you're on a computer or a phone, it always looks fantastic"
+        description="Starting from their existing logo, we meticulously crafted GetSociable's branding identity. By revamping the frontend of their app, we not only refined the user experience but also streamlined their codebase, incorporating webpack and advanced caching strategies to markedly increase app speed and efficiency."
         />
       <OurWorkItem 
         image="/images/brand2.webp"

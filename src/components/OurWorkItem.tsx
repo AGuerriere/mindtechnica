@@ -8,7 +8,7 @@ type propsType = {
 
 export default function OurWorkItem(props: propsType) {
   return (
-    <div className="flex flex-col items-start md:w-1/4 pb-3">
+    <div className="flex flex-col items-start md:w-2/6 lg:w-1/4 pb-3">
       <div className="h-auto w-full aspect-[4/3] relative p-5">
         <Image
           src={props.image}
@@ -19,7 +19,7 @@ export default function OurWorkItem(props: propsType) {
         />
       </div>
         <h5 className="text-sm pb-5 pt-5 md:text-xl text-white font-semibold">{props.brand}</h5>
-        <p className="text-xs md:text-sm md:w-2/3">{props.description}</p>
+        <p className="text-xs md:text-sm">{props.description}</p>
     </div>
   )
 }
