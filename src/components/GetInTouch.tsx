@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Bayon } from 'next/font/google'
+import Script from "next/script"
 
 const bayon = Bayon({
   weight: '400',
@@ -36,7 +37,11 @@ export default function GetInTouch() {
               />
             </h5>
           </div>
-          <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+          <Script
+            src="https://www.google.com/recaptcha/api.js"
+            strategy="afterInteractive"
+          />
+          <form name="contact" method="POST" action="/success" data-netlify="true" className="sm:w-1/2 md:pl-5" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact" />
 
             <p className="hidden">
@@ -49,7 +54,7 @@ export default function GetInTouch() {
               <label htmlFor="yourname">
                 Name
               </label>
-             
+
               <input className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2 mt-2" placeholder="Enter your name*" type="text" name="name" id="yourname" required />
             </div>
 
@@ -57,7 +62,7 @@ export default function GetInTouch() {
               <label htmlFor="youremail">
                 Email
               </label>
-             
+
               <input className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2 mt-2" placeholder="Email address*" type="email" name="email" id="youremail" required />
             </div>
 
@@ -77,8 +82,8 @@ export default function GetInTouch() {
             <div className="flex justify-end">
               <button type="submit" className="border-solid border-green border-2 rounded-2xl h-12 w-32">Send</button>
             </div>
-
-            <div data-netlify-recaptcha="true"></div>
+            <div className="g-recaptcha" data-sitekey="6LcmiYApAAAAAM57aMe6Lf9_H5bVY5Hc1B5eRIWV" data-theme="dark"></div>
+            
           </form>
         </div>
       </div>
