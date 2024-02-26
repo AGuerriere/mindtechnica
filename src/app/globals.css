@@ -50,3 +50,8 @@ h1 {
 .highlightsTitle {
   color: #0DD99F;
 }
+
+#rc-anchor-container {
+  border: 0 !important;
+  background-color: rgba(74,109,217,.1);
+}
