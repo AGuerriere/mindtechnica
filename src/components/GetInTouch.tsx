@@ -82,7 +82,7 @@ export default function GetInTouch() {
             <div className="flex justify-end">
               <button type="submit" className="border-solid border-green border-2 rounded-2xl h-12 w-32">Send</button>
             </div>
-            <div className="g-recaptcha" data-sitekey="6LcmiYApAAAAAM57aMe6Lf9_H5bVY5Hc1B5eRIWV" data-theme="dark"></div>
+            <div className="g-recaptcha" data-sitekey="6LeRkoApAAAAALCYwyYX19LbnpkwAJVGVUMqtjAS" data-theme="dark"></div>
             
           </form>
         </div>
