@@ -79,10 +79,10 @@ export default function GetInTouch() {
               </label>
               <textarea className="rounded-md pt-2 text-xs w-full h-28 bg-blueFaded text-gray pl-2 mt-2" placeholder="Type your message here*" name="message" id="yourmessage" required></textarea>
             </div>
+            <div className="g-recaptcha mb-2" data-sitekey="6LeRkoApAAAAALCYwyYX19LbnpkwAJVGVUMqtjAS" data-theme="dark"></div>
             <div className="flex justify-end">
               <button type="submit" className="border-solid border-green border-2 rounded-2xl h-12 w-32">Send</button>
             </div>
-            <div className="g-recaptcha" data-sitekey="6LeRkoApAAAAALCYwyYX19LbnpkwAJVGVUMqtjAS" data-theme="dark"></div>
             
           </form>
         </div>
