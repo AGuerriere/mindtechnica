@@ -39,21 +39,21 @@ const bayon = Bayon({
       </div>
       <div className="flex w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto justify-evenly">
         <HeroTitles 
-          icon="/images/bulb.svg"
+          icon="./images/bulb.svg"
           title="Branding"
           description="Crafting compelling brand identities that captivate, resonate and drive success"
           color="text-pink"
           bgColor="bg-pinkFaded"
           />
         <HeroTitles 
-          icon="/images/laptop.svg"
+          icon="./images/laptop.svg"
           title="Web Design"
           description="Elevating online presence with innovative, user-centric web solutions"
           color="text-green"
           bgColor="bg-greenFaded"
           />
         <HeroTitles 
-          icon="/images/mobile.svg"
+          icon="./images/mobile.svg"
           title="App Design"
           description="Creating seamless and intuitive app experience that delight users"
           color="text-blue"
