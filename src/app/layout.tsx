@@ -9,7 +9,7 @@ export const metadata = {
   keywords: ['Web Development', 'Branding', 'Web Agency', 'Software'],
   metadataBase: new URL('https://mindtechnica.com'),
   icons: {
-    icon: '/icon.ico',
+    icon: './icon.ico',
   },
   alternates: {
     canonical: '/',
