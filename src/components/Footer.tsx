@@ -11,7 +11,7 @@ export default function Footer() {
     <div className="flex justify-start flex-col md:flex-row mt-20 mb-20">
       <div>
       <Image
-        src="/images/Asset5.png"
+        src="./images/Asset5.png"
         width={150}
         height={40}
         alt="Icon"

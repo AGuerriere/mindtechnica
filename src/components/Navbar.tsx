@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="hidden md:flex flex-row justify-between mt-10 items-center">
       <div className="logo flex items-center">
       <Image
-      src="/images/Asset6.png"
+      src="./images/Asset6.png"
       width={136}
       height={54}
       alt="Logo"
@@ -33,14 +33,14 @@ export default function Navbar() {
     {/* Mobile navbar */}
     <nav className="flex justify-between mt-4 md:hidden">
       <Image
-        src="/images/Asset6.png"
+        src="./images/Asset6.png"
         width={110}
         height={40}
         alt="Logo"
       />
       <div onClick={()=>triggerToggle()}>
         <Image
-          src="/images/menu.svg"
+          src="./images/menu.svg"
           width={50}
           height={31}
           alt="Logo"
@@ -53,7 +53,7 @@ export default function Navbar() {
       <div className="pt- 5 flex h-64 justify-between flex-col">
         <div>
           <Image
-          src="/images/Asset6.png"
+          src="./images/Asset6.png"
           width={136}
           height={54}
           alt="Logo"

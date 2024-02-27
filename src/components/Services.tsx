@@ -17,7 +17,7 @@ export default function Services(){
     <>
       <div className="h-36" id="services">
         <Image
-          src="/images/bigcircle.svg"
+          src="./images/bigcircle.svg"
           width={70}
           height={70}
           alt="Big circle"

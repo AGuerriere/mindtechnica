@@ -26,7 +26,7 @@ export default function OurClients() {
   return (
     <div className="flex flex-col items-center pt-20 pb-20">
       <Image
-        src="/images/smallcircle.svg"
+        src="./images/smallcircle.svg"
         width={18}
         height={18}
         alt="Circle"
@@ -51,14 +51,14 @@ export default function OurClients() {
       </div>
       <div className="flex w-32 justify-evenly">
         <Image
-          src="/images/square.svg"
+          src="./images/square.svg"
           width={196}
           height={196}
           alt="Square"
           className="absolute left-0 md:left-10 -z-50"
         />
         <Image
-          src="/images/circlebuttonleft.svg"
+          src="./images/circlebuttonleft.svg"
           width={40}
           height={40}
           alt="Icon"
@@ -66,7 +66,7 @@ export default function OurClients() {
           className="cursor-pointer"
         />
         <Image
-          src="/images/right.svg"
+          src="./images/right.svg"
           width={40}
           height={40}
           alt="Icon"

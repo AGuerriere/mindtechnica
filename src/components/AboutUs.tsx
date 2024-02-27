@@ -13,7 +13,7 @@ export default function AboutUs() {
       <>
         <div className="h-36">
             <Image
-              src="/images/triangle.svg"
+              src="./images/triangle.svg"
               width={100}
               height={100}
               alt="Triangle"
@@ -22,7 +22,7 @@ export default function AboutUs() {
           </div>
           <div className="aboutUs">
           <Image
-              src="/images/circle.svg"
+              src="./images/circle.svg"
               width={20}
               height={20}
               alt="Circle"
@@ -38,7 +38,7 @@ export default function AboutUs() {
                   <a href="#contacts">
                     <h5 className="text-green md:text-lg">Get in Touch
                     <Image
-                      src="/images/arrow.svg"
+                      src="./images/arrow.svg"
                       width={70}
                       height={9}
                       alt="Arrow"
@@ -49,7 +49,7 @@ export default function AboutUs() {
                 </div>
               </div>
             <Image
-                src="/images/star.svg"
+                src="./images/star.svg"
                 width={70}
                 height={70}
                 alt="Star"

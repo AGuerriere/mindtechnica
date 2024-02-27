@@ -18,7 +18,7 @@ const bayon = Bayon({
       <div className="hero">
       <div className="absolute top-40 left-0 -z-50">
           <Image
-        src="/images/polygon.svg"
+        src="./images/polygon.svg"
         width={61}
         height={105}
         alt="Polygon"
@@ -26,7 +26,7 @@ const bayon = Bayon({
       </div>
       <div className="absolute right-0 -z-50">
         <Image
-          src="/images/rectangle.svg"
+          src="./images/rectangle.svg"
           width={156}
           height={312}
           alt="Rectangle"

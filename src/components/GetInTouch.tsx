@@ -29,7 +29,7 @@ export default function GetInTouch() {
             </div>
             <h5 className="text-green md:text-lg pb-5">Get in Touch
               <Image
-                src="/images/arrow.svg"
+                src="./images/arrow.svg"
                 width={70}
                 height={9}
                 alt="Arrow"
