@@ -15,7 +15,7 @@ export const metadata = {
     canonical: '/',
   },
   openGraph: {
-    images: '/images/Asset1.png',
+    images: './images/Asset1.png',
     title: 'Mind Technica',
     description: 'Web development and branding agency',
     url: 'https://mindtechnica.com',
