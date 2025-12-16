@@ -15,22 +15,22 @@ const bayon = Bayon({
 const heroItems = [
   {
     icon: "./images/bulb.svg",
-    title: "Branding",
-    description: "Crafting compelling brand identities that captivate, resonate and drive success",
+    title: "AI Systems",
+    description: "Designing and deploying AI-driven systems that streamline operations and expand capacity",
     color: "text-pink",
     bgColor: "bg-pinkFaded"
   },
   {
     icon: "./images/laptop.svg",
-    title: "Web Design",
-    description: "Elevating online presence with innovative, user-centric web solutions",
+    title: "Data Intelligence",
+    description: "Building automated pipelines to process and normalise large, high-volume data sources",
     color: "text-green",
     bgColor: "bg-greenFaded"
   },
   {
     icon: "./images/mobile.svg",
-    title: "App Design",
-    description: "Creating seamless and intuitive app experience that delight users",
+    title: "Computer Vision",
+    description: "Extracting information from documents and images with high accuracy at scale",
     color: "text-blue",
     bgColor: "bg-blueFaded"
   }
@@ -39,51 +39,51 @@ const heroItems = [
 const whyUsItems = [
   {
     icon: "./images/settings.svg",
-    title: "Bespoke Solution",
-    description: "We are committed to crafting every aspect of your website from the ground up. This ensures the delivery of a fully customized website tailored precisely to your unique requirements."
+    title: "AI that enables scaling",
+    description: "Our systems increase operational capacity by improving processing speed, accuracy and insight, without requiring proportional growth in staff or overhead."
   },
   {
     icon: "./images/pen.svg",
-    title: "Unique Designs",
-    description: "We believe in the power of creativity. Our team of talented designers will work closely with you to create stunning designs that reflect your brand identity and captivate your audience."
+    title: "Engineering-first approach",
+    description: "Every solution is built on robust, maintainable architectures designed to operate reliably under real-world load."
   },
   {
     icon: "./images/pressure.svg",
-    title: "Performance-driven",
-    description: "We understand the importance of speed and performance in today's digital world. Our websites are optimised for super-fast loading times, ensuring a seamless user experience."
+    title: "Designed for long-term growth",
+    description: "We build modular systems that evolve with your organisation, allowing AI capabilities to expand as demand increases."
   },
   {
     icon: "./images/piggybank.svg",
-    title: "Cost-Effective",
-    description: "Pre-made solutions can be expensive and take a cut of your sales. Our custom solutions have no hidden costs. This means that you can save money in the long run."
+    title: "Focus on measurable outcomes",
+    description: "We prioritise efficiency gains that can be clearly measured, including reduced manual effort, faster turnaround times and improved decision quality."
   },
   {
     icon: "./images/pc.svg",
-    title: "Optimised for all devices",
-    description: "Our websites are optimised for both desktop and mobile devices, ensuring that your users have a seamless experience across all platforms."
+    title: "Commercial awareness",
+    description: "We combine deep technical expertise with commercial understanding to ensure every system delivers practical, operational value."
   },
   {
     icon: "./images/useradd.svg",
-    title: "Lead Generation",
-    description: "We specialise in crafting websites and landing pages that effectively transform visitors into valuable leads, and ultimately, into profitable sales."
+    title: "Independent and agile",
+    description: "As an independent consultancy, we move quickly, adapt to your needs and maintain focus on outcomes that matter to your organisation."
   }
 ]
 
-const workItems = [
+const sectorsItems = [
   {
     image: "./images/brand1.webp",
-    brand: "GetSociable",
-    description: "Starting from their existing logo, we meticulously crafted GetSociable's branding identity. By revamping the frontend of their app, we not only refined the user experience but also streamlined their codebase, incorporating webpack and advanced caching strategies to markedly increase app speed and efficiency."
+    brand: "SMEs and Scale-ups",
+    description: "We help small and medium enterprises scale operations using AI, enabling them to increase capacity without proportional growth in headcount or costs."
   },
   {
     image: "./images/brand2.webp",
-    brand: "Watsons Opticians",
-    description: "We are proud to have created a brand new identity for our client, which is reflected in the stunning design of their website. Our team worked tirelessly to ensure that the website is not only visually appealing but also user-friendly and easy to navigate"
+    brand: "Public Sector",
+    description: "Supporting government and public sector organisations handling large volumes of documents and data with automated processing and intelligence systems."
   },
   {
     image: "./images/brand3.webp",
-    brand: "McHenry Bros Ltd",
-    description: "We helped our client to redefine their brand identity by focusing on their core values, which is reflected in the updated branding of their website. Additionally, we created a faster and more responsive website that has been generating more leads for our client."
+    brand: "Technology Companies",
+    description: "Partnering with research-driven and frontier technology initiatives in robotics, advanced automation and next-generation AI development."
   }
 ]
 
@@ -111,11 +111,11 @@ export default function Home() {
             />
           </div>
           <h1 className={`${bayon.className} mt-16 md:mt-28 uppercase text-4xl md:text-[4.5vw] leading-relaxed`}>
-            At Mind<span className={`${bayon.className} highlightsTitle`}>Technica</span> we craft beautiful brands and we build high performing <span className={`${bayon.className} highlightsTitle`}>web apps</span>
+            Engineering <span className={`${bayon.className} highlightsTitle`}>intelligence</span> for real-world <span className={`${bayon.className} highlightsTitle`}>impact</span>
           </h1>
           <div className="flex justify-center mt-9 mb-10 md:mb-40">
             <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>
-              Our team combines the magic of branding with the power of software to create amazing solutions
+              Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making
             </p>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function Home() {
                 <h2 className={`${bayon.className} text-white min-w-fit text-4xl pb-2 md:text-6xl lg:text-8xl`}>About Us</h2>
                 <div className="pl-10">
                   <p className="text-xs md:text-2xl pb-3 md:max-w-4xl">
-                    At MindTechnica we specialise in creating beautiful handcrafted and high-performance websites that turn visitors into leads and leads into sales. Our focus is on beautiful designs, lightning-fast web apps, and infinitely customizable solutions that are easily maintained.
+                    Mind Technica is an independent, engineering-led AI consultancy focused on helping organisations scale through automation, intelligent systems and data-driven decision making. Our work spans AI engineering, automation pipelines, document intelligence, computer vision, robotics research and predictive analytics. We help SMEs, public sector teams and technology-driven companies transform raw data into operational intelligence, using AI as a practical force multiplier.
                   </p>
                   <a href="#contacts">
                     <h5 className="text-green md:text-lg">
@@ -227,11 +227,11 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-row align-center mt-20 mb-7">
-              <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>Our Work</h2>
+              <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>Sectors We Support</h2>
               <div className="border-b-2 border-white w-full"></div>
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-3">
-              {workItems.map((item, index) => (
+              {sectorsItems.map((item, index) => (
                 <div key={index} className="flex flex-col items-start md:w-2/6 lg:w-1/4 pb-3">
                   <div className="h-auto w-full aspect-[4/3] relative p-5">
                     <Image
@@ -254,10 +254,10 @@ export default function Home() {
           {/* Get In Touch Section */}
           <>
             <div id="contacts">
-              <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`}>Get in touch</h2>
+              <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`}>Let&apos;s Work Together</h2>
               <div className="flex md:flex-row flex-col justify-start">
                 <div className="flex flex-col justify-between w-1/2">
-                  <p className="pb-3 text-xs md:text-base">Contact us today to discuss your project requirements and let us bring your vision to life!</p>
+                  <p className="pb-3 text-xs md:text-base">If your organisation wants to scale efficiently using AI, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
                   <div>
                     <h5 className="text-white font-semibold pb-3">Email</h5>
                     <p className="pb-3 text-xs md:text-base">projects@mindtechnica.com </p>
@@ -298,7 +298,7 @@ export default function Home() {
                   className="-ml-5"
                 />
                 <p className={`${bayon.className} text-xl w-2/5 mb-5 mb-5`}>
-                  Let&apos;s transform your <span className="text-green">vision</span> into an extraordinary digital reality that captivates, converts, and conquers.
+                  Scalable <span className="text-green">intelligence</span>. Practical results.
                 </p>
               </div>
               <div className="flex flex-col justify-between">
