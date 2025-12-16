@@ -1,8 +1,13 @@
 'use client'
 
 import Image from "next/image"
-import SectionTitle from "./SectionTitle"
 import React, { useState } from "react";
+import { Bayon } from 'next/font/google'
+
+const bayon = Bayon({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function Services(){
   const [content, changeContent] = useState('We create visually stunning and user-friendly websites that are tailored to your business needs. Our websites are optimised for the desktop and for mobile. Our team of experienced designers will work with you to create a website that is both aesthetically pleasing and  highly functional.')
@@ -24,7 +29,10 @@ export default function Services(){
           className="absolute right-0 -z-50"
         />
       </div>
-      <SectionTitle title="Services"/>
+      <div className="flex flex-row align-center mt-20 mb-7">
+        <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>Services</h2>
+        <div className="border-b-2 border-white w-full"></div>
+      </div>
       <section className="flex flex-col justify-center md:flex-row">
       <div className="md:w-2/6 mb-5">
         <ul className="leading-10 md:text-lg">
