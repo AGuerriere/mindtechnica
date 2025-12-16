@@ -122,7 +122,7 @@ export default function Home() {
         <div className="flex w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto justify-evenly">
           {heroItems.map((item, index) => (
             <div key={index} className="flex flex-col max-w-[32%] md:max-w-md sm:1/3 items-center">
-              <div className={`flex justify-center align center icon-container rounded-full ${item.bgColor} w-16 h-16`}>
+              <div className={`flex justify-center icon-container rounded-full ${item.bgColor} w-16 h-16`}>
                 <Image
                   src={item.icon}
                   width={40}
@@ -130,7 +130,7 @@ export default function Home() {
                   alt="Icon"
                 />
               </div>
-              <h5 className={`${bayon.className} uppercase text-2xl ${item.color}`}>{item.title}</h5>
+              <h5 className={`${bayon.className} uppercase text-2xl text-center ${item.color}`}>{item.title}</h5>
               <p className="text-center p-3 text-xs md:text-base">{item.description}</p>
             </div>
           ))}
@@ -216,7 +216,7 @@ export default function Home() {
           <Services />
 
           {/* Our Work Section */}
-          <>
+          {/* <>
             <div className="h-24 pt-3" id="ourwork">
               <Image
                 src="./images/triangle2.svg"
@@ -246,10 +246,10 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          </>
+          </> */}
 
           {/* Our Clients Section */}
-          <OurClients />
+          {/* <OurClients /> */}
 
           {/* Get In Touch Section */}
           <>
