@@ -4,9 +4,25 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Mind Technica',
-  description: 'Web development and branding agency',
-  keywords: ['Web Development', 'Branding', 'Web Agency', 'Software'],
+  title: 'Mind Technica | Engineering Intelligence for Real-World Impact',
+  description: 'Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making.',
+  keywords: [
+    'AI',
+    'Artificial Intelligence',
+    'Data Science',
+    'Machine Learning',
+    'Automation',
+    'Robotics',
+    'Custom Software Development',
+    'AI Solutions',
+    'Data Systems',
+    'Intelligent Automation',
+    'AI Consulting',
+    'ML Engineering',
+    'Process Automation',
+    'Data Analytics',
+    'Business Intelligence',
+  ],
   metadataBase: new URL('https://mindtechnica.com'),
   icons: {
     icon: './icon.ico',
@@ -16,8 +32,8 @@ export const metadata = {
   },
   openGraph: {
     images: './images/Asset1.png',
-    title: 'Mind Technica',
-    description: 'Web development and branding agency',
+    title: 'Mind Technica | Engineering Intelligence for Real-World Impact',
+    description: 'Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making.',
     url: 'https://mindtechnica.com',
     siteName: 'Mind Technica',
   },
