@@ -60,6 +60,26 @@ export default function Contact() {
         </div>
 
         <div className="mb-3">
+          <label htmlFor="company">Company</label>
+          <input
+            {...register("company", { required: true })}
+            className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2 mt-2"
+            placeholder="Your company name*"
+            type="text"
+            id="company" />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="role">Role / Title</label>
+          <input
+            {...register("role", { required: true })}
+            className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2 mt-2"
+            placeholder="Your role or title*"
+            type="text"
+            id="role" />
+        </div>
+
+        <div className="mb-3">
           <label htmlFor="youremail">Email</label>
           <input
             {...register("email", { required: true })}
@@ -70,21 +90,62 @@ export default function Contact() {
         </div>
 
         <div className="mb-3">
-          <label htmlFor="whatservice">What services are you interested in?</label>
-          <textarea
-            {...register("whatservice", { required: true })}
-            className="rounded-md pt-2 text-xs w-full h-9 bg-blueFaded text-gray pl-2 mt-2"
-            placeholder="Enter the service required*"
-            id="whatservice"></textarea>
+          <label htmlFor="phone">Phone number (optional)</label>
+          <input
+            {...register("phone")}
+            className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2 mt-2"
+            placeholder="Your phone number"
+            type="tel"
+            id="phone" />
         </div>
 
         <div className="mb-3">
-          <label htmlFor="yourmessage">Message:</label>
+          <label htmlFor="problem">What problem are you trying to solve?</label>
           <textarea
-            {...register("message", { required: true })}
+            {...register("problem", { required: true })}
             className="rounded-md pt-2 text-xs w-full h-28 bg-blueFaded text-gray pl-2 mt-2"
-            placeholder="Type your message here*"
-            id="yourmessage"></textarea>
+            placeholder="Describe the problem or challenge you're facing*"
+            id="problem"></textarea>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="timeline">Estimated timeline</label>
+          <select
+            {...register("timeline", { required: true })}
+            className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2 mt-2"
+            id="timeline">
+            <option value="">Select a timeline*</option>
+            <option value="immediate">Immediate (within 1 month)</option>
+            <option value="1-3months">1-3 months</option>
+            <option value="3-6months">3-6 months</option>
+            <option value="6months+">6+ months</option>
+            <option value="exploring">Just exploring options</option>
+          </select>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="budget">Budget range (optional)</label>
+          <select
+            {...register("budget")}
+            className="rounded-md text-xs w-full h-9 bg-blueFaded text-gray pl-2 mt-2"
+            id="budget">
+            <option value="">Select a budget range</option>
+            <option value="under-10k">Under £10,000</option>
+            <option value="10k-25k">£10,000 - £25,000</option>
+            <option value="25k-50k">£25,000 - £50,000</option>
+            <option value="50k-100k">£50,000 - £100,000</option>
+            <option value="100k+">£100,000+</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="notes">Other notes</label>
+          <textarea
+            {...register("notes")}
+            className="rounded-md pt-2 text-xs w-full h-28 bg-blueFaded text-gray pl-2 mt-2"
+            placeholder="Any additional information you'd like to share"
+            id="notes"></textarea>
         </div>
         <div className="flex justify-start">
           <button

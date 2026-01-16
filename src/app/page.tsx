@@ -255,31 +255,20 @@ export default function Home() {
           <>
             <div id="contacts">
               <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`}>Let&apos;s Work Together</h2>
-              <div className="flex md:flex-row flex-col justify-start">
-                <div className="flex flex-col justify-between w-1/2">
-                  <p className="pb-3 text-xs md:text-base">If your organisation wants to scale efficiently using AI, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
-                  <div>
-                    <h5 className="text-white font-semibold pb-3">Email</h5>
-                    <p className="pb-3 text-xs md:text-base">projects@mindtechnica.com </p>
+              <div className="flex md:flex-row flex-col justify-start gap-8">
+                <div className="flex flex-col justify-start md:w-1/2">
+                  <p className="pb-8 text-xs md:text-base">If your organisation wants to scale efficiently using AI, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
+                  <div className="mb-8">
+                    <h5 className="text-white font-semibold pb-3 text-lg md:text-xl">Contact us by email</h5>
+                    <p className="pb-3 text-base md:text-lg text-stone-300">
+                      <a href="mailto:projects@mindtechnica.com" className="text-green hover:underline">projects@mindtechnica.com</a>
+                    </p>
+                    <p className="text-xs md:text-sm text-stone-400">We typically respond within 24 hours</p>
                   </div>
                   <div>
-                    <h5 className="text-white font-semibold pb-3">Schedule a call</h5>
-                    <p className="pb-3 text-xs md:text-base"><a href="https://calendly.com/mindtechnica/30min">Schedule a free Google Meet video consultation</a></p>
+                    <h5 className="text-white font-semibold pb-3 text-lg md:text-xl">Or use the contact form</h5>
+                    <p className="text-xs md:text-base text-stone-300">Fill in your details and we&apos;ll get back to you promptly to discuss your requirements.</p>
                   </div>
-                  <div>
-                    <h5 className="text-white font-semibold pb-3">Phone and Whatsapp:</h5>
-                    <p>+44 (0) 7561 037904</p>
-                  </div>
-                  <h5 className="text-green md:text-lg pb-5">
-                    Get in Touch
-                    <Image
-                      src="./images/arrow.svg"
-                      width={70}
-                      height={9}
-                      alt="Arrow"
-                      className="inline-block pl-1"
-                    />
-                  </h5>
                 </div>
                 <Form />
               </div>
@@ -306,7 +295,7 @@ export default function Home() {
                 <br />
                 <p>Monday - Friday: 9 - 5</p>
                 <br />
-                <p>Phone and Whatsapp: +44 &#40;0&#41; 7561 037904</p>
+                <p>Email: projects@mindtechnica.com</p>
                 <br />
               </div>
             </div>
