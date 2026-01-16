@@ -24,10 +24,11 @@ export default function Navbar() {
     />
       </div>
       <div className="navLinks flex justify-evenly w-1/2 hidden">
-        <div className="text-green border-b-2 border-green">Home</div>
-        <a href="#services">Services</a>
-        <a href="#ourwork">Our Work</a>
-        <a href="#contacts" className="contacts">Contact Us</a>
+        <a href="/" className="text-green border-b-2 border-green">Home</a>
+        <a href="/#services">Services</a>
+        {/* <a href="/#ourwork">Our Work</a> */}
+        <a href="/careers">Careers</a>
+        <a href="/#contacts" className="contacts">Contact Us</a>
       </div>
     </nav>
     {/* Mobile navbar */}
@@ -60,10 +61,11 @@ export default function Navbar() {
           className="inline-block"
         />
         </div>
-        <a href="#home" onClick={() => triggerToggle()}>Home</a>
-        <a href="#services" onClick={() => triggerToggle()}>Services</a>
-        <a href="#ourwork" onClick={() => triggerToggle()}>Our Work</a>
-        <a href="#contacts" onClick={() => triggerToggle()}>Contact Us</a>
+        <a href="/" onClick={() => triggerToggle()}>Home</a>
+        <a href="/#services" onClick={() => triggerToggle()}>Services</a>
+        {/* <a href="/#ourwork" onClick={() => triggerToggle()}>Our Work</a> */}
+        <a href="/careers" onClick={() => triggerToggle()}>Careers</a>
+        <a href="/#contacts" onClick={() => triggerToggle()}>Contact Us</a>
       </div>     
     </div>
     </>
