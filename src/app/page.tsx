@@ -91,9 +91,9 @@ export default function Home() {
   return (
     <>
       {/* Header Section */}
-      <header className="flex flex-col align-center justify-evenly min-h-screen">
+      <header className="flex flex-col min-h-screen justify-between">
         <Navbar />
-        <div className="hero">
+        <div className="hero flex-grow flex flex-col justify-center">
           <div className="absolute top-40 left-0 -z-50">
             <Image
               src="./images/polygon.svg"
@@ -119,7 +119,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto justify-evenly">
+        <div className="flex w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto justify-evenly pb-10 md:pb-16">
           {heroItems.map((item, index) => (
             <div key={index} className="flex flex-col max-w-[32%] md:max-w-md sm:1/3 items-center">
               <div className={`flex justify-center icon-container rounded-full ${item.bgColor} w-16 h-16`}>

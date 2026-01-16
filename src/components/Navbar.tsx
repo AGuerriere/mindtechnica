@@ -2,9 +2,11 @@
 
 import Image from "next/image"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 
 export default function Navbar() {
   const [hidden, toggleHidden] = useState(1)
+  const pathname = usePathname()
 
   function triggerToggle() {
     const toggle = hidden === 1 ? 0 : 1;
@@ -24,10 +26,10 @@ export default function Navbar() {
     />
       </div>
       <div className="navLinks flex justify-evenly w-1/2 hidden">
-        <a href="/" className="text-green border-b-2 border-green">Home</a>
+        <a href="/" className={pathname === '/' ? 'text-green border-b-2 border-green' : ''}>Home</a>
         <a href="/#services">Services</a>
         {/* <a href="/#ourwork">Our Work</a> */}
-        <a href="/careers">Careers</a>
+        <a href="/careers" className={pathname === '/careers' ? 'text-green border-b-2 border-green' : ''}>Careers</a>
         <a href="/#contacts" className="contacts">Contact Us</a>
       </div>
     </nav>
@@ -61,10 +63,10 @@ export default function Navbar() {
           className="inline-block"
         />
         </div>
-        <a href="/" onClick={() => triggerToggle()}>Home</a>
+        <a href="/" onClick={() => triggerToggle()} className={pathname === '/' ? 'text-green border-b-2 border-green' : ''}>Home</a>
         <a href="/#services" onClick={() => triggerToggle()}>Services</a>
         {/* <a href="/#ourwork" onClick={() => triggerToggle()}>Our Work</a> */}
-        <a href="/careers" onClick={() => triggerToggle()}>Careers</a>
+        <a href="/careers" onClick={() => triggerToggle()} className={pathname === '/careers' ? 'text-green border-b-2 border-green' : ''}>Careers</a>
         <a href="/#contacts" onClick={() => triggerToggle()}>Contact Us</a>
       </div>     
     </div>
