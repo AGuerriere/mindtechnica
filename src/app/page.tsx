@@ -147,7 +147,7 @@ export default function Home() {
               Get Your AI System Built — You Only Cover <span className="highlightsTitle">Delivery Costs</span>
             </h3>
             <p className="text-stone-300 text-sm md:text-lg mb-6 max-w-3xl mx-auto">
-              We're taking on 5 founding clients. All strategy and founder time waived. Limited spots available.
+              We&apos;re taking on 5 founding clients. All strategy and founder time waived. Limited spots available.
             </p>
             <Link
               href="/promo"

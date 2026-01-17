@@ -48,7 +48,7 @@ const PromoPage = () => {
                 </div>
 
                 <h2 className={`${bayon.className} text-white text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight`}>
-                  We'll Build Your <span className="highlightsTitle">AI System</span>.
+                  We&apos;ll Build Your <span className="highlightsTitle">AI System</span>.
                 </h2>
                 <h3 className={`${bayon.className} text-white text-2xl md:text-4xl lg:text-5xl mb-8`}>
                   You Only Cover Delivery Costs
@@ -71,10 +71,10 @@ const PromoPage = () => {
                   Mind Technica is taking on <span className="text-white font-semibold">5 founding clients</span> for the next 60 days.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  We're waiving every fee we'd normally charge: no strategy fees, no founder time, no service markup. You pay only what it costs to build and run your solution—engineering hours, infrastructure, APIs, tools. Nothing more.
+                  We&apos;re waiving every fee we&apos;d normally charge: no strategy fees, no founder time, no service markup. You pay only what it costs to build and run your solution—engineering hours, infrastructure, APIs, tools. Nothing more.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  <span className="text-white font-semibold">Why we're doing this:</span> We need real case studies. You need a partner who'll treat your business like it's ours. This is the trade.
+                  <span className="text-white font-semibold">Why we&apos;re doing this:</span> We need real case studies. You need a partner who&apos;ll treat your business like it&apos;s ours. This is the trade.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed">
                   You get enterprise-grade AI automation built without the enterprise price tag. We get proof of what we can do and permission to share it.
@@ -91,7 +91,7 @@ const PromoPage = () => {
 
               {/* What's Included Section */}
               <div className="flex flex-row align-center mt-20 mb-7">
-                <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>What's Included</h2>
+                <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>What&apos;s Included</h2>
                 <div className="border-b-2 border-white w-full"></div>
               </div>
 
@@ -135,7 +135,7 @@ const PromoPage = () => {
 
               <div className="max-w-4xl mx-auto mb-12">
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  You'll pay only the direct costs to build and deliver your solution:
+                  You&apos;ll pay only the direct costs to build and deliver your solution:
                 </p>
                 <ul className="list-disc ml-8 mb-8 text-base md:text-xl text-stone-300 space-y-3">
                   <li>Engineering time (billed at cost, no markup)</li>
@@ -144,7 +144,7 @@ const PromoPage = () => {
                   <li>Essential software and tools required for your project</li>
                 </ul>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  These costs vary by project scope but we'll provide a clear budget before we begin. 
+                  These costs vary by project scope but we&apos;ll provide a clear budget before we begin.
                 </p>
                 <p className="text-lg md:text-2xl text-white font-semibold">
                   No hidden fees. No margin. No markup. Just what it costs to make it real.
@@ -171,7 +171,7 @@ const PromoPage = () => {
                 </p>
                 <ul className="list-disc ml-8 mb-8 text-base md:text-xl text-stone-300 space-y-3">
                   <li>Provide a detailed testimonial upon successful delivery</li>
-                  <li>Participate in a case study (with approval over what's shared)</li>
+                  <li>Participate in a case study (with approval over what&apos;s shared)</li>
                   <li>Give honest feedback that helps us improve</li>
                 </ul>
               </div>
@@ -187,7 +187,7 @@ const PromoPage = () => {
                   <span className="highlightsTitle">5 spots</span>. <span className="highlightsTitle">60 days</span>. First come, first committed.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-8">
-                  If you've been waiting for the right time to automate a broken process, eliminate repetitive work, or finally put AI to use in your business—this is it.
+                  If you&apos;ve been waiting for the right time to automate a broken process, eliminate repetitive work, or finally put AI to use in your business—this is it.
                 </p>
                 <div className="bg-blueFaded rounded-xl p-8 mb-8">
                   <p className="text-lg md:text-xl text-white font-semibold mb-4">
@@ -199,7 +199,7 @@ const PromoPage = () => {
                     </a>
                   </p>
                   <p className="text-sm md:text-base text-stone-400">
-                  This is a free, no-strings-attached introduction. We’ll discuss your challenges, explore potential solutions, and you can decide if it makes sense to move forward.                  </p>
+                  This is a free, no-strings-attached introduction. We&apos;ll discuss your challenges, explore potential solutions, and you can decide if it makes sense to move forward.                  </p>
                 </div>
               </div>
 
