@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar"
 import Image from "next/image"
+import CountdownTimer from "@/components/CountdownTimer"
 import { Bayon } from 'next/font/google'
 
 const bayon = Bayon({
@@ -40,12 +41,10 @@ const PromoPage = () => {
                   <span className="highlightsTitle">Limited Time Offer</span>
                 </h1>
 
-                {/* Timer Placeholder */}
-                <div className="bg-blueFaded rounded-xl p-8 mb-8 max-w-2xl mx-auto">
-                  <p className="text-stone-300 text-lg md:text-xl mb-4">Offer ends in:</p>
-                  <div className="text-4xl md:text-6xl font-bold text-green">
-                    [TIMER PLACEHOLDER]
-                  </div>
+                {/* Countdown Timer */}
+                <div className="bg-blueFaded rounded-xl p-8 mb-8 max-w-4xl mx-auto">
+                  <p className="text-stone-300 text-lg md:text-xl mb-6 text-center">Offer ends in:</p>
+                  <CountdownTimer />
                 </div>
 
                 <h2 className={`${bayon.className} text-white text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight`}>
