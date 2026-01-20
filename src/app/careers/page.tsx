@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 import Image from "next/image"
 import { Bayon } from 'next/font/google'
 
@@ -92,6 +93,8 @@ const CareersPage = () => {
                 className="relative -z-50 mt-10 mb-20"
               />
             </section>
+
+            <Footer />
           </main>
         </div>
       </header>

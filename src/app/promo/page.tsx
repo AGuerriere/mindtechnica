@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 import Image from "next/image"
 import CountdownTimer from "@/components/CountdownTimer"
 import { Bayon } from 'next/font/google'
@@ -205,6 +206,8 @@ const PromoPage = () => {
 
               <div className="mb-20"></div>
             </section>
+
+            <Footer />
           </main>
         </div>
       </header>
