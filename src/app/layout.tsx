@@ -7,6 +7,8 @@ export const metadata = {
   title: 'Mind Technica | Engineering Intelligence for Real-World Impact',
   description: 'Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making.',
   keywords: [
+    'Mind Technica',
+    'MindTechnica',
     'AI',
     'Artificial Intelligence',
     'Data Science',
@@ -43,7 +45,7 @@ export const metadata = {
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
+      follow: true,
       noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
@@ -59,6 +61,32 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Mind Technica',
+              alternateName: ['MindTechnica', 'Mind-Technica'],
+              url: 'https://mindtechnica.com',
+              logo: 'https://mindtechnica.com/images/Asset1.png',
+              description: 'Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently.',
+              address: {
+                '@type': 'PostalAddress',
+                addressCountry: 'GB',
+                addressRegion: 'Northern Ireland',
+              },
+              contactPoint: {
+                '@type': 'ContactPoint',
+                email: 'projects@mindtechnica.com',
+                contactType: 'sales',
+              },
+            }),
+          }}
+        />
+      </head>
       <body className={`${inter.className} text-greyLight02 ml-5 mr-5 md:ml-24 md:mr-24`}>{children}</body>
     </html>
   )
