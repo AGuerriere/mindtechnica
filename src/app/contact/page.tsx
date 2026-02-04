@@ -41,12 +41,14 @@ export default function ContactPage() {
         <div className="2xl:flex 2xl:justify-center flex-grow">
           <main className="2xl:w-[1400px] px-5 flex flex-col justify-between">
             <section className="mt-16 md:mt-28 mb-12">
-              <h1 className={`${bayon.className} uppercase text-4xl md:text-6xl lg:text-8xl text-white mb-8`}>
+              <h1 className={`${bayon.className} uppercase text-4xl md:text-6xl lg:text-8xl text-white mb-8 text-center`}>
                 Contact <span className="highlightsTitle">Us</span>
               </h1>
-              <p className="text-base md:text-2xl text-stone-300 opacity-90 mb-12 max-w-4xl">
-                We&apos;d love to hear from you. Please fill out the form below and we&apos;ll get back to you as soon as possible.
-              </p>
+              <div className="flex justify-center">
+                <p className="text-base md:text-2xl text-stone-300 opacity-90 mb-12 max-w-4xl text-center">
+                  We&apos;d love to hear from you. Please fill out the form below and we&apos;ll get back to you as soon as possible.
+                </p>
+              </div>
 
               <div className="h-24">
                  <Image
