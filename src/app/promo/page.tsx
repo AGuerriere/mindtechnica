@@ -3,6 +3,8 @@ import Footer from "@/components/Footer"
 import Image from "next/image"
 import CountdownTimer from "@/components/CountdownTimer"
 import { Bayon } from 'next/font/google'
+import CalendlyWidget from '@/components/CalendlyWidget'
+
 
 const bayon = Bayon({
   weight: '400',
@@ -190,9 +192,10 @@ const PromoPage = () => {
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-8">
                   If you&apos;ve been waiting for the right time to automate a broken process, eliminate repetitive work, or finally put AI to use in your business—this is it.
                 </p>
+                <CalendlyWidget />
                 <div className="bg-blueFaded rounded-xl p-8 mb-8">
                   <p className="text-lg md:text-xl text-white font-semibold mb-4">
-                    To book a free intro call email us at:
+                    Alternatively email us at:
                   </p>
                   <p className="text-xl md:text-3xl mb-6">
                     <a href="mailto:projects@mindtechnica.com" className="text-green hover:underline">
@@ -200,7 +203,7 @@ const PromoPage = () => {
                     </a>
                   </p>
                   <p className="text-sm md:text-base text-stone-400">
-                  This is a free, no-strings-attached introduction. We&apos;ll discuss your challenges, explore potential solutions, and you can decide if it makes sense to move forward.                  </p>
+                    This is a free, no-strings-attached introduction. We&apos;ll discuss your challenges, explore potential solutions, and you can decide if it makes sense to move forward.                  </p>
                 </div>
               </div>
 
