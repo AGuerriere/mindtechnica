@@ -1,16 +1,14 @@
 interface Env {
-  // Add your environment variables here
-  // SENDGRID_API_KEY: string;
+  DB: D1Database;
 }
 
-export const onRequestPost = async (context: any) => {
+export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
     const { request, env } = context;
     const body: any = await request.json();
 
     const { firstName, lastName, email, role, message } = body;
 
-    // Validate required fields
     if (!firstName || !lastName || !email || !role || !message) {
       return new Response(JSON.stringify({ message: "Missing required fields" }), {
         status: 400,
@@ -18,35 +16,9 @@ export const onRequestPost = async (context: any) => {
       });
     }
 
-    // --- EMAIL SENDING LOGIC GOES HERE ---
-    // Example using SendGrid (requires fetch):
-    /*
-    const sendGridResponse = await fetch("https://api.sendgrid.com/v3/mail/send", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${env.SENDGRID_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        personalizations: [{ to: [{ email: "projects@mindtechnica.com" }] }],
-        from: { email: "noreply@mindtechnica.com" },
-        subject: `New Contact from ${firstName} ${lastName}`,
-        content: [{ type: "text/plain", value: `Role: ${role}\nEmail: ${email}\n\nMessage:\n${message}` }],
-      }),
-    });
-
-    if (!sendGridResponse.ok) {
-      throw new Error("Failed to send email");
-    }
-    */
-
-    // For now, we simulate a successful submission since no email provider is configured.
-    console.log(`Received contact form submission:
-      Name: ${firstName} ${lastName}
-      Email: ${email}
-      Role: ${role}
-      Message: ${message}
-    `);
+    await env.DB.prepare(
+      "INSERT INTO contacts (firstName, lastName, email, role, message) VALUES (?, ?, ?, ?, ?)"
+    ).bind(firstName, lastName, email, role, message).run();
 
     return new Response(JSON.stringify({ message: "Message sent successfully" }), {
       status: 200,
