@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
 import { Bayon } from 'next/font/google'
+import GoogleTag from '@/components/GoogleTag'
 
 const bayon = Bayon({
   weight: '400',
@@ -11,6 +12,7 @@ const bayon = Bayon({
 const CareersPage = () => {
   return (
     <>
+      <GoogleTag />
       <header className="flex flex-col min-h-screen">
         <Navbar />
 
