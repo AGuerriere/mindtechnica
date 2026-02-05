@@ -15,6 +15,24 @@ const GoogleTag = () => {
           gtag('config', 'AW-17934161576');
         `}
       </Script>
+      <Script id="google-tag-calendly-conversion" strategy="afterInteractive">
+        {`
+          (function(){
+            var fired = false;
+            window.addEventListener('message', function(e) {
+              if (fired) return;
+              if (e.data && e.data.event === 'calendly.event_scheduled') {
+                fired = true;
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-17934161576/HFb7CJqnuPMbEKit1udC',
+                  'value': 1.0,
+                  'currency': 'GBP'
+                });
+              }
+            });
+          })();
+        `}
+      </Script>
     </>
   )
 }
