@@ -187,14 +187,18 @@ const PromoPage = () => {
                 <div className="border-b-2 border-white w-full"></div>
               </div>
 
-              <div className="max-w-4xl mx-auto mb-16 text-center">
+              <div className="max-w-4xl mx-auto mb-8 text-center">
                 <p className="text-2xl md:text-4xl text-white font-semibold mb-8">
                   <span className="highlightsTitle">5 spots</span>. <span className="highlightsTitle">60 days</span>. First come, first committed.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-8">
                   If you&apos;ve been waiting for the right time to automate a broken process, eliminate repetitive work, or finally put AI to use in your business—this is it.
                 </p>
-                <CalendlyWidget />
+              </div>
+
+              <CalendlyWidget />
+
+              <div className="max-w-4xl mx-auto mb-16 text-center mt-8">
                 <div className="bg-blueFaded rounded-xl p-8 mb-8">
                   <p className="text-lg md:text-xl text-white font-semibold mb-4">
                     Alternatively email us at:
