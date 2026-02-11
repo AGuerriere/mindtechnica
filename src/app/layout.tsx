@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -62,43 +63,48 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          async
+        <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17934161576"
+          strategy="afterInteractive"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17934161576');
-            `,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){
-                var fired = false;
-                window.addEventListener('message', function(e) {
-                  var data = e.data;
-                  if (data && data.event === 'calendly.event_scheduled') {
-                    if (fired) return;
-                    fired = true;
-                    if (typeof gtag === 'function') {
-                      gtag('event', 'conversion', {
-                        'send_to': 'AW-17934161576/HFb7CJqnuPMbEKit1udC',
-                        'value': 1.0,
-                        'currency': 'GBP'
-                      });
-                    }
-                  }
-                });
-              })();
-            `,
-          }}
-        />
+        <Script id="google-ads-base" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'AW-17934161576');
+          `}
+        </Script>
+        <Script id="calendly-conversion" strategy="afterInteractive">
+          {`
+            (function () {
+              var fired = false;
+
+              function isCalendlyOrigin(origin) {
+                return typeof origin === 'string' && origin.indexOf('calendly.com') !== -1;
+              }
+
+              window.addEventListener('message', function (e) {
+                if (!isCalendlyOrigin(e.origin)) return;
+
+                var data = e.data;
+                if (!data || data.event !== 'calendly.event_scheduled') return;
+
+                if (fired) return;
+                fired = true;
+
+                if (typeof window.gtag === 'function') {
+                  window.gtag('event', 'conversion', {
+                    'send_to': 'AW-17934161576/HFb7CJqnuPMbEKit1udC',
+                    'value': 1.0,
+                    'currency': 'GBP'
+                  });
+                }
+              });
+            })();
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
