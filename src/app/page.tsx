@@ -7,7 +7,6 @@ import Footer from "@/components/Footer"
 import Services from '@/components/Services'
 import OurClients from '@/components/OurClients'
 import CalendlyWidget from '@/components/CalendlyWidget'
-import GoogleTag from '@/components/GoogleTag'
 // import Form from '@/components/Form'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -94,7 +93,6 @@ const sectorsItems = [
 export default function Home() {
   return (
     <>
-      <GoogleTag />
       {/* Header Section */}
       <header className="flex flex-col min-h-screen justify-between">
         <Navbar />

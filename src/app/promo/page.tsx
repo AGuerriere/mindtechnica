@@ -4,7 +4,6 @@ import Image from "next/image"
 import CountdownTimer from "@/components/CountdownTimer"
 import { Bayon } from 'next/font/google'
 import CalendlyWidget from '@/components/CalendlyWidget'
-import GoogleTag from '@/components/GoogleTag'
 
 
 const bayon = Bayon({
@@ -15,7 +14,6 @@ const bayon = Bayon({
 const PromoPage = () => {
   return (
     <>
-      <GoogleTag />
       <header className="flex flex-col min-h-screen">
         <Navbar />
 

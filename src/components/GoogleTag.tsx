@@ -10,7 +10,8 @@ const GoogleTag = () => {
       <Script id="google-tag" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          function gtag(){window.dataLayer.push(arguments);}
+          window.gtag = gtag;
           gtag('js', new Date());
           gtag('config', 'AW-17934161576');
         `}
@@ -20,14 +21,18 @@ const GoogleTag = () => {
           (function(){
             var fired = false;
             window.addEventListener('message', function(e) {
-              if (fired) return;
-              if (e.data && e.data.event === 'calendly.event_scheduled') {
+              var data = e.data;
+              if (data && data.event === 'calendly.event_scheduled') {
+                if (fired) return;
                 fired = true;
-                gtag('event', 'conversion', {
-                  'send_to': 'AW-17934161576/HFb7CJqnuPMbEKit1udC',
-                  'value': 1.0,
-                  'currency': 'GBP'
-                });
+                var g = window.gtag || gtag;
+                if (typeof g === 'function') {
+                  g('event', 'conversion', {
+                    'send_to': 'AW-17934161576/HFb7CJqnuPMbEKit1udC',
+                    'value': 1.0,
+                    'currency': 'GBP'
+                  });
+                }
               }
             });
           })();

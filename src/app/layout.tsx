@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import GoogleTag from '@/components/GoogleTag'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -62,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <GoogleTag />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
