@@ -1,6 +1,5 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import GoogleTag from '@/components/GoogleTag'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -63,7 +62,43 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <GoogleTag />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17934161576"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17934161576');
+            `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){
+                var fired = false;
+                window.addEventListener('message', function(e) {
+                  var data = e.data;
+                  if (data && data.event === 'calendly.event_scheduled') {
+                    if (fired) return;
+                    fired = true;
+                    if (typeof gtag === 'function') {
+                      gtag('event', 'conversion', {
+                        'send_to': 'AW-17934161576/HFb7CJqnuPMbEKit1udC',
+                        'value': 1.0,
+                        'currency': 'GBP'
+                      });
+                    }
+                  }
+                });
+              })();
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
