@@ -5,6 +5,7 @@ import Link from "next/link"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Services from '@/components/Services'
+import { getAllPosts } from '@/lib/blog'
 import OurClients from '@/components/OurClients'
 import CalendlyWidget from '@/components/CalendlyWidget'
 // import Form from '@/components/Form'
@@ -160,6 +161,66 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Latest Releases Section */}
+      {(() => {
+        const latestPosts = getAllPosts().slice(0, 4)
+        if (latestPosts.length === 0) return null
+        return (
+          <div className="2xl:flex 2xl:justify-center">
+            <section className="2xl:w-[1400px] py-16 md:py-20">
+              <div className="flex flex-row align-center mb-10">
+                <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>Latest Releases</h2>
+                <div className="border-b-2 border-white w-full"></div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {latestPosts.map(post => (
+                  <Link
+                    key={post.slug}
+                    href={`/news/${post.slug}`}
+                    className="group flex flex-col border border-grey/20 rounded-xl p-6 hover:border-green/40 transition-colors"
+                  >
+                    <div className="flex items-center gap-3 text-xs text-grey mb-3">
+                      <time dateTime={post.frontmatter.date}>
+                        {new Date(post.frontmatter.date).toLocaleDateString('en-GB', {
+                          day: 'numeric',
+                          month: 'long',
+                          year: 'numeric',
+                        })}
+                      </time>
+                      <span>·</span>
+                      <span>{post.readingTime}</span>
+                    </div>
+                    <h3 className="text-lg md:text-xl font-semibold text-white group-hover:text-green transition-colors mb-2">
+                      {post.frontmatter.title}
+                    </h3>
+                    <p className="text-sm text-mediumGrey leading-relaxed line-clamp-3 flex-grow">
+                      {post.frontmatter.description}
+                    </p>
+                    {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {post.frontmatter.tags.map(tag => (
+                          <span key={tag} className="text-xs px-2 py-1 rounded bg-greenFaded text-green">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </Link>
+                ))}
+              </div>
+              <div className="mt-8 text-center">
+                <Link
+                  href="/news"
+                  className="inline-block text-green hover:text-green/80 font-semibold transition-colors"
+                >
+                  View all articles &rarr;
+                </Link>
+              </div>
+            </section>
+          </div>
+        )
+      })()}
 
       <div className='2xl:flex 2xl:justify-center'>
         <main className='2xl:w-[1400px]'>
