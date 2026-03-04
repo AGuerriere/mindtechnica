@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://mindtechnica.com/sitemap.xml

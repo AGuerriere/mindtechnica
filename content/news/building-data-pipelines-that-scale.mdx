@@ -1,0 +1,41 @@
+---
+title: "Building Data Pipelines That Scale"
+description: "A practical look at designing data pipelines that grow with your organisation without becoming a maintenance burden."
+date: "2026-02-15"
+tags: ["Data Engineering", "Architecture"]
+author: "Mind Technica"
+---
+
+## The Problem with Ad-Hoc Pipelines
+
+Many organisations start with simple scripts that move data from A to B. This works until it does not. As data volume grows and sources multiply, these scripts become fragile, slow, and impossible to debug.
+
+## Principles for Scalable Pipelines
+
+### 1. Idempotency
+
+Every pipeline step should produce the same output when run multiple times with the same input. This makes retries safe and debugging straightforward.
+
+### 2. Schema Enforcement
+
+Validate data at ingestion. Catching malformed records early prevents cascading failures downstream.
+
+### 3. Observability
+
+Instrument every stage with logging, metrics, and alerting. You cannot fix what you cannot see.
+
+### 4. Modularity
+
+Design pipelines as composable stages rather than monolithic scripts. Each stage should have a clear input, output, and responsibility.
+
+## Technology Choices
+
+The right stack depends on your scale and team. Common patterns include:
+
+- **Small scale** — Python scripts with scheduled execution (cron or Airflow).
+- **Medium scale** — managed ETL services with orchestration (e.g. Prefect, Dagster).
+- **Large scale** — streaming architectures with Kafka or Pulsar for real-time processing.
+
+## Conclusion
+
+The best pipeline is the one your team can maintain. Start simple, enforce good patterns from day one, and scale the infrastructure only when the data demands it.
