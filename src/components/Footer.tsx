@@ -36,7 +36,11 @@ export default function Footer() {
         <p className="mb-3">
           &copy; 2023 Mind Technica Ltd - NI698488 - 6 Bayview Terrace, BT48 7EE, Derry, United Kingdom. All rights reserved
         </p>
-        <p>
+        <p className="space-x-3">
+          <Link href="/about" className="text-green hover:underline">
+            About
+          </Link>
+          <span className="text-stone-600">·</span>
           <Link href="/privacy" className="text-green hover:underline">
             Privacy Policy
           </Link>
