@@ -1,7 +1,14 @@
+import { Metadata } from 'next'
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
 import { Bayon } from 'next/font/google'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/careers',
+  },
+}
 
 const bayon = Bayon({
   weight: '400',
