@@ -24,10 +24,10 @@ export default function CountdownTimer() {
       const now = new Date()
       const currentYear = now.getFullYear()
 
-      // Set target date to March 21st of current year at 23:59:59
-      const targetDate = new Date(currentYear, 2, 21, 23, 59, 59) // Month is 0-indexed, so 2 = March
+      // Set target date to May 21st of current year at 23:59:59
+      const targetDate = new Date(currentYear, 4, 21, 23, 59, 59) // Month is 0-indexed, so 2 = March
 
-      // If we're past March 21st this year, target next year
+      // If we're past May 21st this year, target next year
       if (now > targetDate) {
         targetDate.setFullYear(currentYear + 1)
       }
