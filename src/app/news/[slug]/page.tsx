@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getAllSlugs, getPostBySlug } from '@/lib/blog'
@@ -28,7 +29,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       publishedTime: date,
       url: `https://mindtechnica.com/news/${params.slug}`,
       siteName: 'Mind Technica',
-      ...(image && { images: [{ url: image }] }),
+      images: [{ url: image || '/images/Asset1.png' }],
     },
     alternates: {
       canonical: `/news/${params.slug}`,
@@ -108,6 +109,18 @@ export default function NewsPost({ params }: PageProps) {
             </div>
           )}
         </header>
+
+        {post.frontmatter.image && (
+          <div className="relative w-full aspect-[2/1] mb-10 rounded-xl overflow-hidden">
+            <Image
+              src={post.frontmatter.image}
+              alt={post.frontmatter.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
 
         <article className="prose prose-invert prose-green max-w-none prose-headings:text-white prose-p:text-greyLight02 prose-a:text-green hover:prose-a:text-green/80 prose-strong:text-white prose-code:text-green prose-pre:bg-bgBlack prose-pre:border prose-pre:border-grey/20 prose-li:text-greyLight02 prose-blockquote:border-green prose-blockquote:text-mediumGrey prose-img:rounded-lg">
           <MDXRemote source={post.content} components={MDXComponents} />
