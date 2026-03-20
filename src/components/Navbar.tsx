@@ -27,7 +27,7 @@ export default function Navbar() {
       </div>
       <div className="navLinks flex justify-evenly w-1/2 hidden">
         <a href="/" className={pathname === '/' ? 'text-green border-b-2 border-green' : ''}>Home</a>
-        <a href="/#services">Services</a>
+        <a href="/services" className={pathname === '/services' ? 'text-green border-b-2 border-green' : ''}>Services</a>
         {/* <a href="/#ourwork">Our Work</a> */}
         <a href="/about" className={pathname === '/about' ? 'text-green border-b-2 border-green' : ''}>About</a>
         <a href="/news" className={pathname.startsWith('/news') ? 'text-green border-b-2 border-green' : ''}>News</a>
@@ -66,7 +66,7 @@ export default function Navbar() {
         />
         </div>
         <a href="/" onClick={() => triggerToggle()} className={pathname === '/' ? 'text-green border-b-2 border-green' : ''}>Home</a>
-        <a href="/#services" onClick={() => triggerToggle()}>Services</a>
+        <a href="/services" onClick={() => triggerToggle()} className={pathname === '/services' ? 'text-green border-b-2 border-green' : ''}>Services</a>
         {/* <a href="/#ourwork" onClick={() => triggerToggle()}>Our Work</a> */}
         <a href="/about" onClick={() => triggerToggle()} className={pathname === '/about' ? 'text-green border-b-2 border-green' : ''}>About</a>
         <a href="/news" onClick={() => triggerToggle()} className={pathname.startsWith('/news') ? 'text-green border-b-2 border-green' : ''}>News</a>

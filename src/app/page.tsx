@@ -4,7 +4,6 @@ import Image from "next/image"
 import Link from "next/link"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
-import Services from '@/components/Services'
 import { getAllPosts } from '@/lib/blog'
 import OurClients from '@/components/OurClients'
 import CalendlyWidget from '@/components/CalendlyWidget'
@@ -296,9 +295,6 @@ export default function Home() {
               ))}
             </div>
           </>
-
-          {/* Services Section */}
-          <Services />
 
           {/* Our Work Section */}
           {/* <>
