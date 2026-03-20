@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
 import { Bayon } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 export const metadata: Metadata = {
   alternates: {
@@ -14,6 +15,8 @@ const bayon = Bayon({
   weight: '400',
   subsets: ['latin'],
 })
+
+const inter = Inter({ subsets: ['latin'] })
 
 const CareersPage = () => {
   return (
@@ -41,12 +44,12 @@ const CareersPage = () => {
 
         <div className="2xl:flex 2xl:justify-center flex-grow">
           <main className="2xl:w-[1400px] px-5">
-            <section className="mt-16 md:mt-28">
-              <h1 className={`${bayon.className} uppercase text-4xl md:text-6xl lg:text-8xl text-white mb-8`}>
-                Join Our <span className="highlightsTitle">Team</span>
+            <section className="mt-16 md:mt-24 mb-16 md:mb-24">
+              <h1 className={`${bayon.className} uppercase text-4xl md:text-[4.5vw] leading-relaxed text-center`}>
+                Join Our <span className={`${bayon.className} highlightsTitle`}>Team</span>
               </h1>
-              <p className="text-base md:text-2xl text-stone-300 opacity-90 mb-12 max-w-4xl">
-                We are always looking for passionate and talented individuals to join our team. At MindTechnica, we are committed to fostering a collaborative and innovative environment where you can grow your skills and make a real impact.
+              <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6 mb-12`}>
+                We are always looking for passionate, self-driven people who want to build real things with AI. If that sounds like you, we would love to hear from you.
               </p>
 
               <div className="h-24">

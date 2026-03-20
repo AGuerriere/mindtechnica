@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 import { Bayon } from 'next/font/google'
+import { Inter } from 'next/font/google'
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
@@ -7,6 +9,8 @@ const bayon = Bayon({
   weight: '400',
   subsets: ['latin'],
 })
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'About | Mind Technica',
@@ -31,8 +35,37 @@ export default function About() {
 
       <div className="2xl:flex 2xl:justify-center">
         <main className="2xl:w-[1400px]">
-          {/* Our Vision */}
+
+          {/* Top shapes — positioned to viewport edges */}
+          <div>
+            <Image
+              src="/images/polygon.svg"
+              width={61}
+              height={105}
+              alt=""
+              className="absolute left-0 -z-50"
+            />
+            <Image
+              src="/images/rectangle.svg"
+              width={156}
+              height={312}
+              alt=""
+              className="absolute right-0 -z-50"
+            />
+          </div>
+
+          {/* Hero */}
           <section className="mt-16 md:mt-24 mb-16 md:mb-24">
+            <h1 className={`${bayon.className} uppercase text-4xl md:text-[4.5vw] leading-relaxed text-center`}>
+              About <span className={`${bayon.className} highlightsTitle`}>Mind Technica</span>
+            </h1>
+            <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6`}>
+              We are an engineering-led AI consultancy helping organisations scale through automation, intelligent systems, and data-driven decision-making. Independent, rigorous, and focused on outcomes that last.
+            </p>
+          </section>
+
+          {/* Our Vision */}
+          <section className="mb-16 md:mb-24">
             <div className="flex flex-row align-center mb-10">
               <h1
                 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}
@@ -56,6 +89,17 @@ export default function About() {
               </p>
             </div>
           </section>
+
+          {/* Mid-page shape — triangle right */}
+          <div className="h-24">
+            <Image
+              src="/images/triangle.svg"
+              width={100}
+              height={100}
+              alt=""
+              className="absolute right-0 -z-50"
+            />
+          </div>
 
           {/* About Mind Technica */}
           <section className="mb-16 md:mb-24">
@@ -90,6 +134,17 @@ export default function About() {
               </p>
             </div>
           </section>
+
+          {/* Lower shape — triangle2 left */}
+          <div className="h-16">
+            <Image
+              src="/images/triangle2.svg"
+              width={70}
+              height={70}
+              alt=""
+              className="absolute left-0 -z-50"
+            />
+          </div>
 
           {/* Our Mission */}
           <section className="mb-16 md:mb-24">
