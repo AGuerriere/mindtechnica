@@ -32,8 +32,8 @@ const heroItems = [
   },
   {
     icon: "./images/mobile.svg",
-    title: "Computer Vision",
-    description: "Extracting information from documents and images with high accuracy at scale",
+    title: "Automation & Agents",
+    description: "Deploying AI agents that automate multi-step tasks, from data processing to decision support.",
     color: "text-blue",
     bgColor: "bg-blueFaded"
   }
