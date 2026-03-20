@@ -1,7 +1,11 @@
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Bayon, Inter } from 'next/font/google'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+
+const bayon = Bayon({ weight: '400', subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 import { getAllSlugs, getPostBySlug } from '@/lib/blog'
 import MDXComponents from '@/components/mdx/MDXComponents'
 import Navbar from '@/components/Navbar'
@@ -76,10 +80,10 @@ export default function NewsPost({ params }: PageProps) {
         </Link>
 
         <header className="mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h1 className={`${bayon.className} text-3xl md:text-4xl text-white mb-4`}>
             {post.frontmatter.title}
           </h1>
-          <div className="flex items-center gap-3 text-sm text-grey">
+          <div className={`${inter.className} flex items-center gap-3 text-sm text-grey`}>
             <time dateTime={post.frontmatter.date}>
               {new Date(post.frontmatter.date).toLocaleDateString('en-GB', {
                 day: 'numeric',
@@ -101,7 +105,7 @@ export default function NewsPost({ params }: PageProps) {
               {post.frontmatter.tags.map(tag => (
                 <span
                   key={tag}
-                  className="text-xs px-2 py-1 rounded bg-greenFaded text-green"
+                  className={`${inter.className} text-xs px-2 py-1 rounded bg-greenFaded text-green`}
                 >
                   {tag}
                 </span>

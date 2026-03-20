@@ -177,44 +177,32 @@ export default function Home() {
                   <Link
                     key={post.slug}
                     href={`/news/${post.slug}`}
-                    className="group flex flex-row items-center border border-grey/20 rounded-xl p-6 hover:border-green/40 transition-colors gap-4"
+                    className="group block border border-grey/20 rounded-xl p-6 hover:border-green/40 transition-colors"
                   >
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-3 text-xs text-grey mb-3">
-                        <time dateTime={post.frontmatter.date}>
-                          {new Date(post.frontmatter.date).toLocaleDateString('en-GB', {
-                            day: 'numeric',
-                            month: 'long',
-                            year: 'numeric',
-                          })}
-                        </time>
-                        <span>·</span>
-                        <span>{post.readingTime}</span>
-                      </div>
-                      <h3 className="text-lg md:text-xl font-semibold text-white group-hover:text-green transition-colors mb-2">
-                        {post.frontmatter.title}
-                      </h3>
-                      <p className="text-sm text-mediumGrey leading-relaxed line-clamp-3">
-                        {post.frontmatter.description}
-                      </p>
-                      {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
-                        <div className="flex flex-wrap gap-2 mt-4">
-                          {post.frontmatter.tags.map(tag => (
-                            <span key={tag} className="text-xs px-2 py-1 rounded bg-greenFaded text-green">
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                      )}
+                    <div className={`${inter.className} flex items-center gap-3 text-xs text-grey mb-3`}>
+                      <time dateTime={post.frontmatter.date}>
+                        {new Date(post.frontmatter.date).toLocaleDateString('en-GB', {
+                          day: 'numeric',
+                          month: 'long',
+                          year: 'numeric',
+                        })}
+                      </time>
+                      <span>·</span>
+                      <span>{post.readingTime}</span>
                     </div>
-                    {post.frontmatter.image && (
-                      <div className="relative flex-shrink-0 w-28 md:w-36 aspect-video rounded-lg overflow-hidden">
-                        <Image
-                          src={post.frontmatter.image}
-                          alt={post.frontmatter.title}
-                          fill
-                          className="object-cover"
-                        />
+                    <h3 className={`${bayon.className} text-lg md:text-xl text-white group-hover:text-green transition-colors mb-2`}>
+                      {post.frontmatter.title}
+                    </h3>
+                    <p className={`${inter.className} text-sm text-mediumGrey leading-relaxed line-clamp-3`}>
+                      {post.frontmatter.description}
+                    </p>
+                    {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {post.frontmatter.tags.map(tag => (
+                          <span key={tag} className={`${inter.className} text-xs px-2 py-1 rounded bg-greenFaded text-green`}>
+                            {tag}
+                          </span>
+                        ))}
                       </div>
                     )}
                   </Link>
