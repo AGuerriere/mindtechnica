@@ -334,8 +334,8 @@ export default function Home() {
 
           {/* Get In Touch Section */}
           <>
-            <div id="contacts">
-              <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8 mt-3`}>Let&apos;s Work Together</h2>
+            <div id="contacts" className="mt-20">
+              <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8`}>Let&apos;s Work Together</h2>
               <div className="flex flex-col justify-start gap-8">
                 <div className="flex flex-col justify-start">
                   <p className="pb-8 text-xs md:text-base">If your organisation wants to scale efficiently using AI, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
