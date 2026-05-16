@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
@@ -5,6 +6,20 @@ import CountdownTimer from "@/components/CountdownTimer"
 import { Bayon } from 'next/font/google'
 import CalendlyWidget from '@/components/CalendlyWidget'
 
+export const metadata: Metadata = {
+  title: 'Free AI & Software Automation Audit | Mind Technica',
+  description: 'A complimentary expert assessment of where AI and software automation could reduce operational overhead in your business. Limited places available for 30 days.',
+  alternates: {
+    canonical: '/promo',
+  },
+  openGraph: {
+    title: 'Free AI & Software Automation Audit | Mind Technica',
+    description: 'A complimentary expert assessment of where AI and software automation could reduce operational overhead in your business. Limited places available for 30 days.',
+    url: 'https://mindtechnica.com/promo',
+    siteName: 'Mind Technica',
+    images: '/images/Asset1.png',
+  },
+}
 
 const bayon = Bayon({
   weight: '400',
