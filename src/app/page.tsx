@@ -144,18 +144,18 @@ export default function Home() {
       <div className="bg-gradient-to-r from-greenFaded to-blueFaded py-8 md:py-12 -mt-10">
         <div className="2xl:mx-auto 2xl:w-[1400px] px-5">
           <div className="text-center">
-            <p className="text-green text-sm md:text-base font-semibold uppercase tracking-wider mb-3">Limited Time Offer</p>
+            <p className="text-green text-sm md:text-base font-semibold uppercase tracking-wider mb-3">Limited Time Offer — 30 Days Only</p>
             <h3 className={`${bayon.className} text-white text-2xl md:text-4xl lg:text-5xl mb-4`}>
-              Get Your AI System Built — You Only Cover <span className="highlightsTitle">Delivery Costs</span>
+              Free AI &amp; Software <span className="highlightsTitle">Automation Audit</span>
             </h3>
             <p className="text-stone-300 text-sm md:text-lg mb-6 max-w-3xl mx-auto">
-              We&apos;re taking on 5 founding clients. All strategy and founder time waived. Limited spots available.
+              A complimentary expert assessment of where AI and automation could reduce overhead in your business. Limited places available.
             </p>
             <Link
               href="/promo"
               className="inline-block bg-green text-bgBlack font-semibold text-base md:text-lg px-8 py-4 rounded-full hover:bg-opacity-90 transition-all"
             >
-              Learn More About This Offer
+              Book Your Free Audit
             </Link>
           </div>
         </div>

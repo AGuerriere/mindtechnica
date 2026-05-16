@@ -40,8 +40,9 @@ const PromoPage = () => {
             <section className="mt-16 md:mt-28">
               {/* Hero Section */}
               <div className="text-center mb-16">
+                <p className="text-green text-sm md:text-base font-semibold uppercase tracking-wider mb-4">Limited Time Offer</p>
                 <h1 className={`${bayon.className} uppercase text-3xl md:text-5xl lg:text-7xl text-white mb-8`}>
-                  <span className="highlightsTitle">Limited Time Offer</span>
+                  Free AI &amp; Software <span className="highlightsTitle">Automation Audit</span>
                 </h1>
 
                 {/* Countdown Timer */}
@@ -49,13 +50,6 @@ const PromoPage = () => {
                   <p className="text-stone-300 text-lg md:text-xl mb-6 text-center">Offer ends in:</p>
                   <CountdownTimer />
                 </div>
-
-                <h2 className={`${bayon.className} text-white text-3xl md:text-5xl lg:text-6xl mb-6 leading-tight`}>
-                  We&apos;ll Build Your <span className="highlightsTitle">AI System</span>.
-                </h2>
-                <h3 className={`${bayon.className} text-white text-2xl md:text-4xl lg:text-5xl mb-8`}>
-                  You Only Cover Delivery Costs
-                </h3>
               </div>
 
               <div className="h-24">
@@ -71,16 +65,16 @@ const PromoPage = () => {
               {/* Intro Section */}
               <div className="max-w-4xl mx-auto mb-16">
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  Mind Technica is taking on <span className="text-white font-semibold">5 founding clients</span> for the next 60 days.
+                  For the next 30 days, Mind Technica is offering a <span className="text-white font-semibold">small number of businesses</span> a complimentary audit: an expert assessment of where AI and software automation could meaningfully reduce operational overhead and free your team to focus on higher-value work.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  We&apos;re waiving every fee we&apos;d normally charge: no strategy fees, no founder time, no service markup. You pay only what it costs to build and run your solution—engineering hours, infrastructure, APIs, tools. Nothing more.
+                  Many organisations carry a significant hidden cost in the form of repetitive tasks, manual processes, and disconnected systems. These inefficiencies accumulate quietly, consuming time and resource that your team could direct toward work that genuinely advances the business.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  <span className="text-white font-semibold">Why we&apos;re doing this:</span> We need real case studies. You need a partner who&apos;ll treat your business like it&apos;s ours. This is the trade.
+                  The audit is designed to identify precisely where those inefficiencies lie and what it would take to address them. You will leave with a clear, prioritised view of your automation opportunities and a realistic assessment of what acting on them would involve.
                 </p>
-                <p className="text-base md:text-xl text-stone-300 leading-relaxed">
-                  You get enterprise-grade AI automation built without the enterprise price tag. We get proof of what we can do and permission to share it.
+                <p className="text-lg md:text-xl text-white font-semibold">
+                  Complimentary and without obligation to proceed.
                 </p>
               </div>
 
@@ -102,56 +96,21 @@ const PromoPage = () => {
                 <ul className="space-y-4 text-base md:text-xl text-stone-300 mb-6">
                   <li className="flex items-start">
                     <span className="text-green text-2xl mr-3">✓</span>
-                    <span>Full discovery and solution design</span>
+                    <span>A dedicated discovery session to understand your requirements and explore your ideas in depth</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green text-2xl mr-3">✓</span>
-                    <span>Custom AI automation development</span>
+                    <span>Collaborative working sessions with your teams and management to identify what can be automated</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green text-2xl mr-3">✓</span>
-                    <span>System integration and deployment</span>
+                    <span>Prioritised automation opportunities with effort and savings estimates</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green text-2xl mr-3">✓</span>
-                    <span>Testing and iteration until it works</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green text-2xl mr-3">✓</span>
-                    <span>Ongoing technical support during the engagement</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green text-2xl mr-3">✓</span>
-                    <span>Blueprint project (normally a separate paid phase—included at no cost)</span>
+                    <span>A written summary report, yours to retain regardless of what comes next</span>
                   </li>
                 </ul>
-                <p className="text-lg md:text-xl text-white font-semibold mt-8">
-                  All founder time, strategy sessions, and service fees waived.
-                </p>
-              </div>
-
-              {/* What You Cover Section */}
-              <div className="flex flex-row align-center mt-20 mb-7">
-                <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>What You Cover</h2>
-                <div className="border-b-2 border-white w-full"></div>
-              </div>
-
-              <div className="max-w-4xl mx-auto mb-12">
-                <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  You&apos;ll pay only the direct costs to build and deliver your solution:
-                </p>
-                <ul className="list-disc ml-8 mb-8 text-base md:text-xl text-stone-300 space-y-3">
-                  <li>Engineering time (billed at cost, no markup)</li>
-                  <li>Cloud infrastructure and hosting</li>
-                  <li>Third-party APIs (OpenAI, data providers, etc.)</li>
-                  <li>Essential software and tools required for your project</li>
-                </ul>
-                <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  These costs vary by project scope but we&apos;ll provide a clear budget before we begin.
-                </p>
-                <p className="text-lg md:text-2xl text-white font-semibold">
-                  No hidden fees. No margin. No markup. Just what it costs to make it real.
-                </p>
               </div>
 
               <Image
@@ -162,35 +121,42 @@ const PromoPage = () => {
                 className="relative -z-50"
               />
 
-              {/* The Commitment Section */}
+              {/* Why We're Doing This Section */}
               <div className="flex flex-row align-center mt-20 mb-7">
-                <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>The Commitment</h2>
+                <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>Why We&apos;re Doing This</h2>
                 <div className="border-b-2 border-white w-full"></div>
               </div>
 
               <div className="max-w-4xl mx-auto mb-16">
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  In exchange, you agree to:
+                  We are looking to work with organisations tackling real operational challenges, and we believe the most productive working relationships begin with demonstrated value.
                 </p>
-                <ul className="list-disc ml-8 mb-8 text-base md:text-xl text-stone-300 space-y-3">
-                  <li>Provide a detailed testimonial upon successful delivery</li>
-                  <li>Participate in a case study (with approval over what&apos;s shared)</li>
-                  <li>Give honest feedback that helps us improve</li>
-                </ul>
+                <p className="text-base md:text-xl text-stone-300 leading-relaxed">
+                  If we proceed to an engagement, we would welcome a testimonial. If not, the report remains yours.
+                </p>
               </div>
 
-              {/* Apply Now Section */}
+              {/* Who This Is For Section */}
               <div className="flex flex-row align-center mt-20 mb-7">
-                <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>Apply Now</h2>
+                <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>Who This Is For</h2>
+                <div className="border-b-2 border-white w-full"></div>
+              </div>
+
+              <div className="max-w-4xl mx-auto mb-16">
+                <p className="text-base md:text-xl text-stone-300 leading-relaxed">
+                  Business owners and operations leaders who recognise that their teams are capable of more, but are losing meaningful hours each week to work that does not require human effort to complete.
+                </p>
+              </div>
+
+              {/* Book Your Free Audit Section */}
+              <div className="flex flex-row align-center mt-20 mb-7">
+                <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>Book Your Free Audit</h2>
                 <div className="border-b-2 border-white w-full"></div>
               </div>
 
               <div className="max-w-4xl mx-auto mb-8 text-center">
-                <p className="text-2xl md:text-4xl text-white font-semibold mb-8">
-                  <span className="highlightsTitle">5 spots</span>. <span className="highlightsTitle">60 days</span>. First come, first committed.
-                </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-8">
-                  If you&apos;ve been waiting for the right time to automate a broken process, eliminate repetitive work, or finally put AI to use in your business—this is it.
+                  A limited number of places are available over the next 30 days.
                 </p>
               </div>
 
@@ -207,7 +173,8 @@ const PromoPage = () => {
                     </a>
                   </p>
                   <p className="text-sm md:text-base text-stone-400">
-                    This is a free, no-strings-attached introduction. We&apos;ll discuss your challenges, explore potential solutions, and you can decide if it makes sense to move forward.                  </p>
+                    This is a free, no-obligation introduction. We&apos;ll discuss your challenges, explore potential opportunities, and you can decide if it makes sense to move forward.
+                  </p>
                 </div>
               </div>
 
