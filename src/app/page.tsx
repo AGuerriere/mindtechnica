@@ -36,6 +36,13 @@ const heroItems = [
     description: "Deploying AI agents that automate multi-step tasks, from data processing to decision support.",
     color: "text-blue",
     bgColor: "bg-blueFaded"
+  },
+  {
+    icon: "./images/pc-yellow.svg",
+    title: "Software Development",
+    description: "Building custom web applications, APIs and platforms tailored to your workflow and requirements.",
+    color: "text-yellow",
+    bgColor: "bg-yellowFaded"
   }
 ]
 
@@ -124,7 +131,7 @@ export default function Home() {
         </div>
         <div className="flex w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto justify-evenly pb-10 md:pb-16">
           {heroItems.map((item, index) => (
-            <div key={index} className="flex flex-col max-w-[32%] md:max-w-md sm:1/3 items-center">
+            <div key={index} className="flex flex-col max-w-[24%] md:max-w-xs items-center">
               <div className={`flex justify-center icon-container rounded-full ${item.bgColor} w-16 h-16`}>
                 <Image
                   src={item.icon}
