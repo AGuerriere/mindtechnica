@@ -129,9 +129,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto justify-evenly pb-10 md:pb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto gap-4 pb-10 md:pb-16">
           {heroItems.map((item, index) => (
-            <div key={index} className="flex flex-col max-w-[24%] md:max-w-xs items-center">
+            <div key={index} className="flex flex-col items-center px-2">
               <div className={`flex justify-center icon-container rounded-full ${item.bgColor} w-16 h-16`}>
                 <Image
                   src={item.icon}
