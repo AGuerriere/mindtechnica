@@ -64,9 +64,9 @@ const services = [
   },
   {
     number: '05',
-    title: 'Custom AI software',
+    title: 'Custom software development',
     tagline: 'Purpose-built software for problems off-the-shelf tools cannot solve.',
-    body: 'When existing products do not fit your workflow, we build from scratch. That might mean an internal tool that connects your systems in a way no SaaS product supports, or a client-facing application with AI at its core. We handle the full build, from architecture to deployment, with a focus on maintainability and real-world performance.',
+    body: 'When existing products do not fit your workflow, we build from scratch. That might mean a web application, an internal tool, a backend API, or a client-facing platform — with or without AI at its core. We handle the full build, from architecture to deployment, with a focus on maintainability and real-world performance. From straightforward web applications to AI-powered platforms, we cover the full range.',
     color: 'text-pink',
     bgColor: 'bg-pinkFaded',
   },
@@ -102,7 +102,7 @@ export default function ServicesPage() {
               What we <span className={`${bayon.className} highlightsTitle`}>do</span>
             </h1>
             <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6`}>
-              We design and build AI systems, automation workflows, and data infrastructure that help organisations scale without proportional growth in headcount or cost.
+              We design and build AI systems, automation workflows, data infrastructure and custom software that help organisations scale without proportional growth in headcount or cost.
             </p>
           </section>
 

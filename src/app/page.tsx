@@ -118,7 +118,7 @@ export default function Home() {
           </h1>
           <div className="flex justify-center mt-9 mb-10 md:mb-40">
             <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>
-              Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making
+              Mind Technica builds advanced AI, automation, data systems and custom software that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making
             </p>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function Home() {
                 <h2 className={`${bayon.className} text-white min-w-fit text-4xl pb-2 md:text-6xl lg:text-8xl`}>About Us</h2>
                 <div className="pl-10">
                   <p className="text-xs md:text-2xl pb-3 md:max-w-4xl">
-                    Mind Technica is an independent, engineering-led AI consultancy focused on helping organisations scale through automation, intelligent systems and data-driven decision making. Our work spans AI engineering, automation pipelines, document intelligence, computer vision, robotics research and predictive analytics. We help SMEs, public sector teams and technology-driven companies transform raw data into operational intelligence, using AI as a practical force multiplier.
+                    Mind Technica is an independent, engineering-led consultancy focused on helping organisations scale through AI, automation, intelligent systems and data-driven decision making. Our work spans AI engineering, automation pipelines, document intelligence, computer vision, predictive analytics and bespoke software development. We help SMEs, public sector teams and technology-driven companies build the systems they need — from AI-powered data infrastructure to custom web and backend applications.
                   </p>
                   <a href="#contacts">
                     <h5 className="text-green md:text-lg">
