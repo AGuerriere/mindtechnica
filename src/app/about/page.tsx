@@ -167,21 +167,21 @@ export default function About() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="bg-greenFaded rounded-xl p-6 md:p-8">
-                <h3 className={`${bayon.className} text-green text-xl md:text-2xl mb-3`}>SMEs &amp; Scale-ups</h3>
+                <h3 className={`${bayon.className} text-green text-xl md:text-2xl mb-3`}>Small and medium businesses</h3>
                 <p className="text-sm md:text-base leading-relaxed text-stone-300">
-                  Helping small and medium enterprises scale operations using AI, increasing capacity without proportional growth in headcount or costs.
+                  Organisations that have outgrown their current processes and need systems that scale without adding headcount.
                 </p>
               </div>
               <div className="bg-blueFaded rounded-xl p-6 md:p-8">
-                <h3 className={`${bayon.className} text-blue text-xl md:text-2xl mb-3`}>Public Sector</h3>
+                <h3 className={`${bayon.className} text-blue text-xl md:text-2xl mb-3`}>Enterprises and public sector</h3>
                 <p className="text-sm md:text-base leading-relaxed text-stone-300">
-                  Supporting government and public sector organisations handling large volumes of documents and data with automated processing and intelligence systems.
+                  Large organisations looking to embed AI across operations, reduce overhead, and move faster on data-driven decisions.
                 </p>
               </div>
               <div className="bg-pinkFaded rounded-xl p-6 md:p-8">
-                <h3 className={`${bayon.className} text-pink text-xl md:text-2xl mb-3`}>Technology Companies</h3>
+                <h3 className={`${bayon.className} text-pink text-xl md:text-2xl mb-3`}>Businesses looking to be competitive</h3>
                 <p className="text-sm md:text-base leading-relaxed text-stone-300">
-                  Partnering with research-driven and frontier technology initiatives in robotics, advanced automation and next-generation AI development.
+                  Every industry is changing. Organisations that are serious about staying competitive are looking at AI and automation not as a future consideration but as an immediate operational priority.
                 </p>
               </div>
             </div>
