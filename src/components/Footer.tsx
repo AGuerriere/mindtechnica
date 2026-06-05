@@ -34,7 +34,7 @@ export default function Footer() {
       </div>
       <footer className="text-xs text-center p-8 border-t border-stone-800">
         <p className="mb-3">
-          &copy; 2023 Mind Technica Ltd - NI698488 - 6 Bayview Terrace, BT48 7EE, Derry, United Kingdom. All rights reserved
+          &copy; {new Date().getFullYear()} Mind Technica Ltd - NI698488 - 6 Bayview Terrace, BT48 7EE, Derry, United Kingdom. All rights reserved
         </p>
         <p className="space-x-3">
           <Link href="/about" className="text-green hover:underline">
