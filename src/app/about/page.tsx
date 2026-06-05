@@ -15,11 +15,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'About | Mind Technica',
   description:
-    'Learn about Mind Technica — an AI consultancy focused on helping organisations harness the power of modern artificial intelligence.',
+    'Mind Technica is an engineering-led consultancy specialising in AI, automation, data systems, and custom software development.',
   openGraph: {
     title: 'About | Mind Technica',
     description:
-      'Learn about Mind Technica — an AI consultancy focused on helping organisations harness the power of modern artificial intelligence.',
+      'Mind Technica is an engineering-led consultancy specialising in AI, automation, data systems, and custom software development.',
     url: 'https://mindtechnica.com/about',
     siteName: 'Mind Technica',
   },
@@ -60,18 +60,18 @@ export default function About() {
               About <span className={`${bayon.className} highlightsTitle`}>Mind Technica</span>
             </h1>
             <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6`}>
-              We are an engineering-led AI consultancy helping organisations scale through automation, intelligent systems, and data-driven decision-making. Independent, rigorous, and focused on outcomes that last.
+              Mind Technica is an engineering-led consultancy specialising in AI, automation, data systems, and custom software development. We help organisations scale through intelligent systems that reduce manual overhead, improve decision-making, and deliver measurable operational value.
             </p>
           </section>
 
           {/* Our Vision */}
           <section className="mb-16 md:mb-24">
             <div className="flex flex-row align-center mb-10">
-              <h1
+              <h2
                 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}
               >
                 Our Vision
-              </h1>
+              </h2>
               <div className="border-b-2 border-white w-full"></div>
             </div>
             <div className="max-w-4xl space-y-6">
@@ -85,7 +85,7 @@ export default function About() {
               <p className="text-sm md:text-lg leading-relaxed">
                 We aim to push the boundaries of what intelligent systems can
                 achieve while ensuring the benefits of AI are accessible,
-                practical, and widely shared.
+                practical, and widely shared, from ambitious startups and growing SMEs to large enterprises.
               </p>
             </div>
           </section>
@@ -101,36 +101,39 @@ export default function About() {
             />
           </div>
 
-          {/* About Mind Technica */}
+          {/* How we work */}
           <section className="mb-16 md:mb-24">
             <div className="flex flex-row align-center mb-10">
               <h2
                 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}
               >
-                About Mind Technica
+                How we work
               </h2>
               <div className="border-b-2 border-white w-full"></div>
             </div>
             <div className="max-w-4xl space-y-6">
               <p className="text-sm md:text-lg leading-relaxed">
-                Mind Technica is an AI consultancy focused on helping
-                organisations harness the power of modern artificial
-                intelligence. We design and build intelligent systems that
-                automate complex processes, unlock insights from data, and
-                enable organisations to operate more efficiently and make better
-                decisions.
+                We take an engineering-first approach to every engagement. That means starting with a clear understanding of the problem, building on robust and maintainable architecture, and delivering systems that perform reliably under real-world conditions.
               </p>
               <p className="text-sm md:text-lg leading-relaxed">
-                Our work spans machine learning, large language models, data
-                science, and automation, translating cutting-edge AI research
-                into practical solutions for businesses. From intelligent
-                assistants and predictive analytics to custom AI platforms, we
-                build technology that delivers real, measurable impact.
+                We work independently, which means we move quickly, stay focused on outcomes, and have no incentive to recommend tools or platforms beyond what is right for your organisation.
               </p>
+            </div>
+          </section>
+
+          {/* What we believe */}
+          <section className="mb-16 md:mb-24">
+            <div className="flex flex-row align-center mb-10">
+              <h2
+                className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}
+              >
+                What we believe
+              </h2>
+              <div className="border-b-2 border-white w-full"></div>
+            </div>
+            <div className="max-w-4xl space-y-6">
               <p className="text-sm md:text-lg leading-relaxed">
-                We work closely with organisations to identify high-value
-                opportunities for AI adoption and deliver solutions that are
-                robust, scalable, and aligned with their strategic goals.
+                AI is most valuable when it solves a specific, well-understood problem. The organisations that benefit most from it are not those that adopt it earliest, but those that apply it most deliberately. We work with clients who want to understand what AI can genuinely do for their operations and build accordingly.
               </p>
             </div>
           </section>
@@ -146,37 +149,46 @@ export default function About() {
             />
           </div>
 
-          {/* Our Mission */}
+          {/* Who we work with */}
           <section className="mb-16 md:mb-24">
             <div className="flex flex-row align-center mb-10">
               <h2
                 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}
               >
-                Our Mission
+                Who we work with
               </h2>
               <div className="border-b-2 border-white w-full"></div>
             </div>
             <div className="max-w-4xl space-y-6">
               <p className="text-sm md:text-lg leading-relaxed">
-                Artificial intelligence has the potential to disrupt and
-                transform every industry. At Mind Technica, our mission is to
-                ensure that this transformation benefits as many people as
-                possible.
+                We work with SMEs, public sector teams, and technology-driven organisations across the UK and Ireland. Our engagements range from focused audits and advisory work to full-scale AI and software builds and long-term technical partnerships.
               </p>
+            </div>
+          </section>
+
+          {/* Let's work together */}
+          <section className="mb-16 md:mb-24">
+            <div className="flex flex-row align-center mb-10">
+              <h2
+                className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}
+              >
+                Let&apos;s work together
+              </h2>
+              <div className="border-b-2 border-white w-full"></div>
+            </div>
+            <div className="max-w-4xl space-y-6">
               <p className="text-sm md:text-lg leading-relaxed">
-                We aim to democratise access to AI, helping organisations of all
-                sizes leverage technologies that were once available only to
-                large research labs and major technology companies. By making
-                advanced AI more accessible, innovation can spread faster and
-                deliver broader benefits across the economy.
+                If you want to scale efficiently using AI, we can help you identify the right opportunities and build the systems to act on them.
               </p>
-              <p className="text-sm md:text-lg leading-relaxed">
-                At the same time, we are driven by a deeper ambition: to
-                contribute to the advancement of science and human knowledge.
-                Through the development and application of intelligent systems,
-                we aim to help push the boundaries of what technology and
-                humanity can achieve.
-              </p>
+              <div className="pt-4">
+                <a
+                  href="https://calendly.com/mindtechnica/45min"
+                  target="_blank"
+                  className="inline-block bg-green text-bgBlack font-semibold text-base md:text-lg px-8 py-4 rounded-full hover:bg-opacity-90 transition-all text-center"
+                >
+                  Book a free consultation
+                </a>
+              </div>
             </div>
           </section>
 
