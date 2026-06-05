@@ -161,7 +161,7 @@ export default function About() {
             </div>
             <div className="max-w-4xl space-y-6">
               <p className="text-sm md:text-lg leading-relaxed">
-                We work with SMEs, public sector teams, and technology-driven organisations across the UK and Ireland. Our engagements range from focused audits and advisory work to full-scale AI and software builds and long-term technical partnerships.
+                We work with organisations of all sizes, across industries, looking to use technology to scale and compete. Whether the starting point is a specific operational problem or a broader ambition to build AI into the core of the business, we help identify the right approach and deliver it.
               </p>
             </div>
           </section>
