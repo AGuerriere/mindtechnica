@@ -4,7 +4,8 @@ import Footer from "@/components/Footer"
 import Image from "next/image"
 import CountdownTimer from "@/components/CountdownTimer"
 import { Bayon } from 'next/font/google'
-import CalendlyWidget from '@/components/CalendlyWidget'
+import BookingForm from '@/components/BookingForm'
+
 
 export const metadata: Metadata = {
   title: 'Free AI & Software Automation Audit | Mind Technica',
@@ -107,25 +108,27 @@ const PromoPage = () => {
                 <div className="border-b-2 border-white w-full"></div>
               </div>
 
-              <div className="bg-blueFaded rounded-xl p-6 md:p-10 mb-8 max-w-4xl mx-auto">
-                <ul className="space-y-4 text-base md:text-xl text-stone-300 mb-6">
-                  <li className="flex items-start">
-                    <span className="text-green text-2xl mr-3">✓</span>
-                    <span>A dedicated discovery session to understand your requirements and explore your ideas in depth</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green text-2xl mr-3">✓</span>
-                    <span>Collaborative working sessions with your teams and management to identify what can be automated</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green text-2xl mr-3">✓</span>
-                    <span>Prioritised automation opportunities with effort and savings estimates</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green text-2xl mr-3">✓</span>
-                    <span>A written summary report, yours to retain regardless of what comes next</span>
-                  </li>
-                </ul>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto mb-8">
+                <div className="bg-greenFaded rounded-xl p-6 md:p-8">
+                  <span className="text-green text-3xl">✓</span>
+                  <h3 className={`${bayon.className} text-green text-xl md:text-2xl mt-3 mb-2`}>Discovery Session</h3>
+                  <p className="text-sm md:text-base text-stone-300 leading-relaxed">A dedicated discovery session to understand your requirements and explore your ideas in depth.</p>
+                </div>
+                <div className="bg-blueFaded rounded-xl p-6 md:p-8">
+                  <span className="text-blue text-3xl">✓</span>
+                  <h3 className={`${bayon.className} text-blue text-xl md:text-2xl mt-3 mb-2`}>Collaborative Working</h3>
+                  <p className="text-sm md:text-base text-stone-300 leading-relaxed">Collaborative working sessions with your teams and management to identify what can be automated.</p>
+                </div>
+                <div className="bg-pinkFaded rounded-xl p-6 md:p-8">
+                  <span className="text-pink text-3xl">✓</span>
+                  <h3 className={`${bayon.className} text-pink text-xl md:text-2xl mt-3 mb-2`}>Prioritised Opportunities</h3>
+                  <p className="text-sm md:text-base text-stone-300 leading-relaxed">Prioritised automation opportunities with effort and savings estimates.</p>
+                </div>
+                <div className="bg-yellowFaded rounded-xl p-6 md:p-8">
+                  <span className="text-yellow text-3xl">✓</span>
+                  <h3 className={`${bayon.className} text-yellow text-xl md:text-2xl mt-3 mb-2`}>Written Summary Report</h3>
+                  <p className="text-sm md:text-base text-stone-300 leading-relaxed">A written summary report, yours to retain regardless of what comes next.</p>
+                </div>
               </div>
 
               <Image
@@ -142,11 +145,11 @@ const PromoPage = () => {
                 <div className="border-b-2 border-white w-full"></div>
               </div>
 
-              <div className="max-w-4xl mx-auto mb-16">
-                <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
+              <div className="bg-blueFaded border-l-4 border-green rounded-xl p-8 md:p-12 max-w-4xl mx-auto mb-16">
+                <p className="text-base md:text-xl text-stone-200 leading-relaxed mb-6">
                   We are looking to work with organisations tackling real operational challenges, and we believe the most productive working relationships begin with demonstrated value.
                 </p>
-                <p className="text-base md:text-xl text-stone-300 leading-relaxed">
+                <p className="text-base md:text-xl text-stone-200 leading-relaxed">
                   If we proceed to an engagement, we would welcome a testimonial. If not, the report remains yours.
                 </p>
               </div>
@@ -158,9 +161,11 @@ const PromoPage = () => {
               </div>
 
               <div className="max-w-4xl mx-auto mb-16">
-                <p className="text-base md:text-xl text-stone-300 leading-relaxed">
-                  Business owners and operations leaders who recognise that their teams are capable of more, but are losing meaningful hours each week to work that does not require human effort to complete.
-                </p>
+                <div className="border-l-2 border-green pl-6 md:pl-8">
+                  <p className="text-lg md:text-2xl text-stone-200 leading-relaxed">
+                    Business owners and operations leaders who recognise that their teams are capable of more, but are losing meaningful hours each week to work that does not require human effort to complete.
+                  </p>
+                </div>
               </div>
 
               {/* Book Your Free Audit Section */}
@@ -169,15 +174,21 @@ const PromoPage = () => {
                 <div className="border-b-2 border-white w-full"></div>
               </div>
 
-              <div className="max-w-4xl mx-auto mb-8 text-center">
+              <div className="max-w-4xl mx-auto mb-8">
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-8">
                   A limited number of places are available over the next 30 days.
                 </p>
               </div>
 
-              <CalendlyWidget />
+              <div className="max-w-4xl mx-auto flex flex-col gap-8 mb-16">
+                <div className="flex flex-col justify-start w-full max-w-2xl">
+                  <p className="pb-8 text-xs md:text-base">If your organisation wants to scale efficiently using AI, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
+                  <h3 className={`${bayon.className} text-green text-2xl md:text-4xl lg:text-5xl uppercase`}>Book a free consultation now</h3>
+                </div>
+                <BookingForm />
+              </div>
 
-              <div className="max-w-4xl mx-auto mb-16 text-center mt-8">
+              <div className="max-w-4xl mx-auto mb-16 text-center mt-20">
                 <div className="bg-blueFaded rounded-xl p-8 mb-8">
                   <p className="text-lg md:text-xl text-white font-semibold mb-4">
                     Alternatively email us at:

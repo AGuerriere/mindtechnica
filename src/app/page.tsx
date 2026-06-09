@@ -6,8 +6,7 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import { getAllPosts } from '@/lib/blog'
 import OurClients from '@/components/OurClients'
-import CalendlyWidget from '@/components/CalendlyWidget'
-// import Form from '@/components/Form'
+import BookingForm from '@/components/BookingForm'
 
 const inter = Inter({ subsets: ['latin'] })
 const bayon = Bayon({
@@ -348,10 +347,10 @@ export default function Home() {
                   <p className="pb-8 text-xs md:text-base">If your organisation wants to scale efficiently using AI, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
                   <h3 className={`${bayon.className} text-green text-2xl md:text-4xl lg:text-5xl uppercase`}>Book a free consultation now</h3>
                 </div>
-                <CalendlyWidget />
+                <BookingForm />
               </div>
               <div className="mb-8">
-                <h5 className="text-white font-semibold pb-3 text-lg md:text-xl">Alternatively, contact us by email</h5>
+                <h5 className="text-white font-semibold pb-3 text-lg md:text-xl pt-20">Alternatively, contact us by email</h5>
                 <p className="pb-3 text-base md:text-lg text-stone-300">
                   <a href="mailto:projects@mindtechnica.com" className="text-green hover:underline">projects@mindtechnica.com</a>
                 </p>
