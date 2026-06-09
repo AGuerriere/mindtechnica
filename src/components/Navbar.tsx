@@ -32,7 +32,7 @@ export default function Navbar() {
         <a href="/about" className={pathname === '/about' ? 'text-green border-b-2 border-green' : ''}>About</a>
         <a href="/news" className={pathname.startsWith('/news') ? 'text-green border-b-2 border-green' : ''}>News</a>
         <a href="/careers" className={pathname === '/careers' ? 'text-green border-b-2 border-green' : ''}>Careers</a>
-        <a href="https://calendly.com/mindtechnica/45min" target="_blank" className="contacts">Book a call</a>
+        <a href="/book-a-call" className="contacts">Book a call</a>
       </div>
     </nav>
     {/* Mobile navbar */}
@@ -71,7 +71,7 @@ export default function Navbar() {
         <a href="/about" onClick={() => triggerToggle()} className={pathname === '/about' ? 'text-green border-b-2 border-green' : ''}>About</a>
         <a href="/news" onClick={() => triggerToggle()} className={pathname.startsWith('/news') ? 'text-green border-b-2 border-green' : ''}>News</a>
         <a href="/careers" onClick={() => triggerToggle()} className={pathname === '/careers' ? 'text-green border-b-2 border-green' : ''}>Careers</a>
-        <a href="https://calendly.com/mindtechnica/45min" target="_blank" onClick={() => triggerToggle()}>Book a call</a>
+        <a href="/book-a-call" onClick={() => triggerToggle()}>Book a call</a>
       </div>     
     </div>
     </>
