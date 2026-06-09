@@ -7,3 +7,16 @@ CREATE TABLE IF NOT EXISTS contacts (
   message TEXT NOT NULL,
   createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE IF NOT EXISTS leads (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  fullName TEXT NOT NULL,
+  companyName TEXT NOT NULL,
+  phone TEXT NOT NULL,
+  email TEXT NOT NULL,
+  message TEXT NOT NULL,
+  booking_status TEXT NOT NULL DEFAULT 'pending',
+  createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_leads_email ON leads (email);

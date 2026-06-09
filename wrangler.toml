@@ -1,0 +1,22 @@
+# Cloudflare Pages configuration for Mind Technica.
+# The Next.js static export ("output: export") is built to ./out and served by
+# Pages, while the functions/ directory provides the Pages Functions backend.
+
+name = "mindtechnica"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "out"
+
+# D1 database binding — available in functions as env.DB.
+[[d1_databases]]
+binding = "DB"
+database_name = "mindtechnica-db"
+database_id = "e4cd68e3-4a2b-430d-b327-6d28397f1bbf"
+
+# Non-secret environment variables (override the defaults in the functions).
+[vars]
+RESEND_FROM = "Mind Technica <onboarding@resend.dev>"
+NOTIFICATION_EMAIL = "projects@mindtechnica.com"
+
+# Secrets are NOT stored here. Set them with:
+#   npx wrangler pages secret put RESEND_API_KEY
+#   npx wrangler pages secret put CAL_WEBHOOK_SECRET   (optional)

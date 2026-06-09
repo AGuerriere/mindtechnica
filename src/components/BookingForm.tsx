@@ -27,10 +27,22 @@ export default function BookingForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<FormData>({ mode: 'onTouched' })
 
-  const onSubmit = (data: FormData) => {
+  const onSubmit = async (data: FormData) => {
+    // Save the lead to the backend. Don't block the booking flow if it fails —
+    // the user can still pick a time and the Cal.com webhook is the source of truth.
+    try {
+      await fetch('/api/book-a-call', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+    } catch (error) {
+      console.error('Failed to save lead:', error)
+    }
+
     setSubmittedData(data)
     setShowCalendar(true)
   }
@@ -128,8 +140,8 @@ export default function BookingForm() {
         </div>
 
         <div className="mt-8">
-          <button type="submit" className="contacts">
-            Next: Pick a Time
+          <button type="submit" disabled={isSubmitting} className="contacts disabled:opacity-50">
+            {isSubmitting ? 'Saving...' : 'Next: Pick a Time'}
           </button>
         </div>
       </form>
