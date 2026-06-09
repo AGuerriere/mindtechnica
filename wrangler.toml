@@ -15,7 +15,7 @@ database_id = "e4cd68e3-4a2b-430d-b327-6d28397f1bbf"
 # Non-secret environment variables (override the defaults in the functions).
 [vars]
 RESEND_FROM = "Mind Technica <onboarding@resend.dev>"
-NOTIFICATION_EMAIL = "projects@mindtechnica.com"
+NOTIFICATION_EMAIL = "antonio@mindtechnica.com"
 
 # Secrets are NOT stored here. Set them with:
 #   npx wrangler pages secret put RESEND_API_KEY
