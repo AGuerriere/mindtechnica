@@ -196,8 +196,7 @@ export default function About() {
               If you want to scale efficiently using AI, we can help you identify the right opportunities and build the systems to act on them.
             </p>
             <a
-              href="https://calendly.com/mindtechnica/45min"
-              target="_blank"
+              href="/book-a-call"
               className="inline-block bg-green text-bgBlack font-semibold text-base md:text-lg px-8 py-4 rounded-full hover:bg-opacity-90 transition-all text-center"
             >
               Book a free consultation

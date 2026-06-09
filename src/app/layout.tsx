@@ -76,35 +76,6 @@ export default function RootLayout({
             gtag('config', 'AW-17934161576');
           `}
         </Script>
-        <Script id="calendly-conversion" strategy="afterInteractive">
-          {`
-            (function () {
-              var fired = false;
-
-              function isCalendlyOrigin(origin) {
-                return typeof origin === 'string' && origin.indexOf('calendly.com') !== -1;
-              }
-
-              window.addEventListener('message', function (e) {
-                if (!isCalendlyOrigin(e.origin)) return;
-
-                var data = e.data;
-                if (!data || data.event !== 'calendly.event_scheduled') return;
-
-                if (fired) return;
-                fired = true;
-
-                if (typeof window.gtag === 'function') {
-                  window.gtag('event', 'conversion', {
-                    'send_to': 'AW-17934161576/HFb7CJqnuPMbEKit1udC',
-                    'value': 1.0,
-                    'currency': 'GBP'
-                  });
-                }
-              });
-            })();
-          `}
-        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
