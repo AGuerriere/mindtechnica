@@ -47,8 +47,10 @@ export default function BookingForm() {
     setShowCalendar(true)
   }
 
+  // text-base (16px) on mobile prevents iOS Safari from auto-zooming on focus;
+  // md:text-sm keeps the smaller size on desktop.
   const inputClass =
-    'rounded-lg w-full h-12 bg-blueFaded border border-grey/20 text-greyLight02 placeholder-grey pl-4 mt-2 focus:outline-none focus:border-green transition-colors text-sm'
+    'rounded-lg w-full h-12 bg-blueFaded border border-grey/20 text-greyLight02 placeholder-grey pl-4 mt-2 focus:outline-none focus:border-green transition-colors text-base md:text-sm'
   const labelClass = `${inter.className} text-sm font-semibold text-greyLight02`
 
   return (
@@ -132,7 +134,7 @@ export default function BookingForm() {
             id="message"
             rows={5}
             placeholder="We're looking to automate our document processing pipeline and integrate AI-powered insights into our existing systems..."
-            className="rounded-lg w-full bg-blueFaded border border-grey/20 text-greyLight02 placeholder-grey pl-4 pt-3 mt-2 focus:outline-none focus:border-green transition-colors text-sm resize-none"
+            className="rounded-lg w-full bg-blueFaded border border-grey/20 text-greyLight02 placeholder-grey pl-4 pt-3 mt-2 focus:outline-none focus:border-green transition-colors text-base md:text-sm resize-none"
           />
           {errors.message && (
             <p className="text-red-400 text-xs mt-1">{errors.message.message}</p>
