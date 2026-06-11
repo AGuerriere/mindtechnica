@@ -71,33 +71,33 @@ export default function CountdownTimer() {
   }
 
   return (
-    <div className="flex gap-3 md:gap-6 justify-center items-center">
-      <div className="flex flex-col items-center bg-greenFaded rounded-lg p-3 md:p-5 min-w-[70px] md:min-w-[100px]">
-        <span className="text-3xl md:text-5xl font-bold text-green">
+    <div className="flex gap-2 md:gap-6 justify-center items-center">
+      <div className="flex flex-col items-center bg-greenFaded rounded-lg p-2 md:p-5 md:min-w-[100px]">
+        <span className="text-2xl md:text-5xl font-bold text-green tabular-nums">
           {formatNumber(timeLeft.days)}
         </span>
-        <span className="text-xs md:text-sm text-stone-300 mt-1">DAYS</span>
+        <span className="text-[10px] md:text-sm text-stone-300 mt-1">DAYS</span>
       </div>
-      <div className="text-2xl md:text-4xl text-green font-bold">:</div>
-      <div className="flex flex-col items-center bg-greenFaded rounded-lg p-3 md:p-5 min-w-[70px] md:min-w-[100px]">
-        <span className="text-3xl md:text-5xl font-bold text-green">
+      <div className="text-xl md:text-4xl text-green font-bold">:</div>
+      <div className="flex flex-col items-center bg-greenFaded rounded-lg p-2 md:p-5 md:min-w-[100px]">
+        <span className="text-2xl md:text-5xl font-bold text-green tabular-nums">
           {formatNumber(timeLeft.hours)}
         </span>
-        <span className="text-xs md:text-sm text-stone-300 mt-1">HOURS</span>
+        <span className="text-[10px] md:text-sm text-stone-300 mt-1">HOURS</span>
       </div>
-      <div className="text-2xl md:text-4xl text-green font-bold">:</div>
-      <div className="flex flex-col items-center bg-greenFaded rounded-lg p-3 md:p-5 min-w-[70px] md:min-w-[100px]">
-        <span className="text-3xl md:text-5xl font-bold text-green">
+      <div className="text-xl md:text-4xl text-green font-bold">:</div>
+      <div className="flex flex-col items-center bg-greenFaded rounded-lg p-2 md:p-5 md:min-w-[100px]">
+        <span className="text-2xl md:text-5xl font-bold text-green tabular-nums">
           {formatNumber(timeLeft.minutes)}
         </span>
-        <span className="text-xs md:text-sm text-stone-300 mt-1">MINUTES</span>
+        <span className="text-[10px] md:text-sm text-stone-300 mt-1">MINS</span>
       </div>
-      <div className="text-2xl md:text-4xl text-green font-bold">:</div>
-      <div className="flex flex-col items-center bg-greenFaded rounded-lg p-3 md:p-5 min-w-[70px] md:min-w-[100px]">
-        <span className="text-3xl md:text-5xl font-bold text-green">
+      <div className="text-xl md:text-4xl text-green font-bold">:</div>
+      <div className="flex flex-col items-center bg-greenFaded rounded-lg p-2 md:p-5 md:min-w-[100px]">
+        <span className="text-2xl md:text-5xl font-bold text-green tabular-nums">
           {formatNumber(timeLeft.seconds)}
         </span>
-        <span className="text-xs md:text-sm text-stone-300 mt-1">SECONDS</span>
+        <span className="text-[10px] md:text-sm text-stone-300 mt-1">SECS</span>
       </div>
     </div>
   )
