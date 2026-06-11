@@ -252,7 +252,7 @@ export default function Home() {
             <section className="lg:pb-32">
               <div className="flex flex-col md:flex-row ">
                 <h2 className={`${bayon.className} text-white min-w-fit text-4xl pb-2 md:text-6xl lg:text-8xl`}>About Us</h2>
-                <div className="pl-10">
+                <div className="md:pl-10">
                   <p className="text-xs md:text-2xl pb-3 md:max-w-4xl">
                     Mind Technica is an independent, engineering-led consultancy focused on helping organisations scale through AI, automation, intelligent systems and data-driven decision making. Our work spans AI engineering, automation pipelines, document intelligence, computer vision, predictive analytics and bespoke software development. We help SMEs, public sector teams and technology-driven companies build the systems they need — from AI-powered data infrastructure to custom web and backend applications.
                   </p>
