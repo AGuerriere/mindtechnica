@@ -142,6 +142,13 @@ export default function BookingForm() {
         </div>
 
         <div className="mt-8">
+          <p className="text-xs text-stone-500 mb-4">
+            By submitting this form you agree to our{' '}
+            <a href="/privacy" className="text-green hover:underline" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>
+            .
+          </p>
           <button type="submit" disabled={isSubmitting} className="contacts disabled:opacity-50">
             {isSubmitting ? 'Saving...' : 'Next: Pick a Time'}
           </button>
