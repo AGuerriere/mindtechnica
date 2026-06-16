@@ -236,9 +236,9 @@ export default function Home() {
 
       <div className='2xl:flex 2xl:justify-center'>
         <main className='2xl:w-[1400px]'>
-          {/* About Us Section */}
+          {/* How We Work Section */}
           <>
-            <div className="h-36">
+            <div className="h-24 md:h-32">
               <Image
                 src="./images/triangle.svg"
                 width={100}
@@ -256,27 +256,41 @@ export default function Home() {
                 className="absolute right-20 -z-50"
               />
             </div>
-            <section className="lg:pb-32">
-              <div className="flex flex-col md:flex-row ">
-                <h2 className={`${bayon.className} text-white min-w-fit text-4xl pb-2 md:text-6xl lg:text-8xl`}>About Us</h2>
-                <div className="md:pl-10">
-                  <p className="text-xs md:text-2xl pb-3 md:max-w-4xl">
-                    Mind Technica is an independent, engineering-led consultancy focused on helping organisations scale through AI, automation, intelligent systems and data-driven decision making. Our work spans AI engineering, automation pipelines, document intelligence, computer vision, predictive analytics, cloud infrastructure, AI voice agents and bespoke software development. We help SMEs, public sector teams and technology-driven companies build the systems they need — from AI-powered data infrastructure to custom web applications, backend platforms and secure AWS environments.
-                  </p>
-                  <a href="#contacts">
-                    <h5 className="text-green md:text-lg">
-                      Get in Touch
-                      <Image
-                        src="./images/arrow.svg"
-                        width={70}
-                        height={9}
-                        alt="Arrow"
-                        className="inline-block pl-1"
-                      />
-                    </h5>
-                  </a>
-                </div>
+            <section className="relative lg:pb-32">
+              <div className="flex flex-row align-center mb-8 md:mb-12">
+                <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>How We Work</h2>
+                <div className="border-b-2 border-white w-full"></div>
               </div>
+
+              <div className="flex flex-col gap-5 md:gap-7 md:max-w-4xl">
+                <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
+                  Most businesses we talk to aren&apos;t struggling because their people aren&apos;t good enough. They&apos;re struggling because the systems around those people haven&apos;t kept pace. Quoting takes longer than it should, data lives in the wrong place, and too much depends on someone manually moving information from one system to another.
+                </p>
+                <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
+                  We&apos;re a team of engineers, and our starting point is always the problem rather than the technology. Depending on what&apos;s actually needed, that might mean building a custom software solution, deploying AI that reads documents and handles routine decisions, setting up agentic systems that complete multi-step tasks without human intervention, or putting the right cloud infrastructure in place to make all of it reliable and scalable.
+                </p>
+                <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
+                  We work out where the gaps are actually costing you, and then we build something that closes them properly, designed around the way your business genuinely operates rather than adapted from something generic.
+                </p>
+                <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
+                  When it works well, the impact tends to be straightforward: your team spends less time on work that shouldn&apos;t need them, your client-facing processes get faster and more consistent, and the information you need to make good decisions is actually available when you need it.
+                </p>
+                <p className={`${inter.className} text-white text-lg md:text-xl font-semibold leading-relaxed`}>
+                  If any of that sounds familiar, let&apos;s talk.
+                </p>
+              </div>
+
+              <a href="/promo" className="group mt-8 md:mt-10 inline-flex w-fit items-center text-green md:text-lg font-semibold transition-colors hover:text-green/80">
+                Book a free audit
+                <Image
+                  src="./images/arrow.svg"
+                  width={70}
+                  height={9}
+                  alt=""
+                  className="inline-block pl-2 transition-transform duration-300 group-hover:translate-x-1"
+                />
+              </a>
+
               <Image
                 src="./images/star.svg"
                 width={70}
