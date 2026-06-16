@@ -70,6 +70,22 @@ const services = [
     color: 'text-pink',
     bgColor: 'bg-pinkFaded',
   },
+  {
+    number: '06',
+    title: 'Cloud infrastructure and security',
+    tagline: 'The foundation your software runs on — built to scale, secured by design.',
+    body: 'Custom software is only as reliable as the infrastructure beneath it. We design, provision and manage cloud environments on AWS that are secure, cost-efficient and built to grow with your business. From architecture design and infrastructure-as-code provisioning to security hardening and compliance-aligned deployments, we handle the full cloud layer — whether you are starting from scratch, migrating an existing system, or looking to reduce what you currently spend on AWS.',
+    color: 'text-yellow',
+    bgColor: 'bg-yellowFaded',
+  },
+  {
+    number: '07',
+    title: 'AI voice agents',
+    tagline: 'Your phones answered. Your leads qualified. Your business always on.',
+    body: 'Most businesses miss calls they should never miss — enquiries after hours, overflow during busy periods, leads that go cold because no one followed up in time. We build and deploy voice agents that handle real phone conversations, inbound and outbound. They answer calls, resolve common enquiries, book appointments, follow up with leads, and qualify prospects before your team picks up the phone. When a conversation needs a human, the agent transfers it with full context already captured. Every agent is built around your business and integrates with the tools you already use.',
+    color: 'text-green',
+    bgColor: 'bg-greenFaded',
+  },
 ]
 
 export default function ServicesPage() {
@@ -137,6 +153,16 @@ export default function ServicesPage() {
                 {index === 4 && (
                   <div className="absolute right-8 top-8 -z-10 opacity-30">
                     <Image src="/images/square.svg" width={70} height={70} alt="" />
+                  </div>
+                )}
+                {index === 5 && (
+                  <div className="absolute right-8 bottom-8 -z-10 opacity-30">
+                    <Image src="/images/bigcircle.svg" width={80} height={80} alt="" />
+                  </div>
+                )}
+                {index === 6 && (
+                  <div className="absolute right-8 top-8 -z-10 opacity-30">
+                    <Image src="/images/star.svg" width={70} height={70} alt="" />
                   </div>
                 )}
 
