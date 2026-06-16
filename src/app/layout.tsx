@@ -1,32 +1,23 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
+import {
+  SITE_DESCRIPTION,
+  SITE_EXPERTISE,
+  SITE_KEYWORDS,
+  SITE_NAME,
+  SITE_SERVICES,
+  SITE_SHORT_DESCRIPTION,
+  SITE_URL,
+} from '@/lib/site'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Mind Technica | Engineering Intelligence for Real-World Impact',
-  description: 'Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making.',
-  keywords: [
-    'Mind Technica',
-    'MindTechnica',
-    'AI',
-    'Artificial Intelligence',
-    'Data Science',
-    'Machine Learning',
-    'Automation',
-    'Robotics',
-    'Custom Software Development',
-    'AI Solutions',
-    'Data Systems',
-    'Intelligent Automation',
-    'AI Consulting',
-    'ML Engineering',
-    'Process Automation',
-    'Data Analytics',
-    'Business Intelligence',
-  ],
-  metadataBase: new URL('https://mindtechnica.com'),
+  title: `${SITE_NAME} | Engineering Intelligence for Real-World Impact`,
+  description: SITE_DESCRIPTION,
+  keywords: SITE_KEYWORDS,
+  metadataBase: new URL(SITE_URL),
   icons: {
     icon: './icon.ico',
   },
@@ -35,10 +26,16 @@ export const metadata = {
   },
   openGraph: {
     images: './images/Asset1.png',
-    title: 'Mind Technica | Engineering Intelligence for Real-World Impact',
-    description: 'Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making.',
-    url: 'https://mindtechnica.com',
-    siteName: 'Mind Technica',
+    title: `${SITE_NAME} | Engineering Intelligence for Real-World Impact`,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${SITE_NAME} | Engineering Intelligence for Real-World Impact`,
+    description: SITE_DESCRIPTION,
+    images: './images/Asset1.png',
   },
   robots: {
     index: true,
@@ -82,11 +79,19 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'Mind Technica',
+              name: SITE_NAME,
               alternateName: ['MindTechnica', 'Mind-Technica'],
-              url: 'https://mindtechnica.com',
-              logo: 'https://mindtechnica.com/images/Asset1.png',
-              description: 'Mind Technica builds advanced AI, automation and data systems that help organisations scale efficiently.',
+              url: SITE_URL,
+              logo: `${SITE_URL}/images/Asset1.png`,
+              description: SITE_SHORT_DESCRIPTION,
+              knowsAbout: [...SITE_SERVICES, ...SITE_EXPERTISE],
+              makesOffer: SITE_SERVICES.map(service => ({
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: service,
+                },
+              })),
               address: {
                 '@type': 'PostalAddress',
                 addressCountry: 'GB',

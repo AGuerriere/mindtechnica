@@ -5,19 +5,21 @@ import Image from "next/image"
 import CountdownTimer from "@/components/CountdownTimer"
 import { Bayon } from 'next/font/google'
 import BookingForm from '@/components/BookingForm'
+import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
 
 export const metadata: Metadata = {
-  title: 'Free AI & Software Automation Audit | Mind Technica',
-  description: 'A complimentary expert assessment of where AI and software automation could reduce operational overhead in your business. Limited places available for 30 days.',
+  title: `Free AI & Software Automation Audit | ${SITE_NAME}`,
+  description: 'A complimentary assessment of where AI strategy, agentic AI, automation, data systems, custom software, AWS cloud infrastructure or AI voice agents could reduce operational overhead.',
+  keywords: SITE_KEYWORDS,
   alternates: {
     canonical: '/promo',
   },
   openGraph: {
-    title: 'Free AI & Software Automation Audit | Mind Technica',
-    description: 'A complimentary expert assessment of where AI and software automation could reduce operational overhead in your business. Limited places available for 30 days.',
-    url: 'https://mindtechnica.com/promo',
-    siteName: 'Mind Technica',
+    title: `Free AI & Software Automation Audit | ${SITE_NAME}`,
+    description: 'A complimentary expert assessment across AI, automation, data, software, cloud infrastructure and AI voice agent opportunities.',
+    url: `${SITE_URL}/promo`,
+    siteName: SITE_NAME,
     images: '/images/Asset1.png',
   },
 }

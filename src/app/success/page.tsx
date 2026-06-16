@@ -4,13 +4,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { SITE_NAME } from '@/lib/site'
 
 const bayon = Bayon({ weight: '400', subsets: ['latin'] })
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Thank You | Mind Technica',
-  description: 'Thanks for booking a call with Mind Technica. We look forward to chatting with you.',
+  title: `Thank You | ${SITE_NAME}`,
+  description: 'Thanks for booking a consultation with Mind Technica about AI, automation, software, cloud infrastructure or voice agent systems.',
   alternates: { canonical: '/success' },
   robots: { index: false, follow: false },
 }

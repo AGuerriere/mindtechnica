@@ -1,7 +1,8 @@
 import { getAllPosts } from '@/lib/blog'
+import { RSS_DESCRIPTION, SITE_URL } from '@/lib/site'
 
 export function GET() {
-  const baseUrl = 'https://mindtechnica.com'
+  const baseUrl = SITE_URL
   const posts = getAllPosts()
 
   const itemsXml = posts
@@ -21,7 +22,7 @@ export function GET() {
   <channel>
     <title>Mind Technica News</title>
     <link>${baseUrl}/news</link>
-    <description>Insights on AI, automation, and data systems from the Mind Technica team.</description>
+    <description>${escapeXml(RSS_DESCRIPTION)}</description>
     <language>en-gb</language>
     <atom:link href="${baseUrl}/rss.xml" rel="self" type="application/rss+xml"/>
 ${itemsXml}

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { RSS_DESCRIPTION, SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
 const bayon = Bayon({
   weight: '400',
@@ -15,15 +16,14 @@ const bayon = Bayon({
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Insights & Lab Notes | Mind Technica',
-  description:
-    'Thinking on AI, automation, and data systems — from the work we do and the problems we find interesting.',
+  title: `Insights & Lab Notes | ${SITE_NAME}`,
+  description: RSS_DESCRIPTION,
+  keywords: SITE_KEYWORDS,
   openGraph: {
-    title: 'Insights & Lab Notes | Mind Technica',
-    description:
-      'Thinking on AI, automation, and data systems — from the work we do and the problems we find interesting.',
-    url: 'https://mindtechnica.com/news',
-    siteName: 'Mind Technica',
+    title: `Insights & Lab Notes | ${SITE_NAME}`,
+    description: RSS_DESCRIPTION,
+    url: `${SITE_URL}/news`,
+    siteName: SITE_NAME,
   },
   alternates: {
     canonical: '/news',

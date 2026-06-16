@@ -4,14 +4,22 @@ import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BookingForm from '@/components/BookingForm'
+import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
 const bayon = Bayon({ weight: '400', subsets: ['latin'] })
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Book a Call | Mind Technica',
-  description: 'Tell us about your project and choose a time for a free consultation with the Mind Technica team.',
+  title: `Book a Call | ${SITE_NAME}`,
+  description: 'Book a free consultation about AI strategy, agentic AI, automation, data engineering, custom software, AWS cloud infrastructure, security or AI voice agents.',
+  keywords: SITE_KEYWORDS,
   alternates: { canonical: '/book-a-call' },
+  openGraph: {
+    title: `Book a Call | ${SITE_NAME}`,
+    description: 'Tell Mind Technica what you want to build or automate across AI, data, software, cloud infrastructure and voice agent systems.',
+    url: `${SITE_URL}/book-a-call`,
+    siteName: SITE_NAME,
+  },
 }
 
 export default function BookACall() {

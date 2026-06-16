@@ -7,6 +7,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 const bayon = Bayon({ weight: '400', subsets: ['latin'] })
 const inter = Inter({ subsets: ['latin'] })
 import { getAllSlugs, getPostBySlug } from '@/lib/blog'
+import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 import MDXComponents from '@/components/mdx/MDXComponents'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -21,18 +22,19 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const post = getPostBySlug(params.slug)
-  const { title, description, image, date } = post.frontmatter
+  const { title, description, image, date, tags } = post.frontmatter
 
   return {
-    title: `${title} | Mind Technica`,
+    title: `${title} | ${SITE_NAME}`,
     description,
+    keywords: [...SITE_KEYWORDS, ...(tags || [])],
     openGraph: {
       title,
       description,
       type: 'article',
       publishedTime: date,
-      url: `https://mindtechnica.com/news/${params.slug}`,
-      siteName: 'Mind Technica',
+      url: `${SITE_URL}/news/${params.slug}`,
+      siteName: SITE_NAME,
       images: [{ url: image || '/images/Asset1.png' }],
     },
     alternates: {
@@ -52,14 +54,14 @@ export default function NewsPost({ params }: PageProps) {
     datePublished: post.frontmatter.date,
     author: {
       '@type': 'Organization',
-      name: post.frontmatter.author || 'Mind Technica',
+      name: post.frontmatter.author || SITE_NAME,
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Mind Technica',
-      url: 'https://mindtechnica.com',
+      name: SITE_NAME,
+      url: SITE_URL,
     },
-    url: `https://mindtechnica.com/news/${params.slug}`,
+    url: `${SITE_URL}/news/${params.slug}`,
     ...(post.frontmatter.image && { image: post.frontmatter.image }),
   }
 

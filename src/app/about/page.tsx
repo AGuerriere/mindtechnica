@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
 const bayon = Bayon({
   weight: '400',
@@ -13,15 +14,16 @@ const bayon = Bayon({
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'About | Mind Technica',
+  title: `About | ${SITE_NAME}`,
   description:
-    'Mind Technica is an engineering-led consultancy specialising in AI, automation, data systems, and custom software development.',
+    'Mind Technica is an engineering-led consultancy specialising in AI strategy, agentic AI, automation, data science, custom software, AWS cloud infrastructure and security, and AI voice agents.',
+  keywords: SITE_KEYWORDS,
   openGraph: {
-    title: 'About | Mind Technica',
+    title: `About | ${SITE_NAME}`,
     description:
-      'Mind Technica is an engineering-led consultancy specialising in AI, automation, data systems, and custom software development.',
-    url: 'https://mindtechnica.com/about',
-    siteName: 'Mind Technica',
+      'Learn about Mind Technica: an engineering-led consultancy building AI, automation, data, software, cloud and voice agent systems.',
+    url: `${SITE_URL}/about`,
+    siteName: SITE_NAME,
   },
   alternates: {
     canonical: '/about',

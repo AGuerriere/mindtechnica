@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { SITE_KEYWORDS, SITE_NAME, SITE_SERVICES, SITE_URL } from '@/lib/site'
 
 const bayon = Bayon({
   weight: '400',
@@ -14,18 +15,22 @@ const bayon = Bayon({
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Services | Mind Technica',
+  title: `Services | ${SITE_NAME}`,
   description:
-    'Mind Technica delivers business process automation, agentic AI systems, data science, custom AI software, and AI strategy to help organisations scale intelligently.',
+    'Mind Technica delivers AI strategy, agentic and generative AI, business process automation, data science and engineering, custom software, AWS cloud infrastructure and security, and AI voice agents.',
+  keywords: SITE_KEYWORDS,
   openGraph: {
-    title: 'Services | Mind Technica',
+    title: `Services | ${SITE_NAME}`,
     description:
-      'Mind Technica delivers business process automation, agentic AI systems, data science, custom AI software, and AI strategy to help organisations scale intelligently.',
-    url: 'https://mindtechnica.com/services',
-    siteName: 'Mind Technica',
+      'Explore Mind Technica services: AI strategy, agentic AI, automation, data science, custom software, AWS cloud infrastructure and security, and AI voice agents.',
+    url: `${SITE_URL}/services`,
+    siteName: SITE_NAME,
   },
   alternates: {
     canonical: '/services',
+  },
+  other: {
+    services: SITE_SERVICES.join(', '),
   },
 }
 

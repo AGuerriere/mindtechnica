@@ -3,10 +3,21 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
 import { Bayon } from 'next/font/google'
+import { SITE_NAME, SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  title: `Privacy Policy | ${SITE_NAME}`,
+  description:
+    'Privacy policy for Mind Technica, covering data collected through enquiries and consultations for AI, automation, software, cloud and voice agent services.',
   alternates: {
     canonical: '/privacy',
+  },
+  openGraph: {
+    title: `Privacy Policy | ${SITE_NAME}`,
+    description:
+      'How Mind Technica handles personal data for website visitors, enquiries and consultation bookings.',
+    url: `${SITE_URL}/privacy`,
+    siteName: SITE_NAME,
   },
 }
 

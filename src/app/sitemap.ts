@@ -1,51 +1,59 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
+import { SITE_URL } from '@/lib/site'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://mindtechnica.com'
+  const baseUrl = SITE_URL
+  const lastModified = new Date()
 
   const staticRoutes = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'weekly' as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/services`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/book-a-call`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/careers`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/promo`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/news`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified,
+      changeFrequency: 'yearly' as const,
+      priority: 0.3,
     },
   ]
 

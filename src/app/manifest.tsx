@@ -1,10 +1,11 @@
 import { MetadataRoute } from 'next'
+import { SITE_SHORT_DESCRIPTION } from '@/lib/site'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Mind Technica',
     short_name: 'Mind Technica',
-    description: 'Mind Technica',
+    description: SITE_SHORT_DESCRIPTION,
     start_url: '/',
     display: 'standalone',
     background_color: '#0B1926',
