@@ -23,18 +23,11 @@ const heroItems = [
     bgColor: "bg-pinkFaded"
   },
   {
-    icon: "./images/laptop.svg",
-    title: "Data Intelligence",
-    description: "Building automated pipelines to process and normalise large, high-volume data sources",
-    color: "text-green",
-    bgColor: "bg-greenFaded"
-  },
-  {
     icon: "./images/mobile.svg",
     title: "Automation & Agents",
     description: "Deploying AI agents that automate multi-step tasks, from data processing to decision support.",
-    color: "text-blue",
-    bgColor: "bg-blueFaded"
+    color: "text-green",
+    bgColor: "bg-greenFaded"
   },
   {
     icon: "./images/pc-yellow.svg",
@@ -42,6 +35,20 @@ const heroItems = [
     description: "Building custom web applications, APIs and platforms tailored to your workflow and requirements.",
     color: "text-yellow",
     bgColor: "bg-yellowFaded"
+  },
+  {
+    icon: "./images/settings.svg",
+    title: "Cloud & Security",
+    description: "Designing secure AWS infrastructure that scales cleanly and keeps operating costs under control.",
+    color: "text-pink",
+    bgColor: "bg-pinkFaded"
+  },
+  {
+    icon: "./images/mobile.svg",
+    title: "AI Voice Agents",
+    description: "Building phone agents that answer calls, qualify leads, book appointments and hand off with context.",
+    color: "text-blue",
+    bgColor: "bg-blueFaded"
   }
 ]
 
@@ -124,11 +131,11 @@ export default function Home() {
           </h1>
           <div className="flex justify-center mt-9 mb-10 md:mb-40">
             <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>
-              Mind Technica builds advanced AI, automation, data systems and custom software that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making
+              Mind Technica builds advanced AI, automation, data systems, cloud infrastructure and custom software that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto gap-4 pb-10 md:pb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 w-screen -ml-5 -mr-5 md:ml-0 md:mr-0 md:w-auto gap-4 pb-10 md:pb-16">
           {heroItems.map((item, index) => (
             <div key={index} className="flex flex-col items-center px-2">
               <div className={`flex justify-center icon-container rounded-full ${item.bgColor} w-16 h-16`}>
@@ -254,7 +261,7 @@ export default function Home() {
                 <h2 className={`${bayon.className} text-white min-w-fit text-4xl pb-2 md:text-6xl lg:text-8xl`}>About Us</h2>
                 <div className="md:pl-10">
                   <p className="text-xs md:text-2xl pb-3 md:max-w-4xl">
-                    Mind Technica is an independent, engineering-led consultancy focused on helping organisations scale through AI, automation, intelligent systems and data-driven decision making. Our work spans AI engineering, automation pipelines, document intelligence, computer vision, predictive analytics and bespoke software development. We help SMEs, public sector teams and technology-driven companies build the systems they need — from AI-powered data infrastructure to custom web and backend applications.
+                    Mind Technica is an independent, engineering-led consultancy focused on helping organisations scale through AI, automation, intelligent systems and data-driven decision making. Our work spans AI engineering, automation pipelines, document intelligence, computer vision, predictive analytics, cloud infrastructure, AI voice agents and bespoke software development. We help SMEs, public sector teams and technology-driven companies build the systems they need — from AI-powered data infrastructure to custom web applications, backend platforms and secure AWS environments.
                   </p>
                   <a href="#contacts">
                     <h5 className="text-green md:text-lg">
