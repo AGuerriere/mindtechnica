@@ -204,7 +204,7 @@ export default function ServicesPage() {
               Not sure where to start?
             </h2>
             <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed max-w-2xl mb-8`}>
-              We offer a free consultation to help you identify the highest-impact opportunity for AI in your organisation. No commitment required.
+              We offer a free consultation to help you identify the highest-impact opportunity for AI and custom software in your organisation. No commitment required.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a

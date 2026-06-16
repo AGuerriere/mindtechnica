@@ -351,7 +351,7 @@ export default function Home() {
               <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8`}>Let&apos;s Work Together</h2>
               <div className="flex flex-col justify-start gap-8">
                 <div className="flex flex-col justify-start">
-                  <p className="pb-8 text-xs md:text-base">If your organisation wants to scale efficiently using AI, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
+                  <p className="pb-8 text-xs md:text-base">If your organisation wants to scale efficiently using AI and custom software, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
                   <h3 className={`${bayon.className} text-green text-2xl md:text-4xl lg:text-5xl uppercase`}>Book a free consultation now</h3>
                 </div>
                 <BookingForm />
