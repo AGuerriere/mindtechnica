@@ -21,7 +21,9 @@ export default function Navbar() {
     {/* Desktop navbar */}
     <nav className="hidden md:flex flex-row justify-between mt-10 items-center">
       <div className="logo flex items-center">
-        <Image src="./images/Asset6.png" width={136} height={54} alt="Logo" />
+        <a href="/" aria-label="Mind Technica home">
+          <Image src="./images/Asset6.png" width={136} height={54} alt="Mind Technica Logo" />
+        </a>
       </div>
       <div className="navLinks flex justify-evenly w-1/2 hidden">
         <a href="/" className={pathname === '/' ? 'text-green border-b-2 border-green' : ''}>Home</a>
@@ -35,7 +37,9 @@ export default function Navbar() {
 
     {/* Mobile top bar */}
     <nav className="flex justify-between items-center mt-4 md:hidden">
-      <Image src="./images/Asset6.png" width={110} height={40} alt="Logo" />
+      <a href="/" aria-label="Mind Technica home">
+        <Image src="./images/Asset6.png" width={110} height={40} alt="Mind Technica Logo" />
+      </a>
       <button
         onClick={() => setOpen(true)}
         className="p-2 rounded-lg active:bg-white/10"
@@ -51,7 +55,9 @@ export default function Navbar() {
     >
       {/* Header */}
       <div className="flex justify-between items-center">
-        <Image src="./images/Asset6.png" width={120} height={48} alt="Logo" />
+        <a href="/" onClick={() => setOpen(false)} aria-label="Mind Technica home">
+          <Image src="./images/Asset6.png" width={120} height={48} alt="Mind Technica Logo" />
+        </a>
         <button
           onClick={() => setOpen(false)}
           aria-label="Close menu"

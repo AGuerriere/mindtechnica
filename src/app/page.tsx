@@ -85,6 +85,13 @@ const whyUsItems = [
   }
 ]
 
+const capabilities = [
+  { label: "Custom software", dot: "bg-green" },
+  { label: "Document-reading AI", dot: "bg-yellow" },
+  { label: "Agentic systems", dot: "bg-pink" },
+  { label: "Cloud infrastructure", dot: "bg-blue" },
+]
+
 const sectorsItems = [
   {
     image: "./images/brand1.webp",
@@ -257,39 +264,63 @@ export default function Home() {
               />
             </div>
             <section className="relative lg:pb-32">
-              <div className="flex flex-row align-center mb-8 md:mb-12">
+              <div className="flex flex-row align-center mb-10 md:mb-14">
                 <h2 className={`${bayon.className} pb-0 text-white text-4xl md:text-6xl lg:text-8xl min-w-fit`}>How We Work</h2>
                 <div className="border-b-2 border-white w-full"></div>
               </div>
 
-              <div className="flex flex-col gap-5 md:gap-7 md:max-w-4xl">
-                <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
-                  Most businesses we talk to aren&apos;t struggling because their people aren&apos;t good enough. They&apos;re struggling because the systems around those people haven&apos;t kept pace. Quoting takes longer than it should, data lives in the wrong place, and too much depends on someone manually moving information from one system to another.
-                </p>
-                <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
-                  We&apos;re a team of engineers, and our starting point is always the problem rather than the technology. Depending on what&apos;s actually needed, that might mean building a custom software solution, deploying AI that reads documents and handles routine decisions, setting up agentic systems that complete multi-step tasks without human intervention, or putting the right cloud infrastructure in place to make all of it reliable and scalable.
-                </p>
-                <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
-                  We work out where the gaps are actually costing you, and then we build something that closes them properly, designed around the way your business genuinely operates rather than adapted from something generic.
-                </p>
-                <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
-                  When it works well, the impact tends to be straightforward: your team spends less time on work that shouldn&apos;t need them, your client-facing processes get faster and more consistent, and the information you need to make good decisions is actually available when you need it.
-                </p>
-                <p className={`${inter.className} text-white text-lg md:text-xl font-semibold leading-relaxed`}>
-                  If any of that sounds familiar, let&apos;s talk.
-                </p>
+              <p className={`${inter.className} max-w-4xl text-white text-xl md:text-2xl lg:text-[1.75rem] font-light leading-snug md:leading-[1.4]`}>
+                Most businesses we talk to aren&apos;t struggling because their people aren&apos;t good enough. They&apos;re struggling because <span className="text-green">the systems around those people haven&apos;t kept pace</span>. Quoting takes longer than it should, data lives in the wrong place, and too much depends on someone manually moving information from one system to another.
+              </p>
+
+              <div className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+                <div>
+                  <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
+                    We&apos;re a team of engineers, and our starting point is always the problem rather than the technology. Depending on what&apos;s actually needed, that might mean building a custom software solution, deploying AI that reads documents and handles routine decisions, setting up agentic systems that complete multi-step tasks without human intervention, or putting the right cloud infrastructure in place to make all of it reliable and scalable.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-2.5">
+                    {capabilities.map((cap) => (
+                      <span
+                        key={cap.label}
+                        className="inline-flex items-center gap-2 rounded-full border border-grey/25 bg-bgBlack/30 px-3.5 py-1.5"
+                      >
+                        <span className={`h-1.5 w-1.5 rounded-full ${cap.dot}`}></span>
+                        <span className={`${inter.className} text-stone-200 text-xs md:text-sm font-medium`}>
+                          {cap.label}
+                        </span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="lg:border-l lg:border-grey/15 lg:pl-12">
+                  <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
+                    We work out where the gaps are actually costing you, and then we build something that closes them properly, designed around the way your business genuinely operates rather than adapted from something generic.
+                  </p>
+                </div>
               </div>
 
-              <a href="/promo" className="group mt-8 md:mt-10 inline-flex w-fit items-center text-green md:text-lg font-semibold transition-colors hover:text-green/80">
-                Book a free audit
-                <Image
-                  src="./images/arrow.svg"
-                  width={70}
-                  height={9}
-                  alt=""
-                  className="inline-block pl-2 transition-transform duration-300 group-hover:translate-x-1"
-                />
-              </a>
+              <p className={`${inter.className} mt-12 md:mt-16 max-w-4xl text-white/90 text-lg md:text-2xl font-light leading-snug`}>
+                When it works well, the impact tends to be straightforward: your team spends less time on work that shouldn&apos;t need them, your client-facing processes get faster and more consistent, and the information you need to make good decisions is actually available when you need it.
+              </p>
+
+              <div className="mt-12 md:mt-16 flex flex-col gap-5 rounded-2xl border border-green/20 bg-greenFaded p-6 md:flex-row md:items-center md:justify-between md:p-9">
+                <p className={`${bayon.className} text-white text-2xl md:text-4xl leading-tight`}>
+                  If any of that sounds familiar, let&apos;s talk.
+                </p>
+                <a
+                  href="/promo"
+                  className="group inline-flex w-fit shrink-0 items-center text-green md:text-lg font-semibold transition-colors hover:text-green/80"
+                >
+                  Book a free audit
+                  <Image
+                    src="./images/arrow.svg"
+                    width={70}
+                    height={9}
+                    alt=""
+                    className="inline-block pl-2 transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </a>
+              </div>
 
               <Image
                 src="./images/star.svg"
