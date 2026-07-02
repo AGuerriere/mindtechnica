@@ -166,10 +166,10 @@ export default function Home() {
           <div className="text-center">
             <p className="text-green text-sm md:text-base font-semibold uppercase tracking-wider mb-3">Limited Time Offer — 30 Days Only</p>
             <h3 className={`${bayon.className} text-white text-2xl md:text-4xl lg:text-5xl mb-4`}>
-              Free AI &amp; Software <span className="highlightsTitle">Automation Audit</span>
+              Free AI &amp; Bespoke <span className="highlightsTitle">Software Audit</span>
             </h3>
             <p className="text-stone-300 text-sm md:text-lg mb-6 max-w-3xl mx-auto">
-              A complimentary expert assessment of where AI and automation could reduce overhead in your business. Limited places available.
+              A complimentary expert assessment of where AI and bespoke software could reduce overhead in your business&mdash;including a written report and implementation blueprint, worth <span className="text-white font-semibold">&pound;5,000</span>, yours for <span className="text-white font-semibold">FREE</span>. Limited places available.
             </p>
             <Link
               href="/promo"
