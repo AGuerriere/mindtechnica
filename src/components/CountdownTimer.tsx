@@ -24,8 +24,8 @@ export default function CountdownTimer() {
       const now = new Date()
       const currentYear = now.getFullYear()
 
-      // Set target date to July 10th of current year at 23:59:59
-      const targetDate = new Date(currentYear, 6, 10, 23, 59, 59)
+      // Set target date to August 1st of current year at 23:59:59
+      const targetDate = new Date(currentYear, 7, 1, 23, 59, 59)
 
       // If we're past June 15th this year, target next year
       if (now > targetDate) {
