@@ -57,7 +57,7 @@ export default function Success() {
             </h1>
 
             <p className={`${inter.className} text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-2xl mx-auto mt-6`}>
-              Thanks for booking a call with Mind Technica — we look forward to chatting with you. You&apos;ll receive a calendar invite with a video call link shortly.
+              Thanks for booking a call with Mind Technica. We look forward to chatting with you. You&apos;ll receive a calendar invite with a video call link shortly.
             </p>
 
             <p className={`${inter.className} text-stone-400 text-sm md:text-base max-w-xl mx-auto mt-4`}>

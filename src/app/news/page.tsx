@@ -64,7 +64,7 @@ export default function NewsIndex() {
               Insights &amp; <span className={`${bayon.className} highlightsTitle`}>Lab Notes</span>
             </h1>
             <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6`}>
-              Thinking on AI, automation, and data systems — from the work we do and the problems we find interesting.
+              Thinking on AI, automation, and data systems, from the work we do and the problems we find interesting.
             </p>
           </section>
 

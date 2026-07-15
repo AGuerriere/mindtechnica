@@ -16,12 +16,12 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: `About | ${SITE_NAME}`,
   description:
-    'Mind Technica is an engineering-led consultancy specialising in AI strategy, agentic AI, automation, data science, custom software, AWS cloud infrastructure and security, and AI voice agents.',
+    'Mind Technica is an engineering-led consultancy building bespoke software and AI around the way businesses already work, primarily for growing and mid-sized businesses, with support for larger organisations on defined transformation projects.',
   keywords: SITE_KEYWORDS,
   openGraph: {
     title: `About | ${SITE_NAME}`,
     description:
-      'Learn about Mind Technica: an engineering-led consultancy building AI, automation, data, software, cloud and voice agent systems.',
+      'Learn about Mind Technica: an engineering-led consultancy building bespoke software and AI that free teams from repetitive work.',
     url: `${SITE_URL}/about`,
     siteName: SITE_NAME,
   },
@@ -62,7 +62,7 @@ export default function About() {
               About <span className={`${bayon.className} highlightsTitle`}>Mind Technica</span>
             </h1>
             <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6`}>
-              Mind Technica is an engineering-led consultancy specialising in AI, automation, data systems, and custom software development. We help organisations scale through intelligent systems that reduce manual overhead, improve decision-making, and deliver measurable operational value.
+              Mind Technica is an engineering-led consultancy building bespoke software and AI around the way businesses already work. We help our clients free up their teams&apos; time, reduce the manpower each task needs, and scale without proportional growth in cost or headcount.
             </p>
           </section>
 
@@ -78,16 +78,19 @@ export default function About() {
             </div>
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 max-w-5xl">
               <p className="text-sm md:text-lg leading-relaxed">
-                At Mind Technica, we believe artificial intelligence will
-                reshape every industry and profoundly transform society. Our
-                vision is to help guide this transformation toward a future
-                where AI expands human potential, accelerates scientific
-                discovery, and benefits people everywhere.
+                We believe growing businesses deserve the same advantage from
+                software and AI that large enterprises get, without enterprise
+                budgets, timelines or complexity. Our work is about making that
+                advantage practical: systems that free people from repetitive
+                work so they can focus on what genuinely moves the business
+                forward.
               </p>
               <p className="text-sm md:text-lg leading-relaxed text-stone-400">
-                We aim to push the boundaries of what intelligent systems can
-                achieve while ensuring the benefits of AI are accessible,
-                practical, and widely shared — from ambitious startups and growing SMEs to large enterprises.
+                We build for the long term. Every system we deliver is
+                engineered to be maintainable, to scale with the organisation
+                it serves, and to keep earning its place, because tools built
+                around a business keep getting used, where generic tools are
+                abandoned.
               </p>
             </div>
           </section>
@@ -141,7 +144,7 @@ export default function About() {
             </div>
             <div className="bg-blueFaded border-l-4 border-green rounded-xl p-8 md:p-12 max-w-4xl">
               <p className="text-base md:text-xl leading-relaxed text-stone-200">
-                AI is most valuable when it solves a specific, well-understood problem. The organisations that benefit most from it are not those that adopt it earliest, but those that apply it most deliberately. We work with clients who want to understand what AI can genuinely do for their operations and build accordingly.
+                AI is most valuable when it solves a specific, well-understood problem. The organisations that benefit most from it are not those that adopt it earliest, but those that apply it most deliberately. We work with clients who want to understand what AI can genuinely do for their operations and build accordingly. And we believe software should be built around the business, not the other way round. It is the difference between tools that get adopted and tools that get abandoned.
               </p>
             </div>
           </section>
@@ -167,23 +170,26 @@ export default function About() {
               </h2>
               <div className="border-b-2 border-white w-full"></div>
             </div>
+            <p className={`${inter.className} text-sm md:text-lg leading-relaxed max-w-4xl mb-10 text-stone-300`}>
+              We primarily work with growing and mid-sized businesses, while also supporting larger organisations and public-sector bodies on clearly defined transformation projects. Most of our clients are in the UK and Ireland, but we work with organisations wherever the problem is well defined.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div className="bg-greenFaded rounded-xl p-6 md:p-8">
-                <h3 className={`${bayon.className} text-green text-xl md:text-2xl mb-3`}>Small and medium businesses</h3>
+                <h3 className={`${bayon.className} text-green text-xl md:text-2xl mb-3`}>Growing and mid-sized businesses</h3>
                 <p className="text-sm md:text-base leading-relaxed text-stone-300">
-                  Organisations that have outgrown their current processes and need systems that scale without adding headcount.
+                  Our core focus: businesses that have outgrown their current processes and need systems that scale without adding headcount, built around the way they already work.
                 </p>
               </div>
               <div className="bg-blueFaded rounded-xl p-6 md:p-8">
-                <h3 className={`${bayon.className} text-blue text-xl md:text-2xl mb-3`}>Enterprises and public sector</h3>
+                <h3 className={`${bayon.className} text-blue text-xl md:text-2xl mb-3`}>Larger organisations and public sector</h3>
                 <p className="text-sm md:text-base leading-relaxed text-stone-300">
-                  Large organisations looking to embed AI across operations, reduce overhead, and move faster on data-driven decisions.
+                  We support larger organisations and public-sector bodies on clearly defined transformation projects: document processing, automation and AI systems with a measurable outcome.
                 </p>
               </div>
               <div className="bg-pinkFaded rounded-xl p-6 md:p-8">
-                <h3 className={`${bayon.className} text-pink text-xl md:text-2xl mb-3`}>Businesses looking to be competitive</h3>
+                <h3 className={`${bayon.className} text-pink text-xl md:text-2xl mb-3`}>Teams held back by manual work</h3>
                 <p className="text-sm md:text-base leading-relaxed text-stone-300">
-                  Every industry is changing. Organisations that are serious about staying competitive are looking at AI and automation not as a future consideration but as an immediate operational priority.
+                  Whatever the size or sector: if your people spend their days moving information between systems, chasing approvals or re-keying data, that is the problem we solve.
                 </p>
               </div>
             </div>
@@ -195,7 +201,7 @@ export default function About() {
               Let&apos;s work together
             </h2>
             <p className={`${inter.className} text-sm md:text-lg leading-relaxed max-w-2xl mb-8 text-stone-300`}>
-              If you want to scale efficiently using AI, we can help you identify the right opportunities and build the systems to act on them.
+              If you want to free your team&apos;s time and scale efficiently, we can help you identify the right opportunities and build the systems to act on them.
             </p>
             <a
               href="/book-a-call"

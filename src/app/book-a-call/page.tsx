@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: `Book a Call | ${SITE_NAME}`,
-  description: 'Book a free consultation about AI strategy, agentic AI, automation, data engineering, custom software, AWS cloud infrastructure, security or AI voice agents.',
+  description: 'Book a free consultation to find out where bespoke software, AI and automation could free your team’s time and reduce the manpower each task needs.',
   keywords: SITE_KEYWORDS,
   alternates: { canonical: '/book-a-call' },
   openGraph: {

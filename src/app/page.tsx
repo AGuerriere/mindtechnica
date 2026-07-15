@@ -18,35 +18,35 @@ const heroItems = [
   {
     icon: "./images/bulb.svg",
     title: "AI Systems",
-    description: "Designing and deploying AI-driven systems that streamline operations and expand capacity",
+    description: "AI that absorbs the repetitive work, so your team can focus on the work that needs them.",
     color: "text-pink",
     bgColor: "bg-pinkFaded"
   },
   {
     icon: "./images/mobile.svg",
     title: "Automation & Agents",
-    description: "Deploying AI agents that automate multi-step tasks, from data processing to decision support.",
+    description: "Multi-step tasks completed end-to-end, reliably, without anyone having to touch them.",
     color: "text-green",
     bgColor: "bg-greenFaded"
   },
   {
     icon: "./images/pc-yellow.svg",
     title: "Software Development",
-    description: "Building custom web applications, APIs and platforms tailored to your workflow and requirements.",
+    description: "Software engineered around your workflow, so it fits your business rather than the other way round.",
     color: "text-yellow",
     bgColor: "bg-yellowFaded"
   },
   {
     icon: "./images/settings.svg",
     title: "Cloud & Security",
-    description: "Designing secure AWS infrastructure that scales cleanly and keeps operating costs under control.",
+    description: "Secure, dependable infrastructure that scales with you and keeps running costs under control.",
     color: "text-pink",
     bgColor: "bg-pinkFaded"
   },
   {
     icon: "./images/mobile.svg",
     title: "AI Voice Agents",
-    description: "Building phone agents that answer calls, qualify leads, book appointments and hand off with context.",
+    description: "Calls answered, leads qualified and appointments booked around the clock, with seamless handover to your team.",
     color: "text-blue",
     bgColor: "bg-blueFaded"
   }
@@ -55,18 +55,23 @@ const heroItems = [
 const whyUsItems = [
   {
     icon: "./images/settings.svg",
-    title: "AI that enables scaling",
-    description: "Our systems increase operational capacity by improving processing speed, accuracy and insight, without requiring proportional growth in staff or overhead."
+    title: "Built around your business",
+    description: "We engineer systems around the way you already operate. That is why our tools see far higher uptake and retention than off-the-shelf products, which force the business to adapt to them."
+  },
+  {
+    icon: "./images/pressure.svg",
+    title: "Your team's time, freed",
+    description: "We target repetitive, manual work first, so the gains show up quickly and can free up to 70% of your team's time for the work that actually moves the business forward."
+  },
+  {
+    icon: "./images/useradd.svg",
+    title: "Fewer hands per task",
+    description: "Our systems increase capacity through speed, accuracy and automation, so output grows without proportional growth in staff or overhead."
   },
   {
     icon: "./images/pen.svg",
     title: "Engineering-first approach",
-    description: "Every solution is built on robust, maintainable architectures designed to operate reliably under real-world load."
-  },
-  {
-    icon: "./images/pressure.svg",
-    title: "Designed for long-term growth",
-    description: "We build modular systems that evolve with your organisation, allowing AI capabilities to expand as demand increases."
+    description: "Every solution is built on robust, maintainable architectures designed to operate reliably under real-world load, and to keep evolving as your business grows."
   },
   {
     icon: "./images/piggybank.svg",
@@ -75,13 +80,8 @@ const whyUsItems = [
   },
   {
     icon: "./images/pc.svg",
-    title: "Commercial awareness",
-    description: "We combine deep technical expertise with commercial understanding to ensure every system delivers practical, operational value."
-  },
-  {
-    icon: "./images/useradd.svg",
-    title: "Independent and agile",
-    description: "As an independent consultancy, we move quickly, adapt to your needs and maintain focus on outcomes that matter to your organisation."
+    title: "Independent engineers",
+    description: "As an independent consultancy we move quickly, adapt to your needs, and have no incentive to recommend platforms or tools beyond what is right for your business."
   }
 ]
 
@@ -133,12 +133,15 @@ export default function Home() {
               alt="Rectangle"
             />
           </div>
-          <h1 className={`${bayon.className} mt-16 md:mt-28 uppercase text-4xl md:text-[4.5vw] leading-relaxed`}>
-            Engineering <span className={`${bayon.className} highlightsTitle`}>intelligence</span> for real-world <span className={`${bayon.className} highlightsTitle`}>impact</span>
+          <p className={`${inter.className} mt-16 md:mt-28 text-center text-green text-xs md:text-sm font-semibold uppercase tracking-[0.25em]`}>
+            Engineering intelligence for real-world impact
+          </p>
+          <h1 className={`${bayon.className} mt-4 uppercase text-4xl md:text-[4.5vw] leading-relaxed`}>
+            Bespoke <span className={`${bayon.className} highlightsTitle`}>AI &amp; software</span> for growing <span className={`${bayon.className} highlightsTitle`}>businesses</span>
           </h1>
           <div className="flex justify-center mt-9 mb-10 md:mb-40">
             <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>
-              Mind Technica builds advanced AI, automation, data systems, cloud infrastructure and custom software that help organisations scale efficiently by reducing manual work, increasing throughput and enabling faster, more informed decision-making
+              We engineer software and AI around the way your business already works, freeing up to 70% of your team&apos;s time, reducing the manpower each task needs, and delivering systems your people actually adopt
             </p>
           </div>
         </div>
@@ -164,12 +167,12 @@ export default function Home() {
       <div className="bg-gradient-to-r from-greenFaded to-blueFaded py-8 md:py-12 -mt-10">
         <div className="2xl:mx-auto 2xl:w-[1400px] px-5">
           <div className="text-center">
-            <p className="text-green text-sm md:text-base font-semibold uppercase tracking-wider mb-3">Limited Time Offer — 30 Days Only</p>
+            <p className="text-green text-sm md:text-base font-semibold uppercase tracking-wider mb-3">Limited Time Offer: 30 Days Only</p>
             <h3 className={`${bayon.className} text-white text-2xl md:text-4xl lg:text-5xl mb-4`}>
               Free AI &amp; Bespoke <span className="highlightsTitle">Software Audit</span>
             </h3>
             <p className="text-stone-300 text-sm md:text-lg mb-6 max-w-3xl mx-auto">
-              A complimentary expert assessment of where AI and bespoke software could reduce overhead in your business&mdash;including a written report and implementation blueprint, worth <span className="text-white font-semibold">&pound;5,000</span>, yours for <span className="text-white font-semibold">FREE</span>. Limited places available.
+              A complimentary expert assessment of where AI and bespoke software could free your team&apos;s time and reduce overhead, including a written report and implementation blueprint worth <span className="text-white font-semibold">&pound;5,000</span>, yours for <span className="text-white font-semibold">FREE</span>. Limited places available.
             </p>
             <Link
               href="/promo"
@@ -270,7 +273,7 @@ export default function Home() {
               </div>
 
               <p className={`${inter.className} max-w-4xl text-white text-xl md:text-2xl lg:text-[1.75rem] font-light leading-snug md:leading-[1.4]`}>
-                Most businesses we talk to aren&apos;t struggling because their people aren&apos;t good enough. They&apos;re struggling because <span className="text-green">the systems around those people haven&apos;t kept pace</span>. Quoting takes longer than it should, data lives in the wrong place, and too much depends on someone manually moving information from one system to another.
+                Most growing businesses we talk to aren&apos;t struggling because their people aren&apos;t good enough. They&apos;re struggling because <span className="text-green">the systems around those people haven&apos;t kept pace</span>. Quoting takes longer than it should, data lives in the wrong place, and too much depends on someone manually moving information from one system to another.
               </p>
 
               <div className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
@@ -294,13 +297,17 @@ export default function Home() {
                 </div>
                 <div className="lg:border-l lg:border-grey/15 lg:pl-12">
                   <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
-                    We work out where the gaps are actually costing you, and then we build something that closes them properly, designed around the way your business genuinely operates rather than adapted from something generic.
+                    We work out where the gaps are actually costing you, and then we build something that closes them properly, designed around the way your business genuinely operates rather than adapted from something generic. That&apos;s why our systems keep getting used long after off-the-shelf tools have been abandoned: your team doesn&apos;t have to change how they work to use them.
                   </p>
                 </div>
               </div>
 
               <p className={`${inter.className} mt-12 md:mt-16 max-w-4xl text-white/90 text-lg md:text-2xl font-light leading-snug`}>
                 When it works well, the impact tends to be straightforward: your team spends less time on work that shouldn&apos;t need them, your client-facing processes get faster and more consistent, and the information you need to make good decisions is actually available when you need it.
+              </p>
+
+              <p className={`${inter.className} mt-8 max-w-4xl text-stone-400 text-sm md:text-base leading-relaxed`}>
+                Most of our clients are growing and mid-sized businesses in the UK and Ireland, but we work with organisations wherever the problem is well defined, including larger enterprises and public-sector bodies on clearly scoped transformation projects.
               </p>
 
               <div className="mt-12 md:mt-16 flex flex-col gap-5 rounded-2xl border border-green/20 bg-greenFaded p-6 md:flex-row md:items-center md:justify-between md:p-9">
@@ -396,7 +403,7 @@ export default function Home() {
               <h2 className={`${bayon.className} text-white text-4xl md:text-6xl lg:text-8xl min-w-fit pb-8`}>Let&apos;s Work Together</h2>
               <div className="flex flex-col justify-start gap-8">
                 <div className="flex flex-col justify-start">
-                  <p className="pb-8 text-xs md:text-base">If your organisation wants to scale efficiently using AI and custom software, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
+                  <p className="pb-8 text-xs md:text-base">Tell us where your team&apos;s time is going, and we will show you what could be automated, streamlined or rebuilt, and what the return would look like. Whether you are a growing business or a larger organisation with a clearly defined project, we will identify the most effective approach.</p>
                   <h3 className={`${bayon.className} text-green text-2xl md:text-4xl lg:text-5xl uppercase`}>Book a free consultation now</h3>
                 </div>
                 <BookingForm />

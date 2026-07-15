@@ -30,16 +30,26 @@ export const SITE_EXPERTISE = [
 ]
 
 export const SITE_DESCRIPTION =
-  'Mind Technica delivers AI strategy, agentic and generative AI, business process automation, data science and engineering, custom software, AWS cloud infrastructure and security, and AI voice agents.'
+  'Mind Technica is an engineering consultancy building bespoke software and AI around the way businesses already work, freeing up to 70% of a team’s time and reducing the manpower each task needs. We work primarily with growing and mid-sized businesses, and support larger organisations and public-sector bodies on clearly defined transformation projects.'
 
 export const SITE_SHORT_DESCRIPTION =
-  'Mind Technica builds AI, automation, data, software, cloud infrastructure and voice agent systems that help organisations scale efficiently.'
+  'Bespoke software and AI, engineered around your business, freeing your team’s time and reducing the manpower each task needs.'
 
 export const SITE_KEYWORDS = [
   'Mind Technica',
   'MindTechnica',
   'AI',
   'Artificial Intelligence',
+  'Bespoke software',
+  'Bespoke AI',
+  'AI for growing businesses',
+  'AI for SMEs',
+  'SME automation',
+  'Business automation UK',
+  'AI consultancy UK',
+  'AI consultancy Ireland',
+  'Software company UK',
+  'Software company Ireland',
   ...SITE_SERVICES,
   ...SITE_EXPERTISE,
 ]

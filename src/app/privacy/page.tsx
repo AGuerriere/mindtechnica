@@ -212,7 +212,7 @@ const PrivacyPage = () => {
                   We retain meeting request submissions for as long as is necessary to fulfil the purpose for which they were collected, or as required by applicable law. If a meeting does not result in an ongoing business relationship, we will delete your data within 12 months of submission.
                 </p>
                 <p className="text-base md:text-lg text-stone-300 leading-relaxed">
-                  You may request deletion of your data at any time — see the Your Rights section below.
+                  You may request deletion of your data at any time. See the Your Rights section below.
                 </p>
               </div>
 
@@ -223,13 +223,13 @@ const PrivacyPage = () => {
                   Under UK GDPR, you have the following rights in relation to your personal data:
                 </p>
                 <ul className="list-disc ml-8 mb-6 text-base md:text-lg text-stone-300 space-y-2">
-                  <li><span className="text-white font-semibold">Right of access</span> — to obtain a copy of the data we hold about you</li>
-                  <li><span className="text-white font-semibold">Right to rectification</span> — to correct inaccurate or incomplete data</li>
-                  <li><span className="text-white font-semibold">Right to erasure (&apos;right to be forgotten&apos;)</span> — to request deletion of your data</li>
-                  <li><span className="text-white font-semibold">Right to restriction</span> — to limit how we use your data in certain circumstances</li>
-                  <li><span className="text-white font-semibold">Right to object</span> — to object to processing based on legitimate interests</li>
-                  <li><span className="text-white font-semibold">Right to data portability</span> — to receive your data in a structured, machine-readable format</li>
-                  <li><span className="text-white font-semibold">Right to withdraw consent</span> — where processing is based on consent, you may withdraw it at any time</li>
+                  <li><span className="text-white font-semibold">Right of access</span>: to obtain a copy of the data we hold about you</li>
+                  <li><span className="text-white font-semibold">Right to rectification</span>: to correct inaccurate or incomplete data</li>
+                  <li><span className="text-white font-semibold">Right to erasure (&apos;right to be forgotten&apos;)</span>: to request deletion of your data</li>
+                  <li><span className="text-white font-semibold">Right to restriction</span>: to limit how we use your data in certain circumstances</li>
+                  <li><span className="text-white font-semibold">Right to object</span>: to object to processing based on legitimate interests</li>
+                  <li><span className="text-white font-semibold">Right to data portability</span>: to receive your data in a structured, machine-readable format</li>
+                  <li><span className="text-white font-semibold">Right to withdraw consent</span>: where processing is based on consent, you may withdraw it at any time</li>
                 </ul>
                 <p className="text-base md:text-lg text-stone-300 leading-relaxed">
                   To exercise any of these rights, contact us at{' '}

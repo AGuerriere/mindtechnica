@@ -64,7 +64,7 @@ const PromoPage = () => {
                 </h1>
 
                 <p className="text-lg md:text-2xl text-stone-300 leading-relaxed max-w-3xl mx-auto mb-6">
-                  A full audit, a written report, and an implementation blueprint&mdash;a <span className="text-white font-semibold">&pound;5,000</span> engagement, yours at no cost.
+                  A full audit, a written report, and an implementation blueprint: a <span className="text-white font-semibold">&pound;5,000</span> engagement, yours at no cost.
                 </p>
 
                 {/* Countdown Timer */}
@@ -103,10 +103,10 @@ const PromoPage = () => {
               {/* Intro Section */}
               <div className="max-w-4xl mx-auto mb-16">
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  For the next 30 days, Mind Technica is offering a <span className="text-white font-semibold">small number of businesses</span> a complimentary audit: an expert assessment of where AI and bespoke software could meaningfully reduce operational overhead and free your team to focus on higher-value work. It concludes with a <span className="text-white font-semibold">written report and a full implementation blueprint</span>&mdash;work we would ordinarily charge <span className="text-green font-semibold">around &pound;5,000</span> for, provided here at no cost.
+                  For the next 30 days, Mind Technica is offering a <span className="text-white font-semibold">small number of businesses</span> a complimentary audit: an expert assessment of where AI and bespoke software could free your team&apos;s time, in some cases <span className="text-white font-semibold">up to 70% of it</span>, and reduce the manpower each task needs. It concludes with a <span className="text-white font-semibold">written report and a full implementation blueprint</span>, work we would ordinarily charge <span className="text-green font-semibold">around &pound;5,000</span> for, provided here at no cost.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
-                  Many organisations carry a significant hidden cost in the form of repetitive tasks, manual processes, and disconnected systems. These inefficiencies accumulate quietly, consuming time and resource that your team could direct toward work that genuinely advances the business.
+                  Most growing businesses carry a significant hidden cost in the form of repetitive tasks, manual processes, and disconnected systems. These inefficiencies accumulate quietly, consuming time and resource that your team could direct toward work that genuinely advances the business.
                 </p>
                 <p className="text-base md:text-xl text-stone-300 leading-relaxed mb-6">
                   The audit is designed to identify precisely where those inefficiencies lie and what it would take to address them. You will leave with a clear, prioritised view of where AI and bespoke software could make the difference, and a realistic assessment of what acting on them would involve.
@@ -149,7 +149,7 @@ const PromoPage = () => {
                 <div className="bg-yellowFaded rounded-xl p-6 md:p-8">
                   <span className="text-yellow text-3xl">✓</span>
                   <h3 className={`${bayon.className} text-yellow text-xl md:text-2xl mt-3 mb-2`}>Report &amp; Implementation Blueprint</h3>
-                  <p className="text-sm md:text-base text-stone-300 leading-relaxed">A written summary report and a step-by-step blueprint for how we would implement it&mdash;a <span className="text-white font-semibold">&pound;5,000</span> deliverable, yours to retain regardless of what comes next.</p>
+                  <p className="text-sm md:text-base text-stone-300 leading-relaxed">A written summary report and a step-by-step blueprint for how we would implement it: a <span className="text-white font-semibold">&pound;5,000</span> deliverable, yours to retain regardless of what comes next.</p>
                 </div>
               </div>
 
@@ -172,7 +172,7 @@ const PromoPage = () => {
                   We are looking to work with organisations tackling real operational challenges, and we believe the most productive working relationships begin with demonstrated value.
                 </p>
                 <p className="text-base md:text-xl text-stone-200 leading-relaxed">
-                  If we proceed to an engagement, we would welcome a testimonial. If not, the report and implementation blueprint&mdash;work we would ordinarily value at around &pound;5,000&mdash;remain yours, with no obligation.
+                  If we proceed to an engagement, we would welcome a testimonial. If not, the report and implementation blueprint, work we would ordinarily value at around &pound;5,000, remain yours, with no obligation.
                 </p>
               </div>
 
@@ -185,7 +185,7 @@ const PromoPage = () => {
               <div className="max-w-4xl mx-auto mb-16">
                 <div className="border-l-2 border-green pl-6 md:pl-8">
                   <p className="text-lg md:text-2xl text-stone-200 leading-relaxed">
-                    Business owners and operations leaders who recognise that their teams are capable of more, but are held back by manual work and gaps that the right AI and bespoke software could close.
+                    Owners and operations leaders of growing and mid-sized businesses who recognise that their teams are capable of more, but are held back by manual work and gaps that the right AI and bespoke software could close. Larger organisations with a clearly defined project are equally welcome.
                   </p>
                 </div>
               </div>
@@ -201,13 +201,13 @@ const PromoPage = () => {
                   A limited number of places are available over the next 30 days.
                 </p>
                 <p className="text-base md:text-xl text-white font-semibold leading-relaxed mb-8">
-                  Secure your audit, report and implementation blueprint&mdash;a <span className="text-green">&pound;5,000</span> engagement&mdash;at no cost.
+                  Secure your audit, report and implementation blueprint, a <span className="text-green">&pound;5,000</span> engagement, at no cost.
                 </p>
               </div>
 
               <div className="max-w-4xl mx-auto flex flex-col gap-8 mb-16">
                 <div className="flex flex-col justify-start w-full max-w-2xl">
-                  <p className="pb-8 text-xs md:text-base">If your organisation wants to scale efficiently using AI, we can help you design and implement the systems that make it possible. Tell us what you are trying to achieve and we will identify the most effective technical approach.</p>
+                  <p className="pb-8 text-xs md:text-base">Tell us where your team&apos;s time is going, and we will show you what could be automated, streamlined or rebuilt, and what the return would look like.</p>
                   <h3 className={`${bayon.className} text-green text-2xl md:text-4xl lg:text-5xl uppercase`}>Book a free consultation now</h3>
                 </div>
                 <BookingForm />

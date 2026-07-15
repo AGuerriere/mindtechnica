@@ -17,12 +17,12 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: `Services | ${SITE_NAME}`,
   description:
-    'Mind Technica delivers AI strategy, agentic and generative AI, business process automation, data science and engineering, custom software, AWS cloud infrastructure and security, and AI voice agents.',
+    'Bespoke software, AI and automation services that free your team’s time: process automation, AI voice agents, custom software, agentic AI, data engineering and cloud infrastructure.',
   keywords: SITE_KEYWORDS,
   openGraph: {
     title: `Services | ${SITE_NAME}`,
     description:
-      'Explore Mind Technica services: AI strategy, agentic AI, automation, data science, custom software, AWS cloud infrastructure and security, and AI voice agents.',
+      'Bespoke software, AI and automation services that free your team’s time: process automation, AI voice agents, custom software, agentic AI, data engineering and cloud infrastructure.',
     url: `${SITE_URL}/services`,
     siteName: SITE_NAME,
   },
@@ -37,9 +37,20 @@ export const metadata: Metadata = {
 const services = [
   {
     number: '01',
-    title: 'AI strategy and advisory',
-    tagline: 'Discover where AI can make a real difference in your business.',
-    body: 'Most AI projects fail not because of bad technology, but because of unclear objectives, poor data foundations, or the wrong problem being solved. We work with leadership teams to identify the highest-impact opportunities, assess readiness, and build a practical roadmap so that when you do invest, you invest in the right things.',
+    title: 'Business process automation',
+    tagline: 'Free your team from the repetitive work: hours back every week.',
+    body: 'Most businesses are running on a patchwork of manual steps: copying data between systems, chasing approvals, generating reports by hand. We replace those bottlenecks with reliable automated workflows that run without intervention, scale without headcount, and free your team to focus on work that actually requires them.',
+    color: 'text-blue',
+    bgColor: 'bg-blueFaded',
+    dot: 'bg-blue',
+    hoverBorder: 'hover:border-blue/40',
+    span: 'md:col-span-3',
+  },
+  {
+    number: '02',
+    title: 'AI voice agents',
+    tagline: 'Your phones answered. Your leads qualified. Your business always on.',
+    body: 'Most businesses miss calls they should never miss: enquiries after hours, overflow during busy periods, leads that go cold because no one followed up. We build and deploy voice agents that handle real phone conversations, inbound and outbound: answering calls, resolving enquiries, booking appointments, following up with leads and qualifying prospects. When a conversation needs a human, the agent transfers it with full context captured.',
     color: 'text-green',
     bgColor: 'bg-greenFaded',
     dot: 'bg-green',
@@ -47,31 +58,31 @@ const services = [
     span: 'md:col-span-3',
   },
   {
-    number: '02',
-    title: 'Agentic AI and generative AI',
-    tagline: 'AI that doesn’t just answer questions. It gets things done.',
-    body: 'Agentic and generative AI systems go further than standard AI tools. They reason through multi-step problems, use APIs and databases as tools, generate content and insights, and complete tasks autonomously, with human oversight built in at the points that matter. We design and deploy agents and generative AI solutions tailored to your operations, from internal research assistants to customer-facing copilots.',
+    number: '03',
+    title: 'Custom software development',
+    tagline: 'Software that fits your business, not the other way round.',
+    body: 'When existing products do not fit your workflow, we build from scratch. That might mean a web application, an internal tool, a backend API, or a client-facing platform, with or without AI at its core. Because it is engineered around how your business actually operates, it gets adopted and keeps getting used, where generic tools are so often abandoned. We handle the full build, from architecture to deployment.',
     color: 'text-pink',
     bgColor: 'bg-pinkFaded',
     dot: 'bg-pink',
     hoverBorder: 'hover:border-pink/40',
-    span: 'md:col-span-3',
-  },
-  {
-    number: '03',
-    title: 'Business process automation',
-    tagline: 'Automate the repetitive. Redirect the time.',
-    body: 'Most businesses are running on a patchwork of manual steps: copying data between systems, chasing approvals, generating reports by hand. We replace those bottlenecks with reliable automated workflows that run without intervention, scale without headcount, and free your team to focus on work that actually requires them.',
-    color: 'text-blue',
-    bgColor: 'bg-blueFaded',
-    dot: 'bg-blue',
-    hoverBorder: 'hover:border-blue/40',
     span: 'md:col-span-2',
   },
   {
     number: '04',
+    title: 'Agentic AI and generative AI',
+    tagline: 'AI that doesn’t just answer questions. It gets things done.',
+    body: 'Agentic and generative AI systems go further than standard AI tools. They reason through multi-step problems, use APIs and databases as tools, generate content and insights, and complete tasks autonomously, with human oversight built in at the points that matter. We design and deploy agents and generative AI solutions tailored to your operations, from internal research assistants to customer-facing copilots.',
+    color: 'text-yellow',
+    bgColor: 'bg-yellowFaded',
+    dot: 'bg-yellow',
+    hoverBorder: 'hover:border-yellow/40',
+    span: 'md:col-span-2',
+  },
+  {
+    number: '05',
     title: 'Data science and engineering',
-    tagline: 'Your data is only valuable if you can use it.',
+    tagline: 'Decisions backed by your own data, not guesswork.',
     body: 'We work across the full data stack, from cleaning and structuring raw data to building predictive models and production pipelines. Whether you need a one-off analysis or an infrastructure your team can rely on week to week, we deliver work that is rigorous, reproducible, and built to last.',
     color: 'text-green',
     bgColor: 'bg-greenFaded',
@@ -80,21 +91,10 @@ const services = [
     span: 'md:col-span-2',
   },
   {
-    number: '05',
-    title: 'Custom software development',
-    tagline: 'Purpose-built software for problems off-the-shelf tools cannot solve.',
-    body: 'When existing products do not fit your workflow, we build from scratch. That might mean a web application, an internal tool, a backend API, or a client-facing platform — with or without AI at its core. We handle the full build, from architecture to deployment, with a focus on maintainability and real-world performance.',
-    color: 'text-pink',
-    bgColor: 'bg-pinkFaded',
-    dot: 'bg-pink',
-    hoverBorder: 'hover:border-pink/40',
-    span: 'md:col-span-2',
-  },
-  {
     number: '06',
     title: 'Cloud infrastructure and security',
-    tagline: 'The foundation your software runs on — built to scale, secured by design.',
-    body: 'Custom software is only as reliable as the infrastructure beneath it. We design, provision and manage cloud environments on AWS that are secure, cost-efficient and built to grow with your business. From infrastructure-as-code provisioning to security hardening and compliance-aligned deployments, we handle the full cloud layer — whether you are starting from scratch, migrating, or looking to reduce what you spend on AWS.',
+    tagline: 'Reliable, secure and cost-efficient, without needing an in-house IT function.',
+    body: 'Custom software is only as reliable as the infrastructure beneath it. We design, provision and manage cloud environments on AWS that are secure, cost-efficient and built to grow with your business. From provisioning through security hardening and compliance, we handle the full cloud layer, whether you are starting from scratch, migrating, or looking to reduce what you spend on AWS.',
     color: 'text-yellow',
     bgColor: 'bg-yellowFaded',
     dot: 'bg-yellow',
@@ -103,13 +103,13 @@ const services = [
   },
   {
     number: '07',
-    title: 'AI voice agents',
-    tagline: 'Your phones answered. Your leads qualified. Your business always on.',
-    body: 'Most businesses miss calls they should never miss — enquiries after hours, overflow during busy periods, leads that go cold because no one followed up. We build and deploy voice agents that handle real phone conversations, inbound and outbound: answering calls, resolving enquiries, booking appointments, following up with leads and qualifying prospects. When a conversation needs a human, the agent transfers it with full context captured.',
-    color: 'text-blue',
-    bgColor: 'bg-blueFaded',
-    dot: 'bg-blue',
-    hoverBorder: 'hover:border-blue/40',
+    title: 'AI strategy and advisory',
+    tagline: 'Know where AI will actually pay off before you invest.',
+    body: 'Most AI projects fail not because of bad technology, but because of unclear objectives, poor data foundations, or the wrong problem being solved. We work with leadership teams to identify the highest-impact opportunities, assess readiness, and build a practical roadmap so that when you do invest, you invest in the right things.',
+    color: 'text-pink',
+    bgColor: 'bg-pinkFaded',
+    dot: 'bg-pink',
+    hoverBorder: 'hover:border-pink/40',
     span: 'md:col-span-3',
   },
 ]
@@ -144,7 +144,7 @@ export default function ServicesPage() {
               What we <span className={`${bayon.className} highlightsTitle`}>do</span>
             </h1>
             <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6`}>
-              We design and build AI systems, automation workflows, data infrastructure and custom software that help organisations scale without proportional growth in headcount or cost.
+              Every service below exists for one reason: to free your team&apos;s time and reduce the manpower each task needs, through systems engineered around the way your business already works.
             </p>
           </section>
 
@@ -209,7 +209,7 @@ export default function ServicesPage() {
               Not sure where to start?
             </h2>
             <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed max-w-2xl mb-8`}>
-              We offer a free consultation to help you identify the highest-impact opportunity for AI and custom software in your organisation. No commitment required.
+              We offer a free consultation to help you identify where bespoke software and AI would have the highest impact in your business, and what the return would look like. No commitment required.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
