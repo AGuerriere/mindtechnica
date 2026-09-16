@@ -10,7 +10,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: '/', label: 'Home', active: pathname === '/' },
-    { href: '/services', label: 'Services', active: pathname === '/services' },
+    { href: '/services', label: 'Services', active: (pathname === '/services' || pathname === '/aws-cloud-services') },
     { href: '/about', label: 'About', active: pathname === '/about' },
     { href: '/news', label: 'News', active: pathname.startsWith('/news') },
     { href: '/careers', label: 'Careers', active: pathname === '/careers' },
@@ -19,15 +19,15 @@ export default function Navbar() {
   return (
     <>
     {/* Desktop navbar */}
-    <nav className="hidden md:flex flex-row justify-between mt-10 items-center">
+    <nav className="hidden lg:flex flex-row justify-between gap-6 mt-10 items-center">
       <div className="logo flex items-center">
         <a href="/" aria-label="Mind Technica home">
           <Image src="./images/Asset6.png" width={136} height={54} alt="Mind Technica Logo" />
         </a>
       </div>
-      <div className="navLinks flex justify-evenly w-1/2 hidden">
+      <div className="navLinks justify-evenly w-1/2 min-w-max">
         <a href="/" className={pathname === '/' ? 'text-green border-b-2 border-green' : ''}>Home</a>
-        <a href="/services" className={pathname === '/services' ? 'text-green border-b-2 border-green' : ''}>Services</a>
+        <a href="/services" className={(pathname === '/services' || pathname === '/aws-cloud-services') ? 'text-green border-b-2 border-green' : ''}>Services</a>
         <a href="/about" className={pathname === '/about' ? 'text-green border-b-2 border-green' : ''}>About</a>
         <a href="/news" className={pathname.startsWith('/news') ? 'text-green border-b-2 border-green' : ''}>News</a>
         <a href="/careers" className={pathname === '/careers' ? 'text-green border-b-2 border-green' : ''}>Careers</a>
@@ -36,7 +36,7 @@ export default function Navbar() {
     </nav>
 
     {/* Mobile top bar */}
-    <nav className="flex justify-between items-center mt-4 md:hidden">
+    <nav className="flex justify-between items-center mt-4 lg:hidden">
       <a href="/" aria-label="Mind Technica home">
         <Image src="./images/Asset6.png" width={110} height={40} alt="Mind Technica Logo" />
       </a>
@@ -51,7 +51,7 @@ export default function Navbar() {
 
     {/* Mobile menu overlay */}
     <div
-      className={`${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} transition-opacity duration-200 fixed inset-0 z-[100] bg-bgBlack flex flex-col px-6 pt-6 pb-10 md:hidden`}
+      className={`${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} transition-opacity duration-200 fixed inset-0 z-[100] bg-bgBlack flex flex-col px-6 pt-6 pb-10 lg:hidden`}
     >
       {/* Header */}
       <div className="flex justify-between items-center">

@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import TeamPortrait from '@/components/TeamPortrait'
 import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
 const bayon = Bayon({
@@ -64,6 +65,53 @@ export default function About() {
             <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6`}>
               Mind Technica is an engineering-led consultancy building bespoke software and AI around the way businesses already work. We help our clients free up their teams&apos; time, reduce the manpower each task needs, and scale without proportional growth in cost or headcount.
             </p>
+          </section>
+
+          <section id="team" className="mb-20 md:mb-32 scroll-mt-8">
+            <div className="mb-10">
+              <h2 className={`${bayon.className} text-white text-4xl md:text-6xl pb-4`}>
+                Meet the team
+              </h2>
+              <div className="border-b-2 border-white w-full" />
+            </div>
+            <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12 max-w-5xl">
+              <TeamPortrait />
+              <div className="border-l-2 border-green pl-6">
+                <h3 className={`${bayon.className} text-green text-2xl md:text-3xl mb-3`}>
+                  Antonio Guerriere
+                </h3>
+                <p className="text-white text-sm md:text-base font-semibold mb-4">
+                  Founder &amp; Director
+                </p>
+                <p className="text-stone-300 text-base md:text-lg leading-relaxed">
+                  Antonio is the founder and director of Mind Technica, helping organisations
+                  build practical AI, software and automation systems. He holds a First-Class
+                  Honours degree in Computing and IT from The Open University and is currently
+                  studying for an MSc in Data Science and Artificial Intelligence at Queen&apos;s
+                  University Belfast.
+                </p>
+                <div className="flex flex-wrap gap-3 mt-6">
+                  <a
+                    href="https://antonioguerriere.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center min-h-[44px] rounded-full border border-green px-6 py-3 text-sm font-semibold text-green transition-colors hover:bg-green hover:text-bgBlack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
+                  >
+                    Personal website
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/antonioguerriere/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center min-h-[44px] rounded-full border border-green px-6 py-3 text-sm font-semibold text-green transition-colors hover:bg-green hover:text-bgBlack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
+                  >
+                    LinkedIn
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Our Vision — two-column layout */}

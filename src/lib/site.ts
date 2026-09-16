@@ -2,13 +2,9 @@ export const SITE_URL = 'https://mindtechnica.com'
 export const SITE_NAME = 'Mind Technica'
 
 export const SITE_SERVICES = [
-  'AI strategy and advisory',
-  'Agentic AI and generative AI',
-  'Business process automation',
-  'Data science and engineering',
-  'Custom software development',
-  'AWS cloud infrastructure and security',
-  'AI voice agents',
+  'Bespoke software development',
+  'AI integrations and bespoke AI solutions',
+  'AWS cloud management',
 ]
 
 export const SITE_EXPERTISE = [
@@ -30,7 +26,7 @@ export const SITE_EXPERTISE = [
 ]
 
 export const SITE_DESCRIPTION =
-  'Mind Technica is an engineering consultancy building bespoke software and AI around the way businesses already work, freeing up to 70% of a team’s time and reducing the manpower each task needs. We work primarily with growing and mid-sized businesses, and support larger organisations and public-sector bodies on clearly defined transformation projects.'
+  'Mind Technica is an engineering consultancy building bespoke software and AI around the way businesses already work, helping teams spend less time on repetitive tasks. We work primarily with growing and mid-sized businesses, and support larger organisations and public-sector bodies on clearly defined transformation projects.'
 
 export const SITE_SHORT_DESCRIPTION =
   'Bespoke software and AI, engineered around your business, freeing your team’s time and reducing the manpower each task needs.'

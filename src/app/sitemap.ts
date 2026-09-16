@@ -20,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/aws-cloud-services`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/book-a-call`,
       lastModified,
       changeFrequency: 'monthly' as const,
@@ -32,10 +38,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/promo`,
+      url: `${baseUrl}/kitchen-quotation-workflow`,
       lastModified,
       changeFrequency: 'weekly' as const,
-      priority: 0.7,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/about`,

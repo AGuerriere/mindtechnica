@@ -1,0 +1,75 @@
+'use client'
+
+import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
+
+export default function TeamPortrait() {
+  const dialogRef = useRef<HTMLDialogElement>(null)
+  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (!isOpen) return
+    const dialog = dialogRef.current
+    const previousOverflow = document.body.style.overflow
+    dialog?.showModal()
+    document.body.style.overflow = 'hidden'
+    return () => {
+      dialog?.close()
+      document.body.style.overflow = previousOverflow
+    }
+  }, [isOpen])
+
+  return (
+    <>
+      <button
+        type="button"
+        onClick={() => setIsOpen(true)}
+        aria-label="Enlarge photo of Antonio Guerriere"
+        aria-haspopup="dialog"
+        className="block w-56 md:w-64 shrink-0 rounded-xl overflow-hidden cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
+      >
+        <Image
+          src="/images/team/antonio.webp"
+          alt="Antonio Guerriere, founder and director of Mind Technica"
+          width={3840}
+          height={5120}
+          sizes="(min-width: 768px) 256px, 224px"
+          className="w-full h-auto"
+        />
+      </button>
+      <dialog
+        ref={dialogRef}
+        aria-label="Photo of Antonio Guerriere"
+        onClose={() => setIsOpen(false)}
+        onClick={event => {
+          if (event.target === event.currentTarget) setIsOpen(false)
+        }}
+        className="m-auto max-w-[95vw] max-h-[95dvh] border-0 bg-transparent p-3 text-white backdrop:bg-black/85 backdrop:backdrop-blur-sm"
+      >
+        <button
+          type="button"
+          onClick={() => setIsOpen(false)}
+          aria-label="Close enlarged photo"
+          className="block mx-auto mb-3 rounded-full px-4 py-2 bg-bgBlack text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-green"
+        >
+          Close ×
+        </button>
+        <button
+          type="button"
+          onClick={() => setIsOpen(false)}
+          aria-label="Close photo of Antonio Guerriere"
+          className="block cursor-zoom-out rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-green"
+        >
+          <Image
+            src="/images/team/antonio.webp"
+            alt="Antonio Guerriere"
+            width={3840}
+            height={5120}
+            sizes="90vw"
+            className="w-auto h-auto max-w-full max-h-[78dvh] rounded-lg object-contain"
+          />
+        </button>
+      </dialog>
+    </>
+  )
+}

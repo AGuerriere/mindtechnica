@@ -65,25 +65,30 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         <p style="font-family:sans-serif;font-size:12px;color:#888">Booking status: pending</p>
       `;
 
-      const resendResponse = await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${env.RESEND_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from,
-          to,
-          reply_to: email,
-          subject: `New lead: ${fullName} (${companyName})`,
-          html,
-        }),
-      });
+      try {
+        const resendResponse = await fetch("https://api.resend.com/emails", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${env.RESEND_API_KEY}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            from,
+            to,
+            reply_to: email,
+            subject: `New lead: ${fullName} (${companyName})`,
+            html,
+          }),
+        });
 
-      if (!resendResponse.ok) {
-        // Lead is already saved — log the email failure but don't fail the request.
-        const errText = await resendResponse.text();
-        console.error("Resend email failed:", resendResponse.status, errText);
+        if (!resendResponse.ok) {
+          // Lead is already saved — log the email failure but don't fail the request.
+          const errText = await resendResponse.text();
+          console.error("Resend email failed:", resendResponse.status, errText);
+        }
+      } catch (error) {
+        // The enquiry is saved. A notification outage must not block booking.
+        console.error("Resend notification failed:", error);
       }
     } else {
       console.warn("RESEND_API_KEY not configured — skipping notification email");

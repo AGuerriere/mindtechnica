@@ -1,0 +1,4 @@
+# The /promo free-audit campaign has ended. Send any remaining traffic
+# (ads, old links) to the general booking page rather than to the
+# kitchen-quotation campaign page, so campaign measurement stays clean.
+/promo /book-a-call 301

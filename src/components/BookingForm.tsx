@@ -20,9 +20,10 @@ type FormData = {
   message: string
 }
 
-export default function BookingForm() {
+export default function BookingForm({ campaign }: { campaign?: 'kitchen-quotation-workflow' }) {
   const [showCalendar, setShowCalendar] = useState(false)
   const [submittedData, setSubmittedData] = useState<FormData | null>(null)
+  const [saveError, setSaveError] = useState(false)
 
   const {
     register,
@@ -31,19 +32,35 @@ export default function BookingForm() {
   } = useForm<FormData>({ mode: 'onTouched' })
 
   const onSubmit = async (data: FormData) => {
-    // Save the lead to the backend. Don't block the booking flow if it fails —
-    // the user can still pick a time and the Cal.com webhook is the source of truth.
+    setSaveError(false)
+    const params = new URLSearchParams(window.location.search)
+    const attribution = [
+      `Enquiry page: ${window.location.pathname}`,
+      ...(campaign ? [`Campaign: ${campaign}`] : []),
+      ...['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']
+        .filter(key => params.has(key))
+        .map(key => `${key}: ${params.get(key)?.slice(0, 200)}`),
+    ].join('\n')
+    // Keep attribution in the existing message field, including calendar notes.
+    // This works with the current database schema and notification emails.
+    const leadData = { ...data, message: `${data.message}\n\n${attribution}` }
     try {
-      await fetch('/api/book-a-call', {
+      const response = await fetch('/api/book-a-call', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        body: JSON.stringify(leadData),
       })
+      if (!response.ok) throw new Error('Lead could not be saved')
+      // A static-host fallback can return HTML with status 200. Require the API response.
+      const result = await response.json()
+      if (result.message !== 'Lead saved successfully') throw new Error('Unexpected response')
     } catch (error) {
       console.error('Failed to save lead:', error)
+      setSaveError(true)
+      return
     }
 
-    setSubmittedData(data)
+    setSubmittedData(leadData)
     setShowCalendar(true)
   }
 
@@ -127,13 +144,15 @@ export default function BookingForm() {
 
         <div className="mt-6">
           <label htmlFor="message" className={labelClass}>
-            Tell us briefly what we can help you with <span className="text-green">*</span>
+            {campaign ? 'Which part of your sales process would you like to improve?' : 'Tell us briefly what we can help you with'} <span className="text-green">*</span>
           </label>
           <textarea
             {...register('message', { required: 'Please tell us how we can help' })}
             id="message"
             rows={5}
-            placeholder="We're looking to automate our document processing pipeline and integrate AI-powered insights into our existing systems..."
+            placeholder={campaign
+              ? 'For example, we lose track of quotes sent and copy client details between our CRM, spreadsheets and accounts software.'
+              : 'A sentence or two about the problem you would like to solve is plenty.'}
             className="rounded-lg w-full bg-blueFaded border border-grey/20 text-greyLight02 placeholder-grey pl-4 pt-3 mt-2 focus:outline-none focus:border-green transition-colors text-base md:text-sm resize-none"
           />
           {errors.message && (
@@ -142,6 +161,13 @@ export default function BookingForm() {
         </div>
 
         <div className="mt-8">
+          {saveError && (
+            <p role="alert" className="text-red-300 text-sm mb-4">
+              We couldn&apos;t save your details. Please try again. If it still doesn&apos;t work, email{' '}
+              <a href="mailto:projects@mindtechnica.com" className="underline">projects@mindtechnica.com</a>
+              {' '}and we&apos;ll arrange a time with you.
+            </p>
+          )}
           <p className="text-xs text-stone-500 mb-4">
             By submitting this form you agree to our{' '}
             <a href="/privacy" className="text-green hover:underline" target="_blank" rel="noopener noreferrer">

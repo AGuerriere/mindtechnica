@@ -38,8 +38,9 @@ const heroItems = [
   },
   {
     icon: "./images/settings.svg",
-    title: "Cloud & Security",
-    description: "Secure, dependable infrastructure that scales with you and keeps running costs under control.",
+    title: "AWS Cloud Services",
+    description: "AWS architecture, migration, security and ongoing support, with a clear view of your running costs.",
+    href: "/aws-cloud-services",
     color: "text-pink",
     bgColor: "bg-pinkFaded"
   },
@@ -61,7 +62,7 @@ const whyUsItems = [
   {
     icon: "./images/pressure.svg",
     title: "Your team's time, freed",
-    description: "We target repetitive, manual work first, so the gains show up quickly and can free up to 70% of your team's time for the work that actually moves the business forward."
+    description: "We start with the repetitive tasks that take up your team's time, so they can spend more of their day on customers and work that needs their attention."
   },
   {
     icon: "./images/useradd.svg",
@@ -86,10 +87,10 @@ const whyUsItems = [
 ]
 
 const capabilities = [
-  { label: "Custom software", dot: "bg-green" },
-  { label: "Document-reading AI", dot: "bg-yellow" },
-  { label: "Agentic systems", dot: "bg-pink" },
-  { label: "Cloud infrastructure", dot: "bg-blue" },
+  { label: "Bespoke software", dot: "bg-green" },
+  { label: "AI integrations", dot: "bg-yellow" },
+  { label: "Automation", dot: "bg-pink" },
+  { label: "AWS cloud services", dot: "bg-blue" },
 ]
 
 const sectorsItems = [
@@ -141,7 +142,7 @@ export default function Home() {
           </h1>
           <div className="flex justify-center mt-9 mb-10 md:mb-40">
             <p className={`${inter.className} w-3/4 opacity-90 text-center text-stone-300 text-base md:text-2xl font-normal leading-9`}>
-              We engineer software and AI around the way your business already works, freeing up to 70% of your team&apos;s time, reducing the manpower each task needs, and delivering systems your people actually adopt
+              We engineer software and AI around the way your business already works, helping your team spend less time on repetitive tasks and giving them tools they can use day to day
             </p>
           </div>
         </div>
@@ -158,6 +159,11 @@ export default function Home() {
               </div>
               <h5 className={`${bayon.className} uppercase text-2xl text-center ${item.color}`}>{item.title}</h5>
               <p className="text-center p-3 text-xs md:text-base">{item.description}</p>
+              {item.href && (
+                <Link href={item.href} className="text-green text-xs md:text-sm font-semibold py-2 hover:underline">
+                  Explore AWS services →
+                </Link>
+              )}
             </div>
           ))}
         </div>
@@ -167,18 +173,18 @@ export default function Home() {
       <div className="bg-gradient-to-r from-greenFaded to-blueFaded py-8 md:py-12 -mt-10">
         <div className="2xl:mx-auto 2xl:w-[1400px] px-5">
           <div className="text-center">
-            <p className="text-green text-sm md:text-base font-semibold uppercase tracking-wider mb-3">Limited Time Offer: 30 Days Only</p>
+            <p className="text-green text-sm md:text-base font-semibold uppercase tracking-wider mb-3">For kitchen, bathroom &amp; bedroom businesses</p>
             <h3 className={`${bayon.className} text-white text-2xl md:text-4xl lg:text-5xl mb-4`}>
-              Free AI &amp; Bespoke <span className="highlightsTitle">Software Audit</span>
+              Spending too much time <span className="highlightsTitle">on sales admin?</span>
             </h3>
             <p className="text-stone-300 text-sm md:text-lg mb-6 max-w-3xl mx-auto">
-              A complimentary expert assessment of where AI and bespoke software could free your team&apos;s time and reduce overhead, including a written report and implementation blueprint worth <span className="text-white font-semibold">&pound;5,000</span>, yours for <span className="text-white font-semibold">FREE</span>. Limited places available.
+              Keep track of clients, quotes and follow-ups, and connect the systems your team uses. Explore a better way to manage your sales process in a <span className="text-white font-semibold">free 20–30-minute consultation</span>.
             </p>
             <Link
-              href="/promo"
+              href="/kitchen-quotation-workflow"
               className="inline-block bg-green text-bgBlack font-semibold text-base md:text-lg px-8 py-4 rounded-full hover:bg-opacity-90 transition-all"
             >
-              Book Your Free Audit
+              Find out about the consultation
             </Link>
           </div>
         </div>
@@ -273,13 +279,13 @@ export default function Home() {
               </div>
 
               <p className={`${inter.className} max-w-4xl text-white text-xl md:text-2xl lg:text-[1.75rem] font-light leading-snug md:leading-[1.4]`}>
-                Most growing businesses we talk to aren&apos;t struggling because their people aren&apos;t good enough. They&apos;re struggling because <span className="text-green">the systems around those people haven&apos;t kept pace</span>. Quoting takes longer than it should, data lives in the wrong place, and too much depends on someone manually moving information from one system to another.
+                As a business grows, its software needs change. Teams spend more time working around the limits of existing tools, and useful information becomes harder to find. Sometimes a business needs a better way to manage its work; sometimes it needs an entirely new product or service.
               </p>
 
               <div className="mt-12 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
                 <div>
                   <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
-                    We&apos;re a team of engineers, and our starting point is always the problem rather than the technology. Depending on what&apos;s actually needed, that might mean building a custom software solution, deploying AI that reads documents and handles routine decisions, setting up agentic systems that complete multi-step tasks without human intervention, or putting the right cloud infrastructure in place to make all of it reliable and scalable.
+                    We build bespoke software, integrate AI into business applications, and design and manage cloud infrastructure on AWS. Our work ranges from custom platforms and connections between existing systems to document-processing AI, voice agents and software agents that carry out routine tasks.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2.5">
                     {capabilities.map((cap) => (
@@ -297,17 +303,17 @@ export default function Home() {
                 </div>
                 <div className="lg:border-l lg:border-grey/15 lg:pl-12">
                   <p className={`${inter.className} text-stone-300 text-base md:text-lg leading-relaxed`}>
-                    We work out where the gaps are actually costing you, and then we build something that closes them properly, designed around the way your business genuinely operates rather than adapted from something generic. That&apos;s why our systems keep getting used long after off-the-shelf tools have been abandoned: your team doesn&apos;t have to change how they work to use them.
+                    We start by understanding what you need the system to do, who will use it and how it fits with your existing technology. From there, we agree an approach that accounts for your budget and the work involved in running and maintaining it.
                   </p>
                 </div>
               </div>
 
               <p className={`${inter.className} mt-12 md:mt-16 max-w-4xl text-white/90 text-lg md:text-2xl font-light leading-snug`}>
-                When it works well, the impact tends to be straightforward: your team spends less time on work that shouldn&apos;t need them, your client-facing processes get faster and more consistent, and the information you need to make good decisions is actually available when you need it.
+                That could mean giving staff better tools, launching a customer-facing platform or making an application more reliable as usage grows. We build with those needs in mind and help you keep the system working as the business develops.
               </p>
 
               <p className={`${inter.className} mt-8 max-w-4xl text-stone-400 text-sm md:text-base leading-relaxed`}>
-                Most of our clients are growing and mid-sized businesses in the UK and Ireland, but we work with organisations wherever the problem is well defined, including larger enterprises and public-sector bodies on clearly scoped transformation projects.
+                Most of our clients are growing and mid-sized businesses in the UK and Ireland. We also work with larger organisations and public-sector bodies, including those based elsewhere, on projects with a clear scope.
               </p>
 
               <div className="mt-12 md:mt-16 flex flex-col gap-5 rounded-2xl border border-green/20 bg-greenFaded p-6 md:flex-row md:items-center md:justify-between md:p-9">
@@ -315,10 +321,10 @@ export default function Home() {
                   If any of that sounds familiar, let&apos;s talk.
                 </p>
                 <a
-                  href="/promo"
+                  href="/book-a-call"
                   className="group inline-flex w-fit shrink-0 items-center text-green md:text-lg font-semibold transition-colors hover:text-green/80"
                 >
-                  Book a free audit
+                  Book a free consultation now
                   <Image
                     src="./images/arrow.svg"
                     width={70}
