@@ -1,19 +1,10 @@
+import { pageMetadata } from '@/lib/metadata'
 import { bayon } from '@/lib/fonts'
-import { Metadata } from 'next'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { SITE_NAME, SITE_URL } from '@/lib/site'
 
-const title = `AWS cloud services & management | ${SITE_NAME}`
-const description = 'AWS assessment, architecture, migration, cost optimisation, security, disaster recovery and managed support, with an AWS-certified Solutions Architect on our team.'
-
-export const metadata: Metadata = {
-  title, description,
-  alternates: { canonical: '/aws-cloud-services' },
-  openGraph: { title, description, url: `${SITE_URL}/aws-cloud-services`, siteName: SITE_NAME, images: '/images/Asset1.png' },
-  twitter: { card: 'summary_large_image', title, description, images: '/images/Asset1.png' },
-}
+export const metadata = pageMetadata('/aws-cloud-services')
 
 const planningServices = [
   { title: 'Infrastructure assessment', description: 'Review your current environment and identify what needs attention. We explain the findings and help you decide which improvements to tackle first.' },

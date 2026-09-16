@@ -1,23 +1,11 @@
+import { pageMetadata } from '@/lib/metadata'
 import { bayon, inter } from '@/lib/fonts'
-import { Metadata } from 'next'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BookingForm from '@/components/BookingForm'
-import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: `Book a Call | ${SITE_NAME}`,
-  description: 'Book a free consultation to find out where bespoke software, AI and automation could free your team’s time and reduce the manpower each task needs.',
-  keywords: SITE_KEYWORDS,
-  alternates: { canonical: '/book-a-call' },
-  openGraph: {
-    title: `Book a Call | ${SITE_NAME}`,
-    description: 'Tell Mind Technica what you want to build or automate across AI, data, software, cloud infrastructure and voice agent systems.',
-    url: `${SITE_URL}/book-a-call`,
-    siteName: SITE_NAME,
-  },
-}
+export const metadata = pageMetadata('/book-a-call')
 
 export default function BookACall() {
   return (

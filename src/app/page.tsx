@@ -1,3 +1,4 @@
+import { pageMetadata } from '@/lib/metadata'
 import { inter, bayon } from '@/lib/fonts'
 import Image from "next/image"
 import Link from "next/link"
@@ -6,6 +7,8 @@ import Footer from "@/components/Footer"
 import { getAllPosts } from '@/lib/blog'
 import OurClients from '@/components/OurClients'
 import BookingForm from '@/components/BookingForm'
+
+export const metadata = pageMetadata('/')
 
 const heroItems = [
   {

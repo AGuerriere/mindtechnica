@@ -1,52 +1,24 @@
+import type { Metadata } from 'next'
 import { inter } from '@/lib/fonts'
 import './globals.css'
 import Script from 'next/script'
 import {
   SITE_DESCRIPTION,
   SITE_EXPERTISE,
-  SITE_KEYWORDS,
   SITE_NAME,
   SITE_SERVICES,
   SITE_SHORT_DESCRIPTION,
   SITE_URL,
 } from '@/lib/site'
 
-export const metadata = {
-  title: `${SITE_NAME} | Engineering Intelligence for Real-World Impact`,
-  description: SITE_DESCRIPTION,
-  keywords: SITE_KEYWORDS,
+export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
+  description: SITE_DESCRIPTION,
+  title: `${SITE_NAME} | Bespoke Software, AI & AWS Cloud Services`,
   icons: {
-    icon: './icon.ico',
-  },
-  alternates: {
-    canonical: '/',
-  },
-  openGraph: {
-    images: './images/Asset1.png',
-    title: `${SITE_NAME} | Engineering Intelligence for Real-World Impact`,
-    description: SITE_DESCRIPTION,
-    url: SITE_URL,
-    siteName: SITE_NAME,
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${SITE_NAME} | Engineering Intelligence for Real-World Impact`,
-    description: SITE_DESCRIPTION,
-    images: './images/Asset1.png',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
+    icon: '/icon.ico',
+    apple: '/apple-touch-icon.png',
   },
 }
 
@@ -77,17 +49,20 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
+              '@id': `${SITE_URL}/#organization`,
+              legalName: 'Mind Technica Ltd',
               name: SITE_NAME,
               alternateName: ['MindTechnica', 'Mind-Technica'],
               url: SITE_URL,
               logo: `${SITE_URL}/images/Asset1.png`,
               description: SITE_SHORT_DESCRIPTION,
               knowsAbout: [...SITE_SERVICES, ...SITE_EXPERTISE],
-              makesOffer: SITE_SERVICES.map(service => ({
+              makesOffer: SITE_SERVICES.map((service, index) => ({
                 '@type': 'Offer',
                 itemOffered: {
                   '@type': 'Service',
                   name: service,
+                  url: new URL(['/services#bespoke-software', '/services#ai-solutions', '/aws-cloud-services'][index], SITE_URL).href,
                 },
               })),
               address: {

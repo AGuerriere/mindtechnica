@@ -21,15 +21,19 @@ export const SITE_EXPERTISE = [
   'Custom web applications',
   'Backend APIs',
   'AWS infrastructure',
+  'AWS migration',
+  'AWS cost optimisation',
+  'Amazon Bedrock',
+  'Disaster recovery',
   'Cloud security',
   'Voice automation',
 ]
 
 export const SITE_DESCRIPTION =
-  'Mind Technica is an engineering consultancy building bespoke software and AI around the way businesses already work, helping teams spend less time on repetitive tasks. We work primarily with growing and mid-sized businesses, and support larger organisations and public-sector bodies on clearly defined transformation projects.'
+  'Mind Technica builds bespoke software and AI solutions, integrates business systems and manages AWS cloud infrastructure. Based in Northern Ireland.'
 
 export const SITE_SHORT_DESCRIPTION =
-  'Bespoke software and AI, engineered around your business, freeing your team’s time and reducing the manpower each task needs.'
+  'Bespoke software, AI integrations and solutions, and AWS cloud management from Mind Technica.'
 
 export const SITE_KEYWORDS = [
   'Mind Technica',
@@ -51,4 +55,4 @@ export const SITE_KEYWORDS = [
 ]
 
 export const RSS_DESCRIPTION =
-  'Insights on AI strategy, agentic AI, automation, data systems, cloud infrastructure, custom software and AI voice agents from the Mind Technica team.'
+  'Articles from Mind Technica on bespoke software, AI integrations and solutions, automation and AWS cloud infrastructure.'

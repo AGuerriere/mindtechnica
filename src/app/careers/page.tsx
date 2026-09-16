@@ -1,26 +1,10 @@
+import { pageMetadata } from '@/lib/metadata'
 import { bayon, inter } from '@/lib/fonts'
-import { Metadata } from 'next'
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
-import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: `Careers | ${SITE_NAME}`,
-  description:
-    'Join Mind Technica to build AI strategy, agentic AI, automation, data science, custom software, AWS cloud infrastructure and AI voice agent systems.',
-  keywords: SITE_KEYWORDS,
-  alternates: {
-    canonical: '/careers',
-  },
-  openGraph: {
-    title: `Careers | ${SITE_NAME}`,
-    description:
-      'Work with Mind Technica on AI, automation, data, custom software, cloud infrastructure and voice agent projects.',
-    url: `${SITE_URL}/careers`,
-    siteName: SITE_NAME,
-  },
-}
+export const metadata = pageMetadata('/careers')
 
 const CareersPage = () => {
   return (

@@ -1,20 +1,11 @@
+import { pageMetadata } from '@/lib/metadata'
 import { bayon, inter } from '@/lib/fonts'
-import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { SITE_NAME, SITE_URL } from '@/lib/site'
 
-const title = `Bespoke software, AI & AWS cloud services | ${SITE_NAME}`
-const description = 'Bespoke software, AI integrations and bespoke AI solutions, and AWS cloud management. Find out how Mind Technica can help with your next project.'
-
-export const metadata: Metadata = {
-  title, description,
-  alternates: { canonical: '/services' },
-  openGraph: { title, description, url: `${SITE_URL}/services`, siteName: SITE_NAME, images: '/images/Asset1.png' },
-  twitter: { card: 'summary_large_image', title, description, images: '/images/Asset1.png' },
-}
+export const metadata = pageMetadata('/services')
 
 const services = [
   {

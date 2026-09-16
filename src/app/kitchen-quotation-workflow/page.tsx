@@ -1,27 +1,11 @@
+import { pageMetadata } from '@/lib/metadata'
 import { bayon, inter } from '@/lib/fonts'
-import { Metadata } from 'next'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BookingForm from '@/components/BookingForm'
-import { SITE_NAME, SITE_URL } from '@/lib/site'
 
-const title = `Manage your sales process with less admin | ${SITE_NAME}`
-const description = 'A free 20–30-minute consultation for kitchen, bathroom and bedroom businesses to improve sales, track clients and quotes, and connect existing systems.'
-
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: '/kitchen-quotation-workflow' },
-  openGraph: {
-    title,
-    description,
-    url: `${SITE_URL}/kitchen-quotation-workflow`,
-    siteName: SITE_NAME,
-    images: '/images/Asset1.png',
-  },
-  twitter: { card: 'summary_large_image', title, description, images: '/images/Asset1.png' },
-}
+export const metadata = pageMetadata('/kitchen-quotation-workflow')
 
 const problems = [
   { title: 'Entering the same details twice', text: 'Customer details and measurements get copied from emails into spreadsheets, quotes and other systems.' },

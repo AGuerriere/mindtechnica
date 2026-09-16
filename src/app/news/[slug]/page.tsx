@@ -5,7 +5,8 @@ import Link from 'next/link'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
 import { getAllSlugs, getPostBySlug } from '@/lib/blog'
-import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
+import { SITE_NAME, SITE_URL } from '@/lib/site'
+import { createMetadata, DEFAULT_SOCIAL_IMAGE } from '@/lib/metadata'
 import MDXComponents from '@/components/mdx/MDXComponents'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -19,26 +20,14 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
-  const post = getPostBySlug(params.slug)
-  const { title, description, image, date, tags } = post.frontmatter
-
-  return {
-    title: `${title} | ${SITE_NAME}`,
-    description,
-    keywords: [...SITE_KEYWORDS, ...(tags || [])],
-    openGraph: {
-      title,
-      description,
-      type: 'article',
-      publishedTime: date,
-      url: `${SITE_URL}/news/${params.slug}`,
-      siteName: SITE_NAME,
-      images: [{ url: image || '/images/Asset1.png' }],
-    },
-    alternates: {
-      canonical: `/news/${params.slug}`,
-    },
-  }
+  const { title, description, image, date, updated, tags, author } = getPostBySlug(params.slug).frontmatter
+  return createMetadata({
+    title, description, image, keywords: tags,
+    path: `/news/${params.slug}`,
+    publishedTime: date,
+    modifiedTime: updated,
+    author: author || SITE_NAME,
+  })
 }
 
 export default function NewsPost({ params }: PageProps) {
@@ -60,7 +49,9 @@ export default function NewsPost({ params }: PageProps) {
       url: SITE_URL,
     },
     url: `${SITE_URL}/news/${params.slug}`,
-    ...(post.frontmatter.image && { image: post.frontmatter.image }),
+    image: new URL(post.frontmatter.image || DEFAULT_SOCIAL_IMAGE, SITE_URL).href,
+    mainEntityOfPage: `${SITE_URL}/news/${params.slug}`,
+    ...(post.frontmatter.updated && { dateModified: post.frontmatter.updated }),
   }
 
   return (

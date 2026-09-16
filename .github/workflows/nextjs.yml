@@ -34,3 +34,5 @@ jobs:
         run: node --test tests/booking.test.cjs
       - name: Build static site
         run: npm run build
+      - name: Check exported metadata and sitemap
+        run: node --test tests/metadata-export.test.cjs

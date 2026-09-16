@@ -1,27 +1,11 @@
+import { pageMetadata } from '@/lib/metadata'
 import { bayon, inter } from '@/lib/fonts'
-import { Metadata } from 'next'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import TeamPortrait from '@/components/TeamPortrait'
-import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: `About | ${SITE_NAME}`,
-  description:
-    'Mind Technica is an engineering-led consultancy building bespoke software and AI around the way businesses already work, primarily for growing and mid-sized businesses, with support for larger organisations on defined transformation projects.',
-  keywords: SITE_KEYWORDS,
-  openGraph: {
-    title: `About | ${SITE_NAME}`,
-    description:
-      'Learn about Mind Technica: an engineering-led consultancy building bespoke software and AI that free teams from repetitive work.',
-    url: `${SITE_URL}/about`,
-    siteName: SITE_NAME,
-  },
-  alternates: {
-    canonical: '/about',
-  },
-}
+export const metadata = pageMetadata('/about')
 
 export default function About() {
   return (

@@ -1,26 +1,12 @@
+import { pageMetadata } from '@/lib/metadata'
 import { bayon, inter } from '@/lib/fonts'
-import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/blog'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { RSS_DESCRIPTION, SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: `Insights & Lab Notes | ${SITE_NAME}`,
-  description: RSS_DESCRIPTION,
-  keywords: SITE_KEYWORDS,
-  openGraph: {
-    title: `Insights & Lab Notes | ${SITE_NAME}`,
-    description: RSS_DESCRIPTION,
-    url: `${SITE_URL}/news`,
-    siteName: SITE_NAME,
-  },
-  alternates: {
-    canonical: '/news',
-  },
-}
+export const metadata = pageMetadata('/news')
 
 export default function NewsIndex() {
   const posts = getAllPosts()

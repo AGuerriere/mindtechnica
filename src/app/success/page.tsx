@@ -1,17 +1,11 @@
+import { pageMetadata } from '@/lib/metadata'
 import { bayon, inter } from '@/lib/fonts'
-import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { SITE_NAME } from '@/lib/site'
 
-export const metadata: Metadata = {
-  title: `Thank You | ${SITE_NAME}`,
-  description: 'Thanks for booking a consultation with Mind Technica about AI, automation, software, cloud infrastructure or voice agent systems.',
-  alternates: { canonical: '/success' },
-  robots: { index: false, follow: false },
-}
+export const metadata = pageMetadata('/success')
 
 export default function Success() {
   return (
