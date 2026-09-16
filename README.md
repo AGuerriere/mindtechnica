@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Bayon and Inter are bundled in `src/fonts` and loaded through `src/lib/fonts.ts` using `next/font/local`. Builds do not download fonts from Google.
 
 ## Learn More
 
@@ -29,8 +29,12 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Cloudflare Pages automatically builds and deploys pushes to `main` through its Git integration.
+The build command is `npm run build`; the static output directory is `out`.
+`next.config.js` already enables static export, so no separate `next export` command is needed.
+The `functions` directory supplies the Cloudflare Pages booking backend, configured in `wrangler.toml`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+GitHub Actions validates the build and booking tests only. It does not deploy to GitHub Pages
+or modify the Next.js configuration.

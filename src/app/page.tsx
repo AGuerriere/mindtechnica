@@ -1,5 +1,4 @@
-import { Inter } from 'next/font/google'
-import { Bayon } from 'next/font/google'
+import { inter, bayon } from '@/lib/fonts'
 import Image from "next/image"
 import Link from "next/link"
 import Navbar from "@/components/Navbar"
@@ -7,12 +6,6 @@ import Footer from "@/components/Footer"
 import { getAllPosts } from '@/lib/blog'
 import OurClients from '@/components/OurClients'
 import BookingForm from '@/components/BookingForm'
-
-const inter = Inter({ subsets: ['latin'] })
-const bayon = Bayon({
-  weight: '400',
-  subsets: ['latin'],
-})
 
 const heroItems = [
   {

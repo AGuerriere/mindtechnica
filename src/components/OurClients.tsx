@@ -1,12 +1,9 @@
 'use client'
 
+import { bayon } from '@/lib/fonts'
+
 import Image from "next/image"
-import { Bayon } from 'next/font/google'
 import { useState } from "react"
-const bayon = Bayon({
-  weight: '400',
-  subsets: ['latin'],
-})
 
 export default function OurClients() {
   const [hidden, toggleHidden] = useState(2)

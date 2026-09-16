@@ -1,11 +1,10 @@
 'use client'
 
+import { inter } from '@/lib/fonts'
+
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import dynamic from 'next/dynamic'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 const CalendarModal = dynamic(() => import('./CalendarModal'), {
   ssr: false,

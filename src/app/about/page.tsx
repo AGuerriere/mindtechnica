@@ -1,18 +1,10 @@
+import { bayon, inter } from '@/lib/fonts'
 import { Metadata } from 'next'
-import { Bayon } from 'next/font/google'
-import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import TeamPortrait from '@/components/TeamPortrait'
 import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
-
-const bayon = Bayon({
-  weight: '400',
-  subsets: ['latin'],
-})
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: `About | ${SITE_NAME}`,

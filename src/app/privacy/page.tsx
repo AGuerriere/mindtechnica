@@ -1,8 +1,8 @@
+import { bayon } from '@/lib/fonts'
 import { Metadata } from 'next'
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import Image from "next/image"
-import { Bayon } from 'next/font/google'
 import { SITE_NAME, SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
@@ -20,11 +20,6 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
   },
 }
-
-const bayon = Bayon({
-  weight: '400',
-  subsets: ['latin'],
-})
 
 const SectionHeading = ({ title, className }: { title: string; className?: string }) => (
   <div className={`flex flex-row align-center mt-20 mb-7 ${className ?? ''}`}>

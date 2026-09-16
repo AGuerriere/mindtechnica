@@ -1,5 +1,5 @@
+import { inter } from '@/lib/fonts'
 import './globals.css'
-import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import {
   SITE_DESCRIPTION,
@@ -10,8 +10,6 @@ import {
   SITE_SHORT_DESCRIPTION,
   SITE_URL,
 } from '@/lib/site'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: `${SITE_NAME} | Engineering Intelligence for Real-World Impact`,

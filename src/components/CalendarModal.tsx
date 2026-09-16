@@ -1,12 +1,10 @@
 'use client'
 
+import { bayon, inter } from '@/lib/fonts'
+
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Cal, { getCalApi } from '@calcom/embed-react'
-import { Bayon, Inter } from 'next/font/google'
-
-const bayon = Bayon({ weight: '400', subsets: ['latin'] })
-const inter = Inter({ subsets: ['latin'] })
 
 // cal.com booking link (the part after the domain) and its origin.
 // This account is on cal.com's EU region (cal.eu), so calOrigin must be set.

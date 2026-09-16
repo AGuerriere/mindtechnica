@@ -1,13 +1,11 @@
+import { bayon, inter } from '@/lib/fonts'
 import { Metadata } from 'next'
-import { Bayon, Inter } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { SITE_NAME, SITE_URL } from '@/lib/site'
 
-const bayon = Bayon({ weight: '400', subsets: ['latin'] })
-const inter = Inter({ subsets: ['latin'] })
 const title = `Bespoke software, AI & AWS cloud services | ${SITE_NAME}`
 const description = 'Bespoke software, AI integrations and bespoke AI solutions, and AWS cloud management. Find out how Mind Technica can help with your next project.'
 

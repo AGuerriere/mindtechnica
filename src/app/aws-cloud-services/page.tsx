@@ -1,11 +1,10 @@
+import { bayon } from '@/lib/fonts'
 import { Metadata } from 'next'
-import { Bayon } from 'next/font/google'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { SITE_NAME, SITE_URL } from '@/lib/site'
 
-const bayon = Bayon({ weight: '400', subsets: ['latin'] })
 const title = `AWS cloud services & management | ${SITE_NAME}`
 const description = 'AWS assessment, architecture, migration, cost optimisation, security, disaster recovery and managed support, with an AWS-certified Solutions Architect on our team.'
 

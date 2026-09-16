@@ -1,11 +1,9 @@
+import { bayon, inter } from '@/lib/fonts'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Bayon, Inter } from 'next/font/google'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
-const bayon = Bayon({ weight: '400', subsets: ['latin'] })
-const inter = Inter({ subsets: ['latin'] })
 import { getAllSlugs, getPostBySlug } from '@/lib/blog'
 import { SITE_KEYWORDS, SITE_NAME, SITE_URL } from '@/lib/site'
 import MDXComponents from '@/components/mdx/MDXComponents'
