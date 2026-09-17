@@ -28,8 +28,8 @@ export const SITE_PAGES: Record<string, PageDetails> = {
     keywords: ['AWS cloud management', 'AWS architecture', 'AWS migration', 'AWS cost optimisation', 'Amazon Bedrock', 'disaster recovery'],
   },
   '/kitchen-quotation-workflow': {
-    title: 'Sales & Quotation Software for KBB Businesses',
-    description: 'Manage clients, quotes and follow-ups, and connect your systems. Book a free sales workflow consultation for your kitchen, bathroom or bedroom business.',
+    title: 'Bespoke Software & AI for KBB Sales & Quotes',
+    description: 'Explore bespoke software and AI for clients, quotes and follow-ups. Book a free sales workflow call for your kitchen, bathroom or bedroom business.',
     keywords: ['kitchen quotation software', 'KBB sales software', 'client and quote tracking', 'sales workflow consultation'],
   },
   '/about': {
