@@ -132,15 +132,15 @@ export default function About() {
               </article>
               <article className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                 <TeamPortrait
-                  name="Martin Král"
+                  name="Martin KRÀL"
                   src="/images/team/martin.webp"
-                  alt="Martin Král, software developer at Mind Technica"
+                  alt="Martin KRÀL, software developer at Mind Technica"
                   width={1536}
                   height={2048}
                 />
                 <div className="flex flex-1 flex-col pt-5">
                   <h3 className={`${bayon.className} text-green text-2xl leading-tight mb-3`}>
-                    Martin Král
+                    Martin KRÀL
                   </h3>
                   <p className="text-white text-sm md:text-base font-semibold mb-4">
                     Software Developer
