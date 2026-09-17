@@ -39,7 +39,7 @@ export default function About() {
               About <span className={`${bayon.className} highlightsTitle`}>Mind Technica</span>
             </h1>
             <p className={`${inter.className} text-center text-stone-300 text-base md:text-2xl font-normal leading-9 max-w-3xl mx-auto mt-6`}>
-              Mind Technica is an engineering-led consultancy building bespoke software and AI around the way businesses already work. We help our clients free up their teams&apos; time, reduce the manpower each task needs, and scale without proportional growth in cost or headcount.
+              Mind Technica is an engineering-led consultancy based in Northern Ireland, building bespoke software and AI around the way businesses already work. We help our clients free up their teams&apos; time, reduce the manpower each task needs, and scale without proportional growth in cost or headcount.
             </p>
           </section>
 
@@ -50,43 +50,112 @@ export default function About() {
               </h2>
               <div className="border-b-2 border-white w-full" />
             </div>
-            <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12 max-w-5xl">
-              <TeamPortrait />
-              <div className="border-l-2 border-green pl-6">
-                <h3 className={`${bayon.className} text-green text-2xl md:text-3xl mb-3`}>
-                  Antonio Guerriere
-                </h3>
-                <p className="text-white text-sm md:text-base font-semibold mb-4">
-                  Founder &amp; Director
-                </p>
-                <p className="text-stone-300 text-base md:text-lg leading-relaxed">
-                  Antonio is the founder and director of Mind Technica, helping organisations
-                  build practical AI, software and automation systems. He holds a First-Class
-                  Honours degree in Computing and IT from The Open University and is currently
-                  studying for an MSc in Data Science and Artificial Intelligence at Queen&apos;s
-                  University Belfast.
-                </p>
-                <div className="flex flex-wrap gap-3 mt-6">
-                  <a
-                    href="https://antonioguerriere.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center min-h-[44px] rounded-full border border-green px-6 py-3 text-sm font-semibold text-green transition-colors hover:bg-green hover:text-bgBlack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
-                  >
-                    Personal website
-                    <span className="sr-only"> (opens in a new tab)</span>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/antonioguerriere/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center min-h-[44px] rounded-full border border-green px-6 py-3 text-sm font-semibold text-green transition-colors hover:bg-green hover:text-bgBlack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
-                  >
-                    LinkedIn
-                    <span className="sr-only"> (opens in a new tab)</span>
-                  </a>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              <article className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                <TeamPortrait
+                  name="Antonio Guerriere"
+                  src="/images/team/antonio.webp"
+                  alt="Antonio Guerriere, founder and director of Mind Technica"
+                  width={3840}
+                  height={5120}
+                />
+                <div className="flex flex-1 flex-col pt-5">
+                  <h3 className={`${bayon.className} text-green text-2xl leading-tight mb-3`}>
+                    Antonio Guerriere<span className="block mt-2 font-sans text-sm font-medium tracking-wide text-stone-300">BSc (Hons)</span>
+                  </h3>
+                  <p className="text-white text-sm md:text-base font-semibold mb-4">
+                    Founder &amp; Director
+                  </p>
+                  <p className="text-stone-300 text-[15px] leading-6">
+                    Antonio is the founder and director of Mind Technica, helping organisations
+                    build practical AI, software and automation systems. He holds a First-Class
+                    Honours degree in Computing and IT from The Open University and is currently
+                    studying for an MSc in Data Science and Artificial Intelligence at Queen&apos;s
+                    University Belfast.
+                  </p>
+                  <div className="flex flex-wrap gap-3 mt-auto pt-6">
+                    <a
+                      href="https://antonioguerriere.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center min-h-[44px] rounded-full border border-green px-4 py-2 text-sm font-semibold text-green transition-colors hover:bg-green hover:text-bgBlack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
+                    >
+                      Personal website
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/antonioguerriere/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center min-h-[44px] rounded-full border border-green px-4 py-2 text-sm font-semibold text-green transition-colors hover:bg-green hover:text-bgBlack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
+                    >
+                      LinkedIn
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
+              </article>
+              <article className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                <TeamPortrait
+                  name="Cedric Ouaga"
+                  src="/images/team/cedric.webp"
+                  alt="Cedric Ouaga, commercial director of Mind Technica"
+                  width={2589}
+                  height={2624}
+                />
+                <div className="flex flex-1 flex-col pt-5">
+                  <h3 className={`${bayon.className} text-green text-2xl leading-tight mb-3`}>
+                    Cedric Ouaga<span className="block mt-2 font-sans text-sm font-medium tracking-wide text-stone-300">MBA</span>
+                  </h3>
+                  <p className="text-white text-sm md:text-base font-semibold mb-4">
+                    Commercial Director
+                  </p>
+                  <p className="text-stone-300 text-[15px] leading-6">
+                    Cedric partners with ambitious, growing companies and enterprise organisations
+                    to build scalable cloud infrastructure and software solutions that directly
+                    unlock commercial revenue. Backed by a track record across high-growth tech
+                    scale-ups and industry leaders like IBM and DocuSign, he helps teams bridge
+                    deep technical execution with durable commercial value.
+                  </p>
+                  <div className="flex flex-wrap gap-3 mt-auto pt-6">
+                    <a
+                      href="https://www.linkedin.com/in/cedouaga/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center min-h-[44px] rounded-full border border-green px-4 py-2 text-sm font-semibold text-green transition-colors hover:bg-green hover:text-bgBlack focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
+                    >
+                      LinkedIn
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+              <article className="flex flex-col rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+                <TeamPortrait
+                  name="Martin Král"
+                  src="/images/team/martin.webp"
+                  alt="Martin Král, software developer at Mind Technica"
+                  width={1536}
+                  height={2048}
+                />
+                <div className="flex flex-1 flex-col pt-5">
+                  <h3 className={`${bayon.className} text-green text-2xl leading-tight mb-3`}>
+                    Martin Král
+                  </h3>
+                  <p className="text-white text-sm md:text-base font-semibold mb-4">
+                    Software Developer
+                  </p>
+                  <p className="text-stone-300 text-[15px] leading-6">
+                    Martin is a software developer with over five years of experience building
+                    websites, applications and IoT tools. He develops full-stack applications
+                    with Laravel and Vue.js, integrates third-party APIs and automates data
+                    workflows, with experience in cloud deployment and database design.
+                    At Mind Technica, he builds data extraction tools and internal business
+                    systems, and brings experience mentoring developers through training
+                    and code reviews.
+                  </p>
+                </div>
+              </article>
             </div>
           </section>
 

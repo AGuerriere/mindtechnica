@@ -3,7 +3,15 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
-export default function TeamPortrait() {
+type TeamPortraitProps = {
+  name: string
+  src: string
+  alt: string
+  width: number
+  height: number
+}
+
+export default function TeamPortrait({ name, src, alt, width, height }: TeamPortraitProps) {
   const dialogRef = useRef<HTMLDialogElement>(null)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -24,22 +32,22 @@ export default function TeamPortrait() {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        aria-label="Enlarge photo of Antonio Guerriere"
+        aria-label={`Enlarge photo of ${name}`}
         aria-haspopup="dialog"
-        className="block w-56 md:w-64 shrink-0 rounded-xl overflow-hidden cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
+        className="group relative block w-full max-w-[240px] mx-auto aspect-square shrink-0 rounded-xl overflow-hidden cursor-zoom-in focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-green"
       >
         <Image
-          src="/images/team/antonio.webp"
-          alt="Antonio Guerriere, founder and director of Mind Technica"
-          width={3840}
-          height={5120}
-          sizes="(min-width: 768px) 256px, 224px"
-          className="w-full h-auto"
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          sizes="240px"
+          className="w-full h-full object-cover motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:scale-105"
         />
       </button>
       <dialog
         ref={dialogRef}
-        aria-label="Photo of Antonio Guerriere"
+        aria-label={`Photo of ${name}`}
         onClose={() => setIsOpen(false)}
         onClick={event => {
           if (event.target === event.currentTarget) setIsOpen(false)
@@ -57,14 +65,14 @@ export default function TeamPortrait() {
         <button
           type="button"
           onClick={() => setIsOpen(false)}
-          aria-label="Close photo of Antonio Guerriere"
+          aria-label={`Close photo of ${name}`}
           className="block cursor-zoom-out rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-green"
         >
           <Image
-            src="/images/team/antonio.webp"
-            alt="Antonio Guerriere"
-            width={3840}
-            height={5120}
+            src={src}
+            alt={name}
+            width={width}
+            height={height}
             sizes="90vw"
             className="w-auto h-auto max-w-full max-h-[78dvh] rounded-lg object-contain"
           />
